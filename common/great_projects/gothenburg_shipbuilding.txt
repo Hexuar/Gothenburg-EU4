@@ -1,1 +1,1 @@
-#Make this naval focused
+#Make this naval focused, can change price of naval supplies
