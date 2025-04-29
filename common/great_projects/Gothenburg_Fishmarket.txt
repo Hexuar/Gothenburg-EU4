@@ -188,6 +188,5 @@ gothenburg_fishmarket = {
 		on_upgraded = {
 			add_or_upgrade_trade_building = yes
 		}
-
     }
 }
