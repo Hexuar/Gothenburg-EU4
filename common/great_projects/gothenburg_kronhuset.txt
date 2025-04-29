@@ -190,7 +190,7 @@ gothenburg.kronhuset = {
 
 		# What happens when the upgrade is complete
 		on_upgraded = {
-			add_or_upgrade_state_house_building = yes
+			#add_or_upgrade_state_house_building = yes
 		}
     }
 }
