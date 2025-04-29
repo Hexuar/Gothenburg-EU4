@@ -87,7 +87,7 @@ gothenburg.chalmers = {
 
 		# Cost to upgrade the project
 		cost_to_upgrade = {
-			factor = 2
+			factor = 2000
 		}
 
 		# What modifiers are given to the province the project is located in
@@ -124,7 +124,7 @@ gothenburg.chalmers = {
 
 		# Cost to upgrade the project
 		cost_to_upgrade = {
-			factor = 4
+			factor = 4000
 		}
 
 		# What modifiers are given to the province the project is located in
@@ -162,7 +162,7 @@ gothenburg.chalmers = {
 
 		# Cost to upgrade the project
 		cost_to_upgrade = {
-			factor = 8
+			factor = 8000
 		}
 
 		# What modifiers are given to the province the project is located in
