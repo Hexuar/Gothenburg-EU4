@@ -120,6 +120,8 @@ gothenburg.main = {
                 add_prestige = 20
             }
 
+            custom_tooltip = gothenburg.the_hansa_branches
+
             hidden_effect = {
                 if = {
                     limit = {
@@ -130,14 +132,16 @@ gothenburg.main = {
                         owns_or_subject_of = 1874
                     }
                     add_prestige = 20
+                    set_country_flag = gothenburg.hansa_conquered
                 }
                 else {
                     add_treasury = 200
+                    set_country_flag = gothenburg.hansa_befriended
                 }
+                swap_non_generic_missions = yes
             }
         }
     }
-
 }
 
 
@@ -221,7 +225,6 @@ gothenburg.expansion = {
             }
         }
     }
-
 }
 
 
@@ -320,12 +323,18 @@ gothenburg.navy = {
         effect = {
             create_admiral = { tradition = 30 }
             add_yearly_sailors = 10
-            capital_scope = {
-                light_ship = ROOT
-                light_ship = ROOT
-                light_ship = ROOT
-                light_ship = ROOT
+
+            hidden_effect = {
+                capital_scope = {
+                    light_ship = ROOT
+                    light_ship = ROOT
+                    light_ship = ROOT
+                    light_ship = ROOT
+                    light_ship = ROOT
+                }
             }
+
+            custom_tooltip = gothenburg.varvet_spawn_ships
         }
     }
 }
@@ -358,14 +367,12 @@ gothenburg.colonialism = {
         }
 
         effect = {
-            23 = {
-                define_explorer = {
-                    shock = 2
-                    fire = 0
-                    manuever = 3
-                    siege = 1
-                    name = "Eirik Raude"
-                }
+            define_explorer = {
+                shock = 2
+                fire = 0
+                manuever = 3
+                siege = 1
+                name = "Eirik Raude"
             }
         }
     }

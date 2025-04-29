@@ -40,7 +40,7 @@
 # Missions
  gothenburg.founding_the_city_title: "Found the City"
  gothenburg.founding_the_city_desc: ""
- gothenburg.founding_the_city.enable_requesting: "\nEnables new decisions to purchase the islands of Bornholm, Åland and Ösel."
+ gothenburg.founding_the_city.enable_requesting: "\n§YEnables new decisions to purchase the islands of Bornholm, Åland and Ösel.§"
 
  gothenburg.gutnish_trade_title: "Gutnish Trade"
  gothenburg.gutnish_trade_desc: ""
@@ -52,18 +52,26 @@
  gothenburg.the_hansa_desc: ""
  gothenburg.the_hansa_befriend: "If we befriend the league:"
  gothenburg.the_hansa_conquer: "\nIf we conquer the league:"
+ gothenburg.the_hansa_branches: "\n§YDepending on our choice, this mission will unlock different branches.§"
 
  gothenburg.the_fleet_title: "The Fleet"
  gothenburg.the_fleet_desc: ""
 
  gothenburg.varvet_title: "Varvet"
  gothenburg.varvet_desc: ""
+ gothenburg.varvet_spawn_ships: "§Y[Root.GetName]§!: Get five §YLight Ships§! in §Y[Root.Capital.GetName]§!."
 
  gothenburg.explorers_title: "Ancestral Explorers"
  gothenburg.explorers_desc: ""
 
  gothenburg.greenland_title: "Rediscover Greenland"
  gothenburg.greenland_desc: ""
+
+ gothenburg.recover_novgorod_title: "Recover Novgorod"
+ gothenburg.recover_novgorod_desc: ""
+
+ gothenburg.protect_danzig_title: "Protect Danzig"
+ gothenburg.protect_danzig_desc: ""
 
 
 # Events
@@ -97,14 +105,18 @@
  #gothenburg.trade_city: "Trade City"
 
 
+# Trade Modifiers
+ gothenburg.hansa_control: "Hansa Controlled"
+
+
 # Decisions
- gothenburg.request_aland_title: "Request Åland"
+ gothenburg.request_aland_title: "¤ Request Åland"
  gothenburg.request_aland_desc: ""
 
- gothenburg.request_bornholm_title: "Request Bornholm"
+ gothenburg.request_bornholm_title: "¤ Request Bornholm"
  gothenburg.request_bornholm_desc: ""
 
- gothenburg.request_osel_title: "Request Ösel"
+ gothenburg.request_osel_title: "¤ Request Ösel"
  gothenburg.request_osel_desc: ""
 
 
