@@ -267,8 +267,6 @@ gothenburg.trade = {
             }
         }
     }
-
-
 }
 
 
@@ -327,6 +325,67 @@ gothenburg.navy = {
                 light_ship = ROOT
                 light_ship = ROOT
                 light_ship = ROOT
+            }
+        }
+    }
+}
+
+
+
+
+gothenburg.colonialism = {
+    slot = 1
+    generic = no
+    ai = yes
+    has_country_shield = yes
+
+    potential = {
+        tag = GBG
+    }
+
+
+    gothenburg.explorers = {
+        icon = mission_longships
+        position = 5
+
+        trigger = {
+            NOR = {
+                has_opinion = {
+                    who = ROOT
+                    value = 100
+                }
+            }
+        }
+
+        effect = {
+            23 = {
+                define_explorer = {
+                    shock = 2
+                    fire = 0
+                    manuever = 3
+                    siege = 1
+                    name = "Eirik Raude"
+                }
+            }
+        }
+    }
+
+
+    gothenburg.greenland = {
+        icon = mission_sailor_boat
+        position = 6
+
+        required_missions = {
+            gothenburg.explorers
+        }
+
+        trigger = {
+            has_discovered = 1104
+        }
+
+        effect = {
+            1104 = {
+                create_colony = 100
             }
         }
     }

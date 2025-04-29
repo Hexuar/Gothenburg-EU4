@@ -59,6 +59,12 @@
  gothenburg.varvet_title: "Varvet"
  gothenburg.varvet_desc: ""
 
+ gothenburg.explorers_title: "Ancestral Explorers"
+ gothenburg.explorers_desc: ""
+
+ gothenburg.greenland_title: "Rediscover Greenland"
+ gothenburg.greenland_desc: ""
+
 
 # Events
  gothenburg.city_of_gothenburg_title: "City of Gothenburg"
@@ -100,6 +106,7 @@
 
  gothenburg.request_osel_title: "Request Ösel"
  gothenburg.request_osel_desc: ""
+
 
 # Subject Types
  gothenburg.trade_city: "Trade City"

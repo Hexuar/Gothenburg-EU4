@@ -25,10 +25,10 @@ country_decisions = {
                         }
                     }
                 }
-                treasury = 250
+                treasury = 100
             }
             else = {
-                treasury = 500
+                treasury = 200
             }
 
             1930 = {
@@ -81,10 +81,10 @@ country_decisions = {
                         }
                     }
                 }
-                treasury = 250
+                treasury = 100
             }
             else = {
-                treasury = 500
+                treasury = 200
             }
 
             1981 = {
@@ -137,10 +137,10 @@ country_decisions = {
                         }
                     }
                 }
-                treasury = 250
+                treasury = 100
             }
             else = {
-                treasury = 500
+                treasury = 200
             }
 
             35 = {

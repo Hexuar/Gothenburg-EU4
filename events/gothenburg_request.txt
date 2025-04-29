@@ -38,16 +38,16 @@ country_event = {
                         }
                     }
                 }
-                add_treasury = 250
+                add_treasury = 100
                 GBG = {
-    			    add_treasury = -250
+    			    add_treasury = -100
     			}
 
             }
             else = {
-                add_treasury = 500
+                add_treasury = 200
                 GBG = {
-    			    add_treasury = -500
+    			    add_treasury = -200
     			}
             }
 		}
@@ -102,15 +102,15 @@ country_event = {
                         }
                     }
                 }
-                add_treasury = 250
+                add_treasury = 100
                 GBG = {
-    			    add_treasury = -250
+    			    add_treasury = -100
     			}
             }
             else = {
-                add_treasury = 500
+                add_treasury = 200
                 GBG = {
-    			    add_treasury = -500
+    			    add_treasury = -200
     			}
             }
 		}
@@ -165,16 +165,16 @@ country_event = {
                         }
                     }
                 }
-                add_treasury = 250
+                add_treasury = 100
                 GBG = {
-    			    add_treasury = -250
+    			    add_treasury = -100
     			}
 
             }
             else = {
-                add_treasury = 500
+                add_treasury = 200
                 GBG = {
-    			    add_treasury = -500
+    			    add_treasury = -200
     			}
             }
 		}
