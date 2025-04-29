@@ -358,14 +358,12 @@ gothenburg.colonialism = {
         }
 
         effect = {
-            23 = {
-                define_explorer = {
-                    shock = 2
-                    fire = 0
-                    manuever = 3
-                    siege = 1
-                    name = "Eirik Raude"
-                }
+            define_explorer = {
+                shock = 2
+                fire = 0
+                manuever = 3
+                siege = 1
+                name = "Eirik Raude"
             }
         }
     }
