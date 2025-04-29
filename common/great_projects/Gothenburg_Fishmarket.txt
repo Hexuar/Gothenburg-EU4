@@ -8,7 +8,7 @@ gothenburg.fishmarket = {
     # How much it costs to build
     build_cost = 0
 
-	# Time
+	# Time unit
 	time = { months = 120}
 
     # If the project can be moved
