@@ -52,6 +52,7 @@
  gothenburg.the_hansa_desc: ""
  gothenburg.the_hansa_befriend: "If we befriend the league:"
  gothenburg.the_hansa_conquer: "\nIf we conquer the league:"
+ gothenburg.the_hansa_branches: "\nDepending on our choice, this mission will unlock different branches."
 
  gothenburg.the_fleet_title: "The Fleet"
  gothenburg.the_fleet_desc: ""
@@ -64,6 +65,12 @@
 
  gothenburg.greenland_title: "Rediscover Greenland"
  gothenburg.greenland_desc: ""
+
+ gothenburg.recover_novgorod_title: "Recover Novgorod"
+ gothenburg.recover_novgorod_desc: ""
+
+ gothenburg.protect_danzig_title: "Protect Danzig"
+ gothenburg.protect_danzig_desc: ""
 
 
 # Events
@@ -95,6 +102,10 @@
  gothenburg.gutnish_trade: "Gutnish Trade"
  gothenburg.trade_network: "Trade Network"
  #gothenburg.trade_city: "Trade City"
+
+
+# Trade Modifiers
+ gothenburg.hansa_control: "Hansa Controlled"
 
 
 # Decisions

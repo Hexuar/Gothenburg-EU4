@@ -120,6 +120,8 @@ gothenburg.main = {
                 add_prestige = 20
             }
 
+            custom_tooltip = gothenburg.the_hansa_branches
+
             hidden_effect = {
                 if = {
                     limit = {
@@ -130,14 +132,16 @@ gothenburg.main = {
                         owns_or_subject_of = 1874
                     }
                     add_prestige = 20
+                    set_country_flag = gothenburg.hansa_conquered
                 }
                 else {
                     add_treasury = 200
+                    set_country_flag = gothenburg.hansa_befriended
                 }
+                swap_non_generic_missions = yes
             }
         }
     }
-
 }
 
 
@@ -221,7 +225,6 @@ gothenburg.expansion = {
             }
         }
     }
-
 }
 
 
