@@ -1,3 +1,8 @@
+gothenburg.sprouting_city = {
+    local_development_cost = -0.1
+    local_build_cost = -0.1
+}
+
 gothenburg.city_planning = {
     development_cost = -0.1
     build_cost = -0.1

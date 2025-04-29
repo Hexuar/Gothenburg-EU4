@@ -36,6 +36,8 @@ gothenburg.main = {
             35 = { add_permanent_claim = ROOT }
             1930 = { add_permanent_claim = ROOT }
             1981 = { add_permanent_claim = ROOT }
+
+            custom_tooltip = gothenburg.founding_the_city.enable_requesting
         }
     }
 
@@ -50,8 +52,10 @@ gothenburg.main = {
 
         provinces_to_highlight = {
             OR = {
+                province_id = 38
                 province_id = 44
                 province_id = 45
+                province_id = 1865
                 province_id = 1874
             }
         }
@@ -60,9 +64,9 @@ gothenburg.main = {
             OR = {
                 AND = {
                     if = {
-                        limit = { exists = HSA}
+                        limit = { exists = RIG}
                         reverse_has_opinion = {
-                            who = HSA
+                            who = RIG
                             value = 150
                         }
                     }
@@ -70,6 +74,20 @@ gothenburg.main = {
                         limit = { exists = HAM}
                         reverse_has_opinion = {
                             who = HAM
+                            value = 150
+                        }
+                    }
+                    if = {
+                        limit = { exists = HSA}
+                        reverse_has_opinion = {
+                            who = HSA
+                            value = 150
+                        }
+                    }
+                    if = {
+                        limit = { exists = FLA}
+                        reverse_has_opinion = {
+                            who = FLA
                             value = 150
                         }
                     }
@@ -82,8 +100,10 @@ gothenburg.main = {
                     }
                 }
                 AND = {
+                    owns_or_subject_of = 38
                     owns_or_subject_of = 45
                     owns_or_subject_of = 44
+                    owns_or_subject_of = 1865
                     owns_or_subject_of = 1874
                 }
             }
@@ -103,8 +123,10 @@ gothenburg.main = {
             hidden_effect = {
                 if = {
                     limit = {
+                        owns_or_subject_of = 38
                         owns_or_subject_of = 45
                         owns_or_subject_of = 44
+                        owns_or_subject_of = 1865
                         owns_or_subject_of = 1874
                     }
                     add_prestige = 20
@@ -224,7 +246,12 @@ gothenburg.trade = {
         }
 
         trigger = {
-            trade_income_percentage = 0.25
+            OR = {
+                has_building = marketplace
+                has_building = trade_depot
+                has_building = stock_exchange
+            }
+            trade_income_percentage = 0.2
         }
 
         effect = {
@@ -233,9 +260,9 @@ gothenburg.trade = {
                 duration = -1
             }
 
-            35 = { add_permanent_claim = ROOT }
-            1930 = { add_permanent_claim = ROOT }
-            1981 = { add_permanent_claim = ROOT }
+            capital_scope = {
+                add_center_of_trade_level = 1
+            }
         }
     }
 
@@ -269,14 +296,8 @@ gothenburg.navy = {
         }
 
         effect = {
-            every_province = {
-                if = {
-                    limit = {
-                        has_port = yes
-                        range = ROOT
-                    }
-                    add_claim = ROOT
-                }
+            capital_scope = {
+                heavy_ship = ROOT
             }
         }
     }
@@ -291,7 +312,7 @@ gothenburg.navy = {
         }
 
         trigger = {
-            4942 = {
+            capital_scope = {
                 has_building = shipyard
             }
         }
@@ -299,7 +320,7 @@ gothenburg.navy = {
         effect = {
             create_admiral = { tradition = 30 }
             add_yearly_sailors = 10
-            4942 = {
+            capital_scope = {
                 light_ship = ROOT
                 light_ship = ROOT
                 light_ship = ROOT

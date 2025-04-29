@@ -40,6 +40,7 @@
 # Missions
  gothenburg.founding_the_city_title: "Found the City"
  gothenburg.founding_the_city_desc: ""
+ gothenburg.founding_the_city.enable_requesting: "\nEnables new decisions to purchase the islands of Bornholm, Åland and Ösel."
 
  gothenburg.gutnish_trade_title: "Gutnish Trade"
  gothenburg.gutnish_trade_desc: ""
@@ -51,6 +52,9 @@
  gothenburg.the_hansa_desc: ""
  gothenburg.the_hansa_befriend: "If we befriend the league:"
  gothenburg.the_hansa_conquer: "\nIf we conquer the league:"
+
+ gothenburg.the_fleet_title: "The Fleet"
+ gothenburg.the_fleet_desc: ""
 
  gothenburg.varvet_title: "Varvet"
  gothenburg.varvet_desc: ""

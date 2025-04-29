@@ -31,6 +31,12 @@ country_event = {
             change_government = republic
             set_government_rank = 1
         }
+        4942 = {
+            add_province_modifier = {
+                name = gothenburg.sprouting_city
+                duration = 9125
+            }
+        }
         switch_tag = GBG
 	}
 	option = {
@@ -43,6 +49,12 @@ country_event = {
         GBG = {
             change_government = republic
             set_government_rank = 1
+        }
+        4942 = {
+            add_province_modifier = {
+                name = gothenburg.sprouting_city
+                duration = 9125
+            }
         }
 	}
 	option = {
