@@ -68,9 +68,10 @@ gothenburg.hansa_befriended.expansion = {
             43 = {
                 add_trade_node_income = 24
             }
-            baltic_region = {
+            every_province = {
                 if = {
                     limit = {
+                        region = baltic_region
                         has_port = yes
                     }
                     add_claim = ROOT

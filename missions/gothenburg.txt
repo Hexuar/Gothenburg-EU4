@@ -323,12 +323,18 @@ gothenburg.navy = {
         effect = {
             create_admiral = { tradition = 30 }
             add_yearly_sailors = 10
-            capital_scope = {
-                light_ship = ROOT
-                light_ship = ROOT
-                light_ship = ROOT
-                light_ship = ROOT
+
+            hidden_effect = {
+                capital_scope = {
+                    light_ship = ROOT
+                    light_ship = ROOT
+                    light_ship = ROOT
+                    light_ship = ROOT
+                    light_ship = ROOT
+                }
             }
+
+            custom_tooltip = gothenburg.varvet_spawn_ships
         }
     }
 }

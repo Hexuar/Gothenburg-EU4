@@ -2,7 +2,7 @@ country_decisions = {
 
     # Request Åland
     gothenburg.request_aland = {
-        color = { 62  160  75 }
+        color = { 214  180  14 }
 
         potential = {
             tag = GBG
@@ -58,7 +58,7 @@ country_decisions = {
 
     # Request Bornholm
     gothenburg.request_bornholm = {
-        color = { 62  160  75 }
+        color = { 214  180  14 }
 
         potential = {
             tag = GBG
@@ -114,7 +114,7 @@ country_decisions = {
 
     # Request Ösel
     gothenburg.request_osel = {
-        color = { 62  160  75 }
+        color = { 214  180  14 }
 
         potential = {
             tag = GBG
