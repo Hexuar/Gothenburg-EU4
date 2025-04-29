@@ -1,0 +1,310 @@
+gothenburg.main = {
+    slot = 3
+    generic = no
+    ai = yes
+    has_country_shield = yes
+
+    potential = {
+        tag = GBG
+    }
+
+
+    gothenburg.founding_the_city = {
+        icon = mission_hanseatic_city
+        position = 1
+
+        provinces_to_highlight = {
+            province_id = 4942
+        }
+
+        trigger = {
+            4942 = {
+                development = 20
+            }
+        }
+
+        effect = {
+            set_country_flag = gothenburg.gothenburg_founded
+
+            add_country_modifier = {
+                name = gothenburg.city_planning
+                duration = 9125
+            }
+
+            add_sailors = 100
+
+            35 = { add_permanent_claim = ROOT }
+            1930 = { add_permanent_claim = ROOT }
+            1981 = { add_permanent_claim = ROOT }
+        }
+    }
+
+
+    gothenburg.the_hansa = {
+        icon = unite_the_league
+        position = 4
+
+        required_missions = {
+            gothenburg.gutnish_trade
+        }
+
+        provinces_to_highlight = {
+            OR = {
+                province_id = 44
+                province_id = 45
+                province_id = 1874
+            }
+        }
+
+        trigger = {
+            OR = {
+                AND = {
+                    if = {
+                        limit = { exists = HSA}
+                        reverse_has_opinion = {
+                            who = HSA
+                            value = 150
+                        }
+                    }
+                    if = {
+                        limit = { exists = HAM}
+                        reverse_has_opinion = {
+                            who = HAM
+                            value = 150
+                        }
+                    }
+                    if = {
+                        limit = { exists = BRE}
+                        reverse_has_opinion = {
+                            who = BRE
+                            value = 150
+                        }
+                    }
+                }
+                AND = {
+                    owns_or_subject_of = 45
+                    owns_or_subject_of = 44
+                    owns_or_subject_of = 1874
+                }
+            }
+        }
+
+        effect = {
+            custom_tooltip = gothenburg.the_hansa_befriend
+            tooltip = {
+                add_treasury = 200
+            }
+
+            custom_tooltip = gothenburg.the_hansa_conquer
+            tooltip = {
+                add_prestige = 20
+            }
+
+            hidden_effect = {
+                if = {
+                    limit = {
+                        owns_or_subject_of = 45
+                        owns_or_subject_of = 44
+                        owns_or_subject_of = 1874
+                    }
+                    add_prestige = 20
+                }
+                else {
+                    add_treasury = 200
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+gothenburg.expansion = {
+    slot = 2
+    generic = no
+    ai = yes
+    has_country_shield = yes
+
+    potential = {
+        tag = GBG
+    }
+
+
+    gothenburg.baltic_outposts = {
+        icon = mission_galleys_in_port
+        position = 2
+
+        required_missions = {
+            gothenburg.founding_the_city
+        }
+
+        provinces_to_highlight = {
+            OR = {
+                province_id = 35
+                province_id = 1930
+                province_id = 1981
+            }
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+
+        trigger = {
+            35 = {
+                country_or_non_sovereign_subject_holds = ROOT
+                development = 10
+            }
+            1930 = {
+                country_or_non_sovereign_subject_holds = ROOT
+                development = 10
+            }
+            1981 = {
+                country_or_non_sovereign_subject_holds = ROOT
+                development = 10
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = gothenburg.trade_network
+                duration = -1
+            }
+            25 = { add_permanent_claim = ROOT }
+        }
+    }
+
+
+    gothenburg.gutnish_trade = {
+        icon = mission_invade_island
+        position = 3
+
+        required_missions = {
+            gothenburg.baltic_outposts
+        }
+
+        provinces_to_highlight = {
+            province_id = 25
+        }
+
+        trigger = {
+            25 = {
+                is_core = ROOT
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = gothenburg.gutnish_trade
+                duration = -1
+            }
+        }
+    }
+
+}
+
+
+
+
+gothenburg.trade = {
+    slot = 4
+    generic = no
+    ai = yes
+    has_country_shield = yes
+
+    potential = {
+        tag = GBG
+    }
+
+    gothenburg.trade_city = {
+        icon = mission_seize_north_sea_trade
+        position = 2
+
+        required_missions = {
+            gothenburg.founding_the_city
+        }
+
+        trigger = {
+            trade_income_percentage = 0.25
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = gothenburg.trade_city
+                duration = -1
+            }
+
+            35 = { add_permanent_claim = ROOT }
+            1930 = { add_permanent_claim = ROOT }
+            1981 = { add_permanent_claim = ROOT }
+        }
+    }
+
+
+}
+
+
+
+
+gothenburg.navy = {
+    slot = 5
+    generic = no
+    ai = yes
+    has_country_shield = yes
+
+    potential = {
+        tag = GBG
+    }
+
+
+    gothenburg.the_fleet = {
+        icon = mission_galleass
+        position = 2
+
+        required_missions = {
+            gothenburg.founding_the_city
+        }
+
+        trigger = {
+            num_of_light_ship = 10
+        }
+
+        effect = {
+            every_province = {
+                if = {
+                    limit = {
+                        has_port = yes
+                        range = ROOT
+                    }
+                    add_claim = ROOT
+                }
+            }
+        }
+    }
+
+
+    gothenburg.varvet = {
+        icon = mission_early_game_buildings
+        position = 3
+
+        required_missions = {
+            gothenburg.the_fleet
+        }
+
+        trigger = {
+            4942 = {
+                has_building = shipyard
+            }
+        }
+
+        effect = {
+            create_admiral = { tradition = 30 }
+            add_yearly_sailors = 10
+            4942 = {
+                light_ship = ROOT
+                light_ship = ROOT
+                light_ship = ROOT
+                light_ship = ROOT
+            }
+        }
+    }
+}

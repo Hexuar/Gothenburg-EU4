@@ -1,0 +1,18 @@
+gothenburg.city_planning = {
+    development_cost = -0.1
+    build_cost = -0.1
+}
+
+gothenburg.gutnish_trade = {
+    merchants = 1
+    global_ship_trade_power = 0.1
+}
+
+gothenburg.trade_network = {
+    trade_steering = 0.1
+}
+
+gothenburg.trade_city = {
+    merchants = 1
+    trade_efficiency = 0.075
+}

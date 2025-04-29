@@ -1,0 +1,191 @@
+namespace = gothenburg_request_province
+
+country_event = {
+	id = gothenburg_request_province.1
+	title = gothenburg.request_aland_event_title
+	desc = gothenburg.request_aland_event_desc
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = gothenburg.request_aland_event.accept
+
+		if = {
+		    limit = {
+				owns = 1930
+				exists = GBG
+			}
+
+			1930 = {
+			    cede_province = GBG
+				add_core = GBG
+				owner = {
+				    remove_core = THIS
+				}
+			}
+
+			if = {
+                limit = {
+                    OR = {
+                        FROM = {
+                            is_subject_of = ROOT
+                        }
+                        FROM = {
+                            overlord = {
+                                is_subject_of = ROOT
+                            }
+                        }
+                    }
+                }
+                add_treasury = 250
+                GBG = {
+    			    add_treasury = -250
+    			}
+
+            }
+            else = {
+                add_treasury = 500
+                GBG = {
+    			    add_treasury = -500
+    			}
+            }
+		}
+
+		ai_chance = { factor = 90 }
+	}
+	option = {
+	    name = gothenburg.request_aland_event.reject
+
+		add_prestige = 10
+
+		ai_chance = { factor = 10 }
+	}
+}
+
+
+country_event = {
+	id = gothenburg_request_province.2
+	title = gothenburg.request_bornholm_event_title
+	desc = gothenburg.request_bornholm_event_desc
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = gothenburg.request_bornholm_event.accept
+
+		if = {
+		    limit = {
+				owns = 1981
+				exists = GBG
+			}
+
+			1981 = {
+			    cede_province = GBG
+				add_core = GBG
+				owner = {
+				    remove_core = THIS
+				}
+			}
+
+			if = {
+                limit = {
+                    OR = {
+                        FROM = {
+                            is_subject_of = ROOT
+                        }
+                        FROM = {
+                            overlord = {
+                                is_subject_of = ROOT
+                            }
+                        }
+                    }
+                }
+                add_treasury = 250
+                GBG = {
+    			    add_treasury = -250
+    			}
+            }
+            else = {
+                add_treasury = 500
+                GBG = {
+    			    add_treasury = -500
+    			}
+            }
+		}
+
+		ai_chance = { factor = 90 }
+	}
+	option = {
+	    name = gothenburg.request_bornholm_event.reject
+
+		add_prestige = 10
+
+		ai_chance = { factor = 10 }
+	}
+}
+
+
+country_event = {
+	id = gothenburg_request_province.3
+	title = gothenburg.request_osel_event_title
+	desc = gothenburg.request_osel_event_desc
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = gothenburg.request_osel_event.accept
+
+		if = {
+		    limit = {
+				owns = 35
+				exists = GBG
+			}
+
+			35 = {
+			    cede_province = GBG
+				add_core = GBG
+				owner = {
+				    remove_core = THIS
+				}
+			}
+
+			if = {
+                limit = {
+                    OR = {
+                        FROM = {
+                            is_subject_of = ROOT
+                        }
+                        FROM = {
+                            overlord = {
+                                is_subject_of = ROOT
+                            }
+                        }
+                    }
+                }
+                add_treasury = 250
+                GBG = {
+    			    add_treasury = -250
+    			}
+
+            }
+            else = {
+                add_treasury = 500
+                GBG = {
+    			    add_treasury = -500
+    			}
+            }
+		}
+
+		ai_chance = { factor = 90 }
+	}
+	option = {
+	    name = gothenburg.request_osel_event.reject
+
+		add_prestige = 10
+
+		ai_chance = { factor = 10 }
+	}
+}

@@ -1,0 +1,105 @@
+﻿l_english:
+
+
+# Countries
+ GBG: "Gothenburg"
+ GBG_ADJ: "Gothenburgian"
+ GBG_ADJ2: "Gothenburgian"
+ gothenburg: "Gothenburg"
+
+
+# Provinces
+ PROV4942: "Göteborg"
+ PROV_ADJ4942: "Göteborger"
+
+
+# Ideas
+ GBG_ideas: "Gothenburgian Ideas"
+ GBG_ideas_start: "Gothenburgian Tradition"
+ GBG_ideas_end: "Gothenburgian Ambitions"
+
+ gbg_vallgraven: "Vallgraven"
+ gbg_vallgraven_desc: ""
+
+ gbg_goteborgs_varv: "Göteborgs Varv"
+ gbg_goteborgs_varv_desc: ""
+
+ gbg_trade_relations: "Trade Relations"
+ gbg_trade_relations_desc: ""
+
+ gbg_political_prowess: "Political Prowess"
+ gbg_political_prowess_desc: ""
+
+ gbg_gustaf_douglas: "Gustaf Douglas"
+ gbg_gustaf_douglas_desc: ""
+
+ gbg_goteborgs_hamn: "Göteborgs Hamn"
+ gbg_goteborgs_hamn_desc: ""
+
+
+# Missions
+ gothenburg.founding_the_city_title: "Found the City"
+ gothenburg.founding_the_city_desc: ""
+
+ gothenburg.gutnish_trade_title: "Gutnish Trade"
+ gothenburg.gutnish_trade_desc: ""
+
+ gothenburg.baltic_outposts_title: "Baltic Outposts"
+ gothenburg.baltic_outposts_desc: ""
+
+ gothenburg.the_hansa_title: "The Hanseatic League"
+ gothenburg.the_hansa_desc: ""
+ gothenburg.the_hansa_befriend: "If we befriend the league:"
+ gothenburg.the_hansa_conquer: "\nIf we conquer the league:"
+
+ gothenburg.varvet_title: "Varvet"
+ gothenburg.varvet_desc: ""
+
+
+# Events
+ gothenburg.city_of_gothenburg_title: "City of Gothenburg"
+ gothenburg.city_of_gothenburg_desc: "In recent years, a city has been developing at the mouth of Göta älv. Merchants from all over Sweden have settled along the river and found much wealth in the process. Now, representatives from this newly established merchant city ask for greater political independence to further their economic growth. "
+ gothenburg.city_of_gothenburg.play: "This sounds interesting!"
+ gothenburg.city_of_gothenburg.release: "Very well. Let them establish a city on their own."
+ gothenburg.city_of_gothenburg.fight: "How dare they!"
+
+ gothenburg.request_aland_event_title: "Gothenburg requests Åland"
+ gothenburg.request_aland_event_desc: ""
+ gothenburg.request_aland_event.accept: "Accept"
+ gothenburg.request_aland_event.reject: "Reject"
+
+ gothenburg.request_bornholm_event_title: "Gothenburg requests Bornholm"
+ gothenburg.request_bornholm_event_desc: ""
+ gothenburg.request_bornholm_event.accept: "Accept"
+ gothenburg.request_bornholm_event.reject: "Reject"
+
+ gothenburg.request_osel_event_title: "Gothenburg requests Ösel"
+ gothenburg.request_osel_event_desc: ""
+ gothenburg.request_osel_event.accept: "Accept"
+ gothenburg.request_osel_event.reject: "Reject"
+
+
+# Event Modifiers
+ gothenburg.city_planning: "City Planning"
+ gothenburg.gutnish_trade: "Gutnish Trade"
+ gothenburg.trade_network: "Trade Network"
+ #gothenburg.trade_city: "Trade City"
+
+
+# Decisions
+ gothenburg.request_aland_title: "Request Åland"
+ gothenburg.request_aland_desc: ""
+
+ gothenburg.request_bornholm_title: "Request Bornholm"
+ gothenburg.request_bornholm_desc: ""
+
+ gothenburg.request_osel_title: "Request Ösel"
+ gothenburg.request_osel_desc: ""
+
+# Subject Types
+ gothenburg.trade_city: "Trade City"
+ gothenburg.trade_city_long_desc: "A Trade City is a semi-independent nation that supports its overlord financially"
+ gothenburg.trade_city_is_our: "$NAME|Y$ is one of our Trade Cities"
+ gothenburg.trade_city_title: "Trade City"
+ gothenburg.trade_city_title_plural: "Trade Cities"
+ is_gothenburg.trade_city: "Is Trade City"

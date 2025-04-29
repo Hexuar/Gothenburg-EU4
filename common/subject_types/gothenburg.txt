@@ -1,0 +1,42 @@
+gothenburg.trade_city = {
+    copy_from = default
+
+    # Graphics:
+    sprite = GFX_icon_trade_league
+    diplomacy_overlord_sprite = GFX_icon_trade_league
+    diplomacy_subject_sprite = GFX_icon_trade_league
+
+    # Properties:
+    is_voluntary = yes
+    transfer_trade_power = yes
+    joins_overlords_wars = no
+    overlord_protects_external = yes
+    counts_for_borders = no
+    can_use_claims = no
+    share_rebel_popup = no
+    allows_taking_land_without_independence = yes
+    overlord_can_fabricate_for = no
+    pays_overlord = 0.2
+
+    can_fight = {
+        independent_nations = yes
+        other_overlord = all
+	}
+	can_rival = {
+        independent_nations = yes
+        other_overlord = all
+	}
+	can_ally = {
+        independent_nations = yes
+        other_overlord = all
+	}
+	can_marry = {
+        independent_nations = yes
+        other_overlord = all
+	}
+
+    # Subject Interactions:
+    divert_trade = yes
+    placate_rulers = no
+    enforce_religion = no
+}

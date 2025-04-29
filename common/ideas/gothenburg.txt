@@ -1,0 +1,37 @@
+GBG_ideas = {
+	start = {
+		trade_range_modifier = 0.10
+		trade_steering = 0.10
+	}
+
+	bonus = {
+		merchants = 1
+	}
+
+	trigger = {
+		tag = GBG
+	}
+	free = yes
+
+	gbg_vallgraven = {
+	    development_cost = -0.1
+	}
+	gbg_goteborgs_varv = {
+		light_ship_cost = -0.1
+	}
+	gbg_trade_relations = {
+		diplomatic_reputation = 1
+	}
+	gbg_political_prowess = {
+		possible_dip_policy = 1
+	}
+	gbg_gustaf_douglas = {
+		mercenary_cost = -0.1
+	}
+	produktplakatet = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	gbg_goteborgs_hamn = {
+		naval_forcelimit_modifier = 0.1
+	}
+}

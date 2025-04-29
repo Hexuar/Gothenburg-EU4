@@ -1,0 +1,7 @@
+government = monarchy
+mercantilism = 10
+technology_group = western
+religion = catholic
+primary_culture = swedish
+capital = 4942	# Göteborg
+fixed_capital = 4942 # Cannot move capital away from this province & no power cost to move to it

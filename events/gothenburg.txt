@@ -1,0 +1,59 @@
+namespace = gothenburg
+
+country_event = {
+	id = gothenburg.1
+	title = gothenburg.city_of_gothenburg_title
+	desc = gothenburg.city_of_gothenburg_desc
+	picture = CITY_VIEW_eventPicture
+
+	mean_time_to_happen = {
+	    months = 1
+	}
+
+	trigger = {
+	    owns = 4942 # Göteborg
+		NOT = { has_country_flag = gothenburg.has_seen_city_of_gothenburg_event }
+		NOT = { tag = GBG }
+	}
+
+	immediate = {
+	    set_country_flag = gothenburg.has_seen_city_of_gothenburg_event
+	}
+
+	option = {
+	    name = gothenburg.city_of_gothenburg.play
+		create_vassal = GBG
+	    create_subject = {
+            subject_type = gothenburg.trade_city
+            subject = GBG
+        }
+        GBG = {
+            change_government = republic
+            set_government_rank = 1
+        }
+        switch_tag = GBG
+	}
+	option = {
+	    name = gothenburg.city_of_gothenburg.release
+		create_vassal = GBG
+	    create_subject = {
+            subject_type = gothenburg.trade_city
+            subject = GBG
+        }
+        GBG = {
+            change_government = republic
+            set_government_rank = 1
+        }
+	}
+	option = {
+	    name = gothenburg.city_of_gothenburg.fight
+		4942 = {
+		    spawn_rebels = {
+				type = nationalist_rebels
+				size = 7
+				win = yes
+				separatists_target = GBG
+			}
+		}
+	}
+}

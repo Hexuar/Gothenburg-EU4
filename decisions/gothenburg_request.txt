@@ -1,0 +1,169 @@
+country_decisions = {
+
+    # Request Åland
+    gothenburg.request_aland = {
+        color = { 62  160  75 }
+
+        potential = {
+            tag = GBG
+            has_country_flag = gothenburg.gothenburg_founded
+            NOT = { 1930 = { country_or_non_sovereign_subject_holds = ROOT } }
+            NOT = { has_country_flag = gothenburg.requested_aland }
+        }
+
+        allow = {
+            if = {
+                limit = {
+                    OR = {
+                        overlord = {
+                            owns = 1930
+                        }
+                        overlord = {
+                            overlord = {
+                                owns = 1930
+                            }
+                        }
+                    }
+                }
+                treasury = 250
+            }
+            else = {
+                treasury = 500
+            }
+
+            1930 = {
+                controller = {
+                    has_opinion = {
+                        who = ROOT
+                        value = 150
+                    }
+                }
+            }
+        }
+
+        effect = {
+            set_country_flag = gothenburg.requested_aland
+            1930 = {
+                controller =  {
+                    country_event = {
+                        id = gothenburg_request_province.1
+                        days = 30
+                        random = 15
+                    }
+                }
+            }
+        }
+    }
+
+
+    # Request Bornholm
+    gothenburg.request_bornholm = {
+        color = { 62  160  75 }
+
+        potential = {
+            tag = GBG
+            has_country_flag = gothenburg.gothenburg_founded
+            NOT = { 1981 = { country_or_non_sovereign_subject_holds = ROOT } }
+            NOT = { has_country_flag = gothenburg.requested_bornholm }
+        }
+
+        allow = {
+            if = {
+                limit = {
+                    OR = {
+                        overlord = {
+                            owns = 1981
+                        }
+                        overlord = {
+                            overlord = {
+                                owns = 1981
+                            }
+                        }
+                    }
+                }
+                treasury = 250
+            }
+            else = {
+                treasury = 500
+            }
+
+            1981 = {
+                controller = {
+                    has_opinion = {
+                        who = ROOT
+                        value = 150
+                    }
+                }
+            }
+        }
+
+        effect = {
+            set_country_flag = gothenburg.requested_bornholm
+            1981 = {
+                controller =  {
+                    country_event = {
+                        id = gothenburg_request_province.2
+                        days = 30
+                        random = 15
+                    }
+                }
+            }
+        }
+    }
+
+
+    # Request Ösel
+    gothenburg.request_osel = {
+        color = { 62  160  75 }
+
+        potential = {
+            tag = GBG
+            has_country_flag = gothenburg.gothenburg_founded
+            NOT = { 35 = { country_or_non_sovereign_subject_holds = ROOT } }
+            NOT = { has_country_flag = gothenburg.requested_osel }
+        }
+
+        allow = {
+            if = {
+                limit = {
+                    OR = {
+                        overlord = {
+                            owns = 35
+                        }
+                        overlord = {
+                            overlord = {
+                                owns = 35
+                            }
+                        }
+                    }
+                }
+                treasury = 250
+            }
+            else = {
+                treasury = 500
+            }
+
+            35 = {
+                controller = {
+                    has_opinion = {
+                        who = ROOT
+                        value = 150
+                    }
+                }
+            }
+        }
+
+        effect = {
+            set_country_flag = gothenburg.requested_osel
+            35 = {
+                controller =  {
+                    country_event = {
+                        id = gothenburg_request_province.3
+                        days = 30
+                        random = 15
+                    }
+                }
+            }
+        }
+    }
+}
