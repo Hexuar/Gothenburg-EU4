@@ -1,12 +1,15 @@
-gothenburg_fishmarket = {
+gothenburg.fishmarket = {
     # Province the project starts in
     start = 4942
 
     # Date built in real life (If you start the game at a date later than this, then the project will show up)
-    date = 3000.01.01
+    date = 0.01.01
 
     # How much it costs to build
     build_cost = 0
+
+	# Time
+	time = { months = 120}
 
     # If the project can be moved
     can_be_moved = no
@@ -49,29 +52,29 @@ gothenburg_fishmarket = {
 
 	# Tiers
 	tier_0 = {
-			upgrade_time = {
-				months = 0
-			}
+		upgrade_time = {
+			months = 0
+		}
 
-			cost_to_upgrade = {
-				factor = 0
-			}
+		cost_to_upgrade = {
+			factor = 0
+		}
 
-			province_modifiers = {
-				
-			}
+		province_modifiers = {
+			
+		}
 
-			area_modifier = {
-				
-			}
+		area_modifier = {
+			
+		}
 
-			country_modifiers = {
-				
-			}
+		country_modifiers = {
+			
+		}
 
-			on_upgraded = {
-				
-			}
+		on_upgraded = {
+			
+		}
 	}
     
 	tier_1 = {
