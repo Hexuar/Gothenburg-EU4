@@ -1,0 +1,9 @@
+gothenburg.opinion_skillfull_diplomats = {
+	opinion = 25
+	yearly_decay = 1
+}
+
+gothenburg.opinion_remained_faithful = {
+	opinion = 50
+	yearly_decay = 1
+}

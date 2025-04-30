@@ -42,6 +42,9 @@
  gothenburg.founding_the_city_desc: ""
  gothenburg.founding_the_city.enable_requesting: "\n§YEnables new decisions to purchase the islands of Bornholm, Åland and Ösel.§"
 
+ gothenburg.skillfull_diplomats_title: "Skillfull Diplomats"
+ gothenburg.skillfull_diplomats_desc: ""
+
  gothenburg.gutnish_trade_title: "Gutnish Trade"
  gothenburg.gutnish_trade_desc: ""
 
@@ -73,6 +76,24 @@
  gothenburg.protect_danzig_title: "Protect Danzig"
  gothenburg.protect_danzig_desc: ""
 
+ gothenburg.independence_question_title: "Independence"
+ gothenburg.independence_question_desc: ""
+ gothenburg.independence_question_become_independent: "If we become independent:"
+ gothenburg.independence_question_swedish_independence: "\nIf §Y[Root.Overlord.GetName]§! becomes independent:"
+ gothenburg.independence_question_branches: "\n§YDepending on our choice, this mission will unlock different branches.§"
+
+ gothenburg.independence_title: "Freedom!"
+ gothenburg.independence_desc: ""
+
+ gothenburg.join_denmark_title: "Danish Allegiance"
+ gothenburg.join_denmark_desc: ""
+
+ gothenburg.join_hre_title: "German Allegiance"
+ gothenburg.join_hre_desc: ""
+
+ gothenburg.swedish_independence_title: "Swedish Freedom!"
+ gothenburg.swedish_independence_desc: ""
+
 
 # Events
  gothenburg.city_of_gothenburg_title: "City of Gothenburg"
@@ -103,6 +124,11 @@
  gothenburg.gutnish_trade: "Gutnish Trade"
  gothenburg.trade_network: "Trade Network"
  #gothenburg.trade_city: "Trade City"
+
+
+# Opinion Modifiers
+ gothenburg.opinion_skillfull_diplomats: "Skillfull Diplomats"
+ gothenburg.opinion_remained_faithful: "Remained Faithful"
 
 
 # Trade Modifiers

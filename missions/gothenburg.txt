@@ -31,13 +31,37 @@ gothenburg.main = {
                 duration = 9125
             }
 
-            add_sailors = 100
+            add_sailors = 1000
 
             35 = { add_permanent_claim = ROOT }
             1930 = { add_permanent_claim = ROOT }
             1981 = { add_permanent_claim = ROOT }
 
             custom_tooltip = gothenburg.founding_the_city.enable_requesting
+        }
+    }
+
+
+    gothenburg.skillfull_diplomats = {
+        icon = mission_diplomatic_relation
+        position = 2
+
+        required_missions = {
+            gothenburg.founding_the_city
+        }
+
+        trigger = {
+            advisor = diplomat
+        }
+
+        effect = {
+            every_country = {
+                limit = { capital_scope = { region = scandinavia_region } }
+                add_opinion = {
+                    who = ROOT
+                    modifier = gothenburg.opinion_skillfull_diplomats
+                }
+            }
         }
     }
 
@@ -393,6 +417,240 @@ gothenburg.colonialism = {
         effect = {
             1104 = {
                 create_colony = 100
+            }
+        }
+    }
+}
+
+
+
+
+gothenburg.independence_question = {
+    slot = 3
+    generic = no
+    ai = yes
+    has_country_shield = yes
+
+    potential = {
+        tag = GBG
+    }
+
+    gothenburg.independence_question = {
+        icon = mission_swedish_independence
+        position = 8
+
+        trigger = {
+            OR = {
+                is_subject = no
+                AND = {
+                    is_subject = yes
+                    overlord = {
+                        is_subject = no
+                    }
+                }
+            }
+        }
+
+        effect = {
+            custom_tooltip = gothenburg.independence_question_become_independent
+            tooltip = {
+                add_republican_tradition = 10
+            }
+
+            custom_tooltip = gothenburg.independence_question_swedish_independence
+            tooltip = {
+                overlord = {
+                    add_opinion = {
+                        who = ROOT
+                        modifier = gothenburg.opinion_remained_faithful
+                    }
+                }
+            }
+
+            hidden_effect = {
+                if = {
+                    limit = {
+                        is_subject = no
+                    }
+                    set_country_flag = gothenburg.independence_became_independent
+                    add_republican_tradition = 10
+                }
+
+                if = {
+                    limit = {
+                        overlord = {
+                            is_subject = no
+                        }
+                    }
+                    set_country_flag = gothenburg.independence_swedish_independence
+                    overlord = {
+                        add_opinion = {
+                            who = ROOT
+                            modifier = gothenburg.opinion_remained_faithful
+                        }
+                    }
+                }
+                swap_non_generic_missions = yes
+            }
+
+            custom_tooltip = gothenburg.independence_question_branches
+        }
+    }
+}
+
+
+
+
+gothenburg.independence = {
+    slot = 3
+    generic = no
+    ai = yes
+    has_country_shield = yes
+
+    potential = {
+        tag = GBG
+        has_country_flag = gothenburg.independence_became_independent
+    }
+
+
+    gothenburg.independence = {
+        icon = mission_swedish_independence
+        position = 9
+
+        required_missions = {
+            gothenburg.independence_question
+        }
+
+        trigger = {
+            is_subject = no
+            is_at_war = no
+        }
+
+        effect = {
+            capital_scope = {
+                add_base_tax = 2
+                add_base_production = 2
+                add_base_manpower = 2
+            }
+        }
+    }
+}
+
+
+
+
+gothenburg.danish_allegiance = {
+    slot = 2
+    generic = no
+    ai = yes
+    has_country_shield = yes
+
+    potential = {
+        tag = GBG
+        has_country_flag = gothenburg.independence_became_independent
+    }
+
+
+    gothenburg.join_denmark = {
+        icon = mission_danish_flag
+        position = 9
+
+        required_missions = {
+            gothenburg.independence_question
+        }
+
+        trigger = {
+            DAN = {
+                has_opinion = {
+                    who = ROOT
+                    value = 100
+                }
+            }
+        }
+
+        effect = {
+            DAN = {
+                create_subject = {
+                    subject_type = gothenburg.trade_city
+                    subject = GBG
+                }
+            }
+        }
+    }
+}
+
+
+
+
+gothenburg.german_allegiance = {
+    slot = 4
+    generic = no
+    ai = yes
+    has_country_shield = yes
+
+    potential = {
+        tag = GBG
+        has_country_flag = gothenburg.independence_became_independent
+    }
+
+
+    gothenburg.join_hre = {
+        icon = the_imperial_border
+        position = 9
+
+        required_missions = {
+            gothenburg.independence_question
+        }
+
+        trigger = {
+            emperor = {
+                has_opinion = {
+                    who = ROOT
+                    value = 100
+                }
+            }
+        }
+
+        effect = {
+            capital_scope = {
+                set_in_empire = yes
+            }
+        }
+    }
+}
+
+
+
+
+gothenburg.independence_faithful = {
+    slot = 3
+    generic = no
+    ai = yes
+    has_country_shield = yes
+
+    potential = {
+        tag = GBG
+        has_country_flag = gothenburg.independence_swedish_independence
+    }
+
+
+    gothenburg.swedish_independence = {
+        icon = mission_swedish_independence
+        position = 9
+
+        required_missions = {
+            gothenburg.independence_question
+        }
+
+        trigger = {
+            is_at_war = no
+        }
+
+        effect = {
+            capital_scope = {
+                add_base_tax = 1
+                add_base_production = 1
+                add_base_manpower = 1
             }
         }
     }

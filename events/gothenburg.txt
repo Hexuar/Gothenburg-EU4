@@ -36,6 +36,7 @@ country_event = {
                 name = gothenburg.sprouting_city
                 duration = 9125
             }
+            remove_core = ROOT
         }
         switch_tag = GBG
 	}
@@ -55,6 +56,7 @@ country_event = {
                 name = gothenburg.sprouting_city
                 duration = 9125
             }
+            remove_core = ROOT
         }
 	}
 	option = {
