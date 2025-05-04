@@ -14,42 +14,19 @@ country_event = {
 		if = {
 		    limit = {
 				owns = 1930
-				exists = GBG
+				exists = FROM
 			}
 
 			1930 = {
-			    cede_province = GBG
-				add_core = GBG
-				owner = {
-				    remove_core = THIS
-				}
+			    cede_province = FROM
+				add_core = FROM
+				remove_core = ROOT
 			}
 
-			if = {
-                limit = {
-                    OR = {
-                        FROM = {
-                            is_subject_of = ROOT
-                        }
-                        FROM = {
-                            overlord = {
-                                is_subject_of = ROOT
-                            }
-                        }
-                    }
-                }
-                add_treasury = 100
-                GBG = {
-    			    add_treasury = -100
-    			}
-
-            }
-            else = {
-                add_treasury = 200
-                GBG = {
-    			    add_treasury = -200
-    			}
-            }
+			add_treasury = 100
+            FROM = {
+ 			    add_treasury = -100
+ 			}
 		}
 
 		ai_chance = { factor = 90 }
@@ -78,41 +55,19 @@ country_event = {
 		if = {
 		    limit = {
 				owns = 1981
-				exists = GBG
+				exists = FROM
 			}
 
 			1981 = {
-			    cede_province = GBG
-				add_core = GBG
-				owner = {
-				    remove_core = THIS
-				}
+			    cede_province = FROM
+				add_core = FROM
+				remove_core = ROOT
 			}
 
-			if = {
-                limit = {
-                    OR = {
-                        FROM = {
-                            is_subject_of = ROOT
-                        }
-                        FROM = {
-                            overlord = {
-                                is_subject_of = ROOT
-                            }
-                        }
-                    }
-                }
-                add_treasury = 100
-                GBG = {
-    			    add_treasury = -100
-    			}
-            }
-            else = {
-                add_treasury = 200
-                GBG = {
-    			    add_treasury = -200
-    			}
-            }
+			add_treasury = 100
+            FROM = {
+ 			    add_treasury = -100
+ 			}
 		}
 
 		ai_chance = { factor = 90 }
@@ -141,42 +96,19 @@ country_event = {
 		if = {
 		    limit = {
 				owns = 35
-				exists = GBG
+				exists = FROM
 			}
 
 			35 = {
-			    cede_province = GBG
-				add_core = GBG
-				owner = {
-				    remove_core = THIS
-				}
+			    cede_province = FROM
+				add_core = FROM
+				remove_core = ROOT
 			}
 
-			if = {
-                limit = {
-                    OR = {
-                        FROM = {
-                            is_subject_of = ROOT
-                        }
-                        FROM = {
-                            overlord = {
-                                is_subject_of = ROOT
-                            }
-                        }
-                    }
-                }
-                add_treasury = 100
-                GBG = {
-    			    add_treasury = -100
-    			}
-
-            }
-            else = {
-                add_treasury = 200
-                GBG = {
-    			    add_treasury = -200
-    			}
-            }
+			add_treasury = 100
+            FROM = {
+ 			    add_treasury = -100
+ 			}
 		}
 
 		ai_chance = { factor = 90 }

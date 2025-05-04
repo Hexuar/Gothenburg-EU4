@@ -1,5 +1,6 @@
 gothenburg.trade_city = {
     copy_from = default
+	can_have_great_projects_moved_by_overlord = no
 
     # Graphics:
     sprite = GFX_icon_trade_league
@@ -7,18 +8,30 @@ gothenburg.trade_city = {
     diplomacy_subject_sprite = GFX_icon_trade_league
 
     # Properties:
+    can_fight_independence_war = no
     is_voluntary = yes
-    transfer_trade_power = yes
+    transfer_trade_power = no
     joins_overlords_wars = no
     can_have_subjects_of_other_types = yes
+    overlord_can_attack = yes
+    overlord_can_be_subject = yes
     can_be_annexed = no
+    takes_diplo_slot = no
     overlord_protects_external = yes
-    counts_for_borders = no
+    counts_for_borders = yes
     can_use_claims = no
     share_rebel_popup = no
     allows_taking_land_without_independence = yes
+    can_transfer_in_peace = no
+    can_send_missionary_to_subject = no
     overlord_can_fabricate_for = no
+    does_overlord_size_count_for_warscore_cost = no
+    can_concentrate_development = no
+
+    base_liberty_desire = -5
     pays_overlord = 0.2
+
+    relative_power_class = 1
 
     can_fight = {
         independent_nations = yes
@@ -38,7 +51,7 @@ gothenburg.trade_city = {
 	}
 
     # Subject Interactions:
-    divert_trade = yes
+    divert_trade = no
     placate_rulers = no
     enforce_religion = no
 }

@@ -102,6 +102,11 @@
  gothenburg.city_of_gothenburg.release: "Very well. Let them establish a city on their own."
  gothenburg.city_of_gothenburg.fight: "How dare they!"
 
+ gothenburg.city_grows_title: "The city grows"
+ gothenburg.city_grows_desc: "Our recent economic success and promises of freedom have attracted merchants and peasants alike."
+ gothenburg.city_grows_accept: "Great news!"
+
+
  gothenburg.request_aland_event_title: "Gothenburg requests Åland"
  gothenburg.request_aland_event_desc: ""
  gothenburg.request_aland_event.accept: "Accept"

@@ -11,6 +11,7 @@ gothenburg.city_planning = {
 gothenburg.gutnish_trade = {
     merchants = 1
     global_ship_trade_power = 0.1
+    trade_efficiency = 0.05
 }
 
 gothenburg.trade_network = {
@@ -19,5 +20,5 @@ gothenburg.trade_network = {
 
 gothenburg.trade_city = {
     merchants = 1
-    trade_efficiency = 0.075
+    trade_efficiency = 0.1
 }

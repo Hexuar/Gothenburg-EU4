@@ -56,7 +56,12 @@ gothenburg.main = {
 
         effect = {
             every_country = {
-                limit = { capital_scope = { region = scandinavia_region } }
+                limit = {
+                    OR = {
+                        capital_scope = { region = scandinavia_region }
+                        capital_scope = { region = baltic_region }
+                    }
+                }
                 add_opinion = {
                     who = ROOT
                     modifier = gothenburg.opinion_skillfull_diplomats
@@ -442,11 +447,8 @@ gothenburg.independence_question = {
         trigger = {
             OR = {
                 is_subject = no
-                AND = {
-                    is_subject = yes
-                    overlord = {
-                        is_subject = no
-                    }
+                SWE = {                                 # Was shown in-game as "Liege" when using overlord for some reason.
+                    is_subject = no
                 }
             }
         }

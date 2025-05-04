@@ -12,24 +12,7 @@ country_decisions = {
         }
 
         allow = {
-            if = {
-                limit = {
-                    OR = {
-                        overlord = {
-                            owns = 1930
-                        }
-                        overlord = {
-                            overlord = {
-                                owns = 1930
-                            }
-                        }
-                    }
-                }
-                treasury = 100
-            }
-            else = {
-                treasury = 200
-            }
+            treasury = 100
 
             1930 = {
                 controller = {
@@ -68,24 +51,7 @@ country_decisions = {
         }
 
         allow = {
-            if = {
-                limit = {
-                    OR = {
-                        overlord = {
-                            owns = 1981
-                        }
-                        overlord = {
-                            overlord = {
-                                owns = 1981
-                            }
-                        }
-                    }
-                }
-                treasury = 100
-            }
-            else = {
-                treasury = 200
-            }
+            treasury = 100
 
             1981 = {
                 controller = {
@@ -124,24 +90,7 @@ country_decisions = {
         }
 
         allow = {
-            if = {
-                limit = {
-                    OR = {
-                        overlord = {
-                            owns = 35
-                        }
-                        overlord = {
-                            overlord = {
-                                owns = 35
-                            }
-                        }
-                    }
-                }
-                treasury = 100
-            }
-            else = {
-                treasury = 200
-            }
+            treasury = 100
 
             35 = {
                 controller = {
