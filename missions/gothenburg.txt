@@ -457,10 +457,13 @@ gothenburg.independence_question = {
             custom_tooltip = gothenburg.independence_question_become_independent
             tooltip = {
                 add_republican_tradition = 10
+                create_alliance = DAN
             }
 
             custom_tooltip = gothenburg.independence_question_swedish_independence
             tooltip = {
+                join_all_defensive_wars_of = SWE
+                join_all_offensive_wars_of = SWE
                 overlord = {
                     add_opinion = {
                         who = ROOT
@@ -476,6 +479,7 @@ gothenburg.independence_question = {
                     }
                     set_country_flag = gothenburg.independence_became_independent
                     add_republican_tradition = 10
+                    create_alliance = DAN
                 }
 
                 if = {
@@ -485,6 +489,8 @@ gothenburg.independence_question = {
                         }
                     }
                     set_country_flag = gothenburg.independence_swedish_independence
+                    join_all_defensive_wars_of = SWE
+                    join_all_offensive_wars_of = SWE
                     overlord = {
                         add_opinion = {
                             who = ROOT
