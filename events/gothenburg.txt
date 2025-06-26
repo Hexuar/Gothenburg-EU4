@@ -23,10 +23,12 @@ country_event = {
 	option = {
 	    name = gothenburg.city_of_gothenburg.play
 		create_vassal = GBG
-	    create_subject = {
-            subject_type = gothenburg.trade_city
-            subject = GBG
-        }
+		DAN = {
+		    create_subject = {
+                subject_type = gothenburg.trade_city
+                subject = GBG
+            }
+		}
         GBG = {
             change_government = republic
             set_government_rank = 1
@@ -115,5 +117,58 @@ country_event = {
 			age_multiplier = 1
 			trigger = { always = yes }
 		}
+	}
+}
+
+
+country_event = {
+    id = gothenburg.3
+	title = gothenburg.swedish_independence_title
+	desc = gothenburg.swedish_independence_desc
+	picture = DIPLOMACY_eventPicture
+
+	trigger = {
+	    tag = GBG
+		NOT = { has_country_flag = gothenburg.has_seen_swedish_independence_event }
+		SWE = {
+            is_subject = no
+        }
+	}
+
+	immediate = {
+	    set_country_flag = gothenburg.has_seen_swedish_independence_event
+	}
+
+	option = {
+	    name = gothenburg.swedish_independence.support_sweden
+
+		SWE = {
+		    create_subject = {
+                subject_type = gothenburg.trade_city
+                subject = GBG
+            }
+		}
+
+        reverse_add_opinion = {
+            who = SWE
+            modifier = gothenburg.opinion_remained_faithful
+        }
+        reverse_add_opinion = {
+            who = DAN
+            modifier = gothenburg.opinion_refused_allegiance
+        }
+	}
+
+	option = {
+	    name = gothenburg.swedish_independence.support_denmark
+
+		reverse_add_opinion = {
+            who = DAN
+            modifier = gothenburg.opinion_remained_faithful
+        }
+        reverse_add_opinion = {
+            who = SWE
+            modifier = gothenburg.opinion_refused_allegiance
+        }
 	}
 }

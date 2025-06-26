@@ -7,3 +7,8 @@ gothenburg.opinion_remained_faithful = {
 	opinion = 50
 	yearly_decay = 1
 }
+
+gothenburg.opinion_refused_allegiance = {
+	opinion = -50
+	yearly_decay = 1
+}

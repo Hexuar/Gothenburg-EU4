@@ -91,9 +91,6 @@
  gothenburg.join_hre_title: "German Allegiance"
  gothenburg.join_hre_desc: ""
 
- gothenburg.swedish_independence_title: "Swedish Freedom!"
- gothenburg.swedish_independence_desc: ""
-
 
 # Events
  gothenburg.city_of_gothenburg_title: "City of Gothenburg"
@@ -122,6 +119,11 @@
  gothenburg.request_osel_event.accept: "Accept"
  gothenburg.request_osel_event.reject: "Reject"
 
+ gothenburg.swedish_independence_title: "Swedish Independence"
+ gothenburg.swedish_independence_desc: "When we were all part of the Kalmar union, our political situation was much simpler. With the war of swedish independence however, things have changed. Now we must decide whether to grant our allegiance to Sweden or Denmark."
+ gothenburg.swedish_independence.support_sweden: "Support Sweden"
+ gothenburg.swedish_independence.support_denmark: "Support Denmark"
+
 
 # Event Modifiers
  gothenburg.sprouting_city: "Sprouting City"
@@ -134,6 +136,7 @@
 # Opinion Modifiers
  gothenburg.opinion_skillfull_diplomats: "Skillfull Diplomats"
  gothenburg.opinion_remained_faithful: "Remained Faithful"
+ gothenburg.opinion_refused_allegiance: "Refused Allegiance"
 
 
 # Trade Modifiers
