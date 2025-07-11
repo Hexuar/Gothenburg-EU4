@@ -1,0 +1,36 @@
+namespace = gothenburg
+
+country_event = {
+	id = gothenburg_integrated_trade_city.1
+	title = gothenburg.integrated_trade_city_event_title
+	desc = gothenburg.integrated_trade_city_event_desc
+	picture = TRADEGOODS_eventPicture
+
+	hidden = true
+
+	trigger = {
+	    is_client_nation = yes
+		overlord = {
+		    has_reform = gothenburg.scandinavian_trade_city
+		}
+	}
+
+	immediate = {
+
+	    overlord = {
+			create_subject = {
+                subject_type = gothenburg.integrated_trade_city
+                subject = ROOT
+            }
+            ROOT = {
+                change_country_color = { country = PREV }
+                change_government = republic
+                set_government_rank = 1
+                add_government_reform = gothenburg.scandinavian_trade_city
+            }
+		}
+	}
+
+
+	option = {}
+}

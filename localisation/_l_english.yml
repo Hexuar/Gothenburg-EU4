@@ -162,6 +162,19 @@
  gothenburg.trade_city_title_plural: "Trade Cities"
  is_gothenburg.trade_city: "Is Trade City"
 
+ gothenburg.integrated_trade_city: "Trade City"
+ gothenburg.integrated_trade_city_long_desc: "An Integrated Trade City is a semi-independent nation that supports its overlord financially"
+ gothenburg.integrated_trade_city_is_our: "$NAME|Y$ is one of our Integrated Trade Cities"
+ gothenburg.integrated_trade_city_title: "Integrated Trade City"
+ gothenburg.integrated_trade_city_title_plural: "Integrated Trade Cities"
+ is_gothenburg.integrated_trade_city: "Is Integrated Trade City"
+
+
 #Great Projects
  gothenburg.fishmarket: "Feskekôrka"
  gothenburg.fishmarket_price: "Strong fish industry"
+
+
+# Government Reforms
+ gothenburg.scandinavian_trade_city: "Scandinavian Trade City"
+ gothenburg.scandinavian_trade_city_desc: ""

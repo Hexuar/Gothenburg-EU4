@@ -32,6 +32,7 @@ country_event = {
         GBG = {
             change_government = republic
             set_government_rank = 1
+            add_government_reform = gothenburg.scandinavian_trade_city
             create_alliance = DAN
         }
         4942 = {

@@ -6,7 +6,7 @@ gothenburg.hansa_befriended.expansion = {
 
     potential = {
         tag = GBG
-        has_country_flag = gothenburg.hansa_befriended
+        #has_country_flag = gothenburg.hansa_befriended
     }
 
 

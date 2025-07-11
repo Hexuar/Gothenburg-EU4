@@ -130,8 +130,8 @@ gothenburg.main = {
                 }
                 AND = {
                     owns_or_subject_of = 38
-                    owns_or_subject_of = 45
                     owns_or_subject_of = 44
+                    owns_or_subject_of = 45
                     owns_or_subject_of = 1865
                     owns_or_subject_of = 1874
                 }
