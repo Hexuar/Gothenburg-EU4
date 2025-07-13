@@ -1,0 +1,70 @@
+gothenburg.invite_trade_city = {
+    category = influence
+
+    is_visible = {
+        has_reform = gothenburg.scandinavian_trade_city
+    }
+
+    is_allowed = {
+        FROM = {
+            NOT = { num_of_owned_provinces_with = { value = 2 } }
+            is_subject = no
+        }
+    }
+
+    on_accept = {
+        ROOT = {
+            create_subject = {
+                subject_type = gothenburg.trade_city
+                subject = FROM
+            }
+            add_prestige = 10
+        }
+    }
+
+    on_decline = {
+        add_prestige = -10
+    }
+
+    require_acceptance = yes
+
+
+    ai_acceptance = {
+        add_entry = {
+            name = gothenburg.monthly_income
+
+            export_to_variable = {
+                variable_name = ai_value
+                value = monthly_income
+            }
+
+            export_to_variable = {
+                variable_name = target_income
+                value = monthly_income
+                who = FROM
+            }
+
+            subtract_variable = {
+                which = ai_value
+                which = target_income
+            }
+
+            multiply_variable = {
+                which = ai_value
+                value = 10
+            }
+        }
+
+        add_entry = {
+			name = OPINION
+
+			export_to_variable = {
+				variable_name = ai_value
+				value = opinion
+				who = FROM
+			}
+
+			divide_variable = { which = ai_value value = 10 }
+		}
+    }
+}

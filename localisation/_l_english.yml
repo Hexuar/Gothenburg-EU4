@@ -40,10 +40,13 @@
 # Missions
  gothenburg.founding_the_city_title: "Found the City"
  gothenburg.founding_the_city_desc: ""
- gothenburg.founding_the_city.enable_requesting: "\n§YEnables new decisions to purchase the islands of Bornholm, Åland and Ösel.§"
+ gothenburg.founding_the_city.enable_requesting: "\n§YEnables new decisions to purchase the islands of Bornholm, Åland and Ösel.§!"
 
  gothenburg.skillfull_diplomats_title: "Skillfull Diplomats"
  gothenburg.skillfull_diplomats_desc: ""
+
+ gothenburg.trade_empire_title: "Trade Empire"
+ gothenburg.trade_empire_desc: ""
 
  gothenburg.gutnish_trade_title: "Gutnish Trade"
  gothenburg.gutnish_trade_desc: ""
@@ -53,9 +56,8 @@
 
  gothenburg.the_hansa_title: "The Hanseatic League"
  gothenburg.the_hansa_desc: ""
- gothenburg.the_hansa_befriend: "If we befriend the league:"
- gothenburg.the_hansa_conquer: "\nIf we conquer the league:"
- gothenburg.the_hansa_branches: "\n§YDepending on our choice, this mission will unlock different branches.§"
+ gothenburg.the_hansa_monthly_income_greater: "Has monthly income greater than §YLübeck§!."
+ gothenburg.the_hansa_enable_diplomatic_action: "Enables diplomatic action to invite nations to become your §YTrade Cities§!."
 
  gothenburg.the_fleet_title: "The Fleet"
  gothenburg.the_fleet_desc: ""
@@ -75,21 +77,6 @@
 
  gothenburg.protect_danzig_title: "Protect Danzig"
  gothenburg.protect_danzig_desc: ""
-
- gothenburg.independence_question_title: "Independence"
- gothenburg.independence_question_desc: ""
- gothenburg.independence_question_become_independent: "If we become independent:"
- gothenburg.independence_question_swedish_independence: "\nIf §Y[Root.Overlord.GetName]§! becomes independent:"
- gothenburg.independence_question_branches: "\n§YDepending on our choice, this mission will unlock different branches.§"
-
- gothenburg.independence_title: "Freedom!"
- gothenburg.independence_desc: ""
-
- gothenburg.join_denmark_title: "Danish Allegiance"
- gothenburg.join_denmark_desc: ""
-
- gothenburg.join_hre_title: "German Allegiance"
- gothenburg.join_hre_desc: ""
 
 
 # Events
@@ -162,7 +149,14 @@
  gothenburg.trade_city_title_plural: "Trade Cities"
  is_gothenburg.trade_city: "Is Trade City"
 
- gothenburg.integrated_trade_city: "Trade City"
+ gothenburg.free_trade_city: "Free Trade City"
+ gothenburg.free_trade_city_long_desc: "A Free Trade City is a nearly independent nation that supports its overlord financially"
+ gothenburg.free_trade_city_is_our: "$NAME|Y$ is one of our Free Trade Cities"
+ gothenburg.free_trade_city_title: "Free Trade City"
+ gothenburg.free_trade_city_title_plural: "Free Trade Cities"
+ is_gothenburg.free_trade_city: "Is Free Trade City"
+
+ gothenburg.integrated_trade_city: "Integrated Trade City"
  gothenburg.integrated_trade_city_long_desc: "An Integrated Trade City is a semi-independent nation that supports its overlord financially"
  gothenburg.integrated_trade_city_is_our: "$NAME|Y$ is one of our Integrated Trade Cities"
  gothenburg.integrated_trade_city_title: "Integrated Trade City"
@@ -178,3 +172,11 @@
 # Government Reforms
  gothenburg.scandinavian_trade_city: "Scandinavian Trade City"
  gothenburg.scandinavian_trade_city_desc: ""
+
+
+# Diplomatic Actions
+ gothenburg.invite_trade_city: "Invite Trade City"
+ gothenburg.invite_trade_city_title: "Invite Trade City"
+ gothenburg.invite_trade_city_desc: "Invite them to become one of our §YTrade Cities§!."
+ gothenburg.invite_trade_city_tooltip: "Invite them to become one of our §YTrade Cities§!."
+ gothenburg.invite_trade_city_alert_tooltip: "Invite them to become one of our §YTrade Cities§!."
