@@ -44,6 +44,11 @@ gothenburg.invite_trade_city = {
                 who = FROM
             }
 
+            multiply_variable = {
+                which = target_income
+                value = 2
+            }
+
             subtract_variable = {
                 which = ai_value
                 which = target_income
@@ -56,7 +61,7 @@ gothenburg.invite_trade_city = {
         }
 
         add_entry = {
-			name = OPINION
+			name = gothenburg.opinion
 
 			export_to_variable = {
 				variable_name = ai_value
@@ -64,7 +69,51 @@ gothenburg.invite_trade_city = {
 				who = FROM
 			}
 
-			divide_variable = { which = ai_value value = 10 }
+			divide_variable = {
+			    which = ai_value
+				value = 10
+			}
 		}
+
+		add_entry = {
+		    name = gothenburg.border_distance
+
+			export_to_variable = {
+			    variable_name = ai_value
+				value = border_distance
+				who = FROM
+			}
+
+			divide_variable = {
+			    which = ai_value
+				value = -4
+			}
+		}
+
+		add_entry = {
+		    name = gothenburg.navy_size
+
+			export_to_variable = {
+			    variable_name = ai_value
+				value = navy_size
+			}
+
+			export_to_variable = {
+			    variable_name = target_navy_size
+				value = navy_size
+				who = FROM
+			}
+
+			subtract_variable = {
+			    which = ai_value
+				which = target_navy_size
+			}
+
+			multiply_variable = {
+			    which = ai_value
+				value = 5
+			}
+		}
+
     }
 }

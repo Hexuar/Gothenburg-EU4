@@ -13,7 +13,7 @@ gothenburg.free_trade_city = {
     transfer_trade_power = no
     can_have_subjects_of_other_types = yes
     can_be_annexed = no
-    takes_diplo_slot = no
+    takes_diplo_slot = yes
     overlord_protects_external = yes
     counts_for_borders = yes
     can_use_claims = no
@@ -81,7 +81,11 @@ gothenburg.trade_city = {
     does_overlord_size_count_for_warscore_cost = no
     can_concentrate_development = no
 
-    relative_power_class = 1
+    relative_power_class = 48
+
+    modifier_overlord = {
+        modifier = gothenburg.trade_city_overlord
+    }
 }
 
 

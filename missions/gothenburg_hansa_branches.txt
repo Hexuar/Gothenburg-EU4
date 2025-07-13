@@ -1,4 +1,4 @@
-gothenburg.hansa_befriended.expansion = {
+gothenburg.hansa.eastward_expansion = {
     slot = 2
     generic = no
     ai = yes
@@ -6,50 +6,15 @@ gothenburg.hansa_befriended.expansion = {
 
     potential = {
         tag = GBG
-        #has_country_flag = gothenburg.hansa_befriended
-    }
-
-
-    gothenburg.recover_novgorod = {
-        icon = mission_novgorod_the_great
-        position = 5
-
-        required_missions = {
-            gothenburg.the_hansa
-        }
-
-        provinces_to_highlight = {
-            province_id = 33
-        }
-
-        trigger = {
-            33 = {
-                country_or_non_sovereign_subject_holds = ROOT
-            }
-        }
-
-        effect = {
-            33 = {
-                add_trade_modifier = {
-                    who = ROOT
-                    duration = 5475
-                    power = 20
-                    key = gothenburg.hansa_control
-                }
-            }
-            43 = {
-                add_claim = ROOT
-            }
-        }
     }
 
 
     gothenburg.protect_danzig = {
         icon = mission_danzig_or_war
-        position = 6
+        position = 5
 
         required_missions = {
-            gothenburg.recover_novgorod
+            gothenburg.the_hansa
         }
 
         provinces_to_highlight = {
@@ -76,6 +41,120 @@ gothenburg.hansa_befriended.expansion = {
                     }
                     add_claim = ROOT
                 }
+            }
+            33 = {
+                add_claim = ROOT
+            }
+        }
+    }
+
+
+    gothenburg.recover_novgorod = {
+        icon = mission_novgorod_the_great
+        position = 6
+
+        required_missions = {
+            gothenburg.protect_danzig
+        }
+
+        provinces_to_highlight = {
+            province_id = 33
+        }
+
+        trigger = {
+            33 = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+
+        effect = {
+            33 = {
+                add_trade_modifier = {
+                    who = ROOT
+                    duration = 5475
+                    power = 20
+                    key = gothenburg.hansa_control
+                }
+            }
+        }
+    }
+}
+
+
+
+
+gothenburg.hansa.westward_expansion = {
+    slot = 3
+    generic = no
+    ai = yes
+    has_country_shield = yes
+
+    potential = {
+        tag = GBG
+    }
+
+
+    gothenburg.liberate_antwerp = {
+        icon = mission_hanseatic_city
+        position = 5
+
+        required_missions = {
+            gothenburg.the_hansa
+        }
+
+        provinces_to_highlight = {
+            province_id = 1744
+        }
+
+        trigger = {
+            1744 = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+
+        effect = {
+            1744 = {
+                add_trade_node_income = 24
+            }
+        }
+    }
+
+}
+
+
+
+
+gothenburg.hansa.hre = {
+    slot = 4
+    generic = no
+    ai = yes
+    has_country_shield = yes
+
+    potential = {
+        tag = GBG
+    }
+
+
+    gothenburg.the_hre = {
+        icon = mission_empire
+        position = 5
+
+        required_missions = {
+            gothenburg.the_hansa
+        }
+
+        trigger = {
+            emperor = {
+                has_opinion = {
+                    who = ROOT
+                    value = 150
+                }
+            }
+        }
+
+        effect = {
+            country_event = {
+                id = gothenburg.5
             }
         }
     }

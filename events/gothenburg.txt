@@ -173,3 +173,72 @@ country_event = {
         }
 	}
 }
+
+
+country_event = {
+    id = gothenburg.4
+	title = gothenburg.fate_of_the_hansa_title
+	desc = gothenburg.fate_of_the_hansa_desc
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+	    name = gothenburg.fate_of_the_hansa_take_control
+
+		add_treasury = -1000
+
+		create_subject = {
+            subject_type = gothenburg.trade_city
+            subject = HSA
+        }
+
+        create_subject = {
+            subject_type = gothenburg.trade_city
+            subject = HAM
+        }
+
+        create_subject = {
+            subject_type = gothenburg.trade_city
+            subject = BRE
+        }
+
+        create_subject = {
+            subject_type = gothenburg.trade_city
+            subject = RIG
+        }
+	}
+
+	option = {
+	    name = gothenburg.fate_of_the_hansa_cooperate
+
+		add_treasury = 500
+
+		add_country_modifier = {
+		    name = gothenburg.hansa_cooperation
+			duration = 9125
+		}
+	}
+}
+
+
+country_event = {
+    id = gothenburg.5
+	title = gothenburg.got_and_hre_title
+	desc = gothenburg.got_and_hre_desc
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+	    name = gothenburg.got_and_hre_join
+
+		set_in_empire = yes
+	}
+
+	option = {
+	    name = gothenburg.got_and_hre_refuse
+
+		add_prestige = 20
+	}
+}

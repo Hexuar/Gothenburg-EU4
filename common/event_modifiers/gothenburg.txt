@@ -22,3 +22,12 @@ gothenburg.trade_city = {
     merchants = 1
     trade_efficiency = 0.1
 }
+
+gothenburg.hansa_cooperation = {
+    trade_efficiency = 0.25
+    development_cost = -0.1
+}
+
+gothenburg.trade_city_overlord = {
+    trade_efficiency = 0.01
+}

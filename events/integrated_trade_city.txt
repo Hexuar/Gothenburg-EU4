@@ -1,7 +1,7 @@
 namespace = gothenburg_integrated_trade_city
 
 country_event = {
-	id = gothenburg.integrated_trade_city.1
+	id = gothenburg_integrated_trade_city.1
 	title = gothenburg.integrated_trade_city_event_title
 	desc = gothenburg.integrated_trade_city_event_desc
 	picture = TRADEGOODS_eventPicture

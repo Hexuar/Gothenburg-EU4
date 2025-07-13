@@ -1,3 +1,86 @@
+gothenburg.expansion = {
+    slot = 2
+    generic = no
+    ai = yes
+    has_country_shield = yes
+
+    potential = {
+        tag = GBG
+    }
+
+
+    gothenburg.baltic_outposts = {
+        icon = mission_galleys_in_port
+        position = 2
+
+        required_missions = {
+            gothenburg.founding_the_city
+        }
+
+        provinces_to_highlight = {
+            OR = {
+                province_id = 35
+                province_id = 1930
+                province_id = 1981
+            }
+            NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+
+        trigger = {
+            35 = {
+                country_or_non_sovereign_subject_holds = ROOT
+                development = 10
+            }
+            1930 = {
+                country_or_non_sovereign_subject_holds = ROOT
+                development = 10
+            }
+            1981 = {
+                country_or_non_sovereign_subject_holds = ROOT
+                development = 10
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = gothenburg.trade_network
+                duration = -1
+            }
+            25 = { add_permanent_claim = ROOT }
+        }
+    }
+
+
+    gothenburg.gutnish_trade = {
+        icon = return_visby_to_the_league
+        position = 3
+
+        required_missions = {
+            gothenburg.baltic_outposts
+        }
+
+        provinces_to_highlight = {
+            province_id = 25
+        }
+
+        trigger = {
+            25 = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = gothenburg.gutnish_trade
+                duration = -1
+            }
+        }
+    }
+}
+
+
+
+
 gothenburg.main = {
     slot = 3
     generic = no
@@ -141,90 +224,15 @@ gothenburg.main = {
         }
 
         effect = {
-            custom_tooltip = gothenburg.the_hansa_enable_diplomatic_action
-            set_country_flag = gothenburg.trade_city_invitation_enabled
-        }
-    }
-}
-
-
-
-
-gothenburg.expansion = {
-    slot = 2
-    generic = no
-    ai = yes
-    has_country_shield = yes
-
-    potential = {
-        tag = GBG
-    }
-
-
-    gothenburg.baltic_outposts = {
-        icon = mission_galleys_in_port
-        position = 2
-
-        required_missions = {
-            gothenburg.founding_the_city
-        }
-
-        provinces_to_highlight = {
-            OR = {
-                province_id = 35
-                province_id = 1930
-                province_id = 1981
+            country_event = {
+                id = gothenburg.4
             }
-            NOT = { country_or_non_sovereign_subject_holds = ROOT }
-        }
 
-        trigger = {
-            35 = {
-                country_or_non_sovereign_subject_holds = ROOT
-                development = 10
+            43 = {
+                add_claim = ROOT
             }
-            1930 = {
-                country_or_non_sovereign_subject_holds = ROOT
-                development = 10
-            }
-            1981 = {
-                country_or_non_sovereign_subject_holds = ROOT
-                development = 10
-            }
-        }
-
-        effect = {
-            add_country_modifier = {
-                name = gothenburg.trade_network
-                duration = -1
-            }
-            25 = { add_permanent_claim = ROOT }
-        }
-    }
-
-
-    gothenburg.gutnish_trade = {
-        icon = return_visby_to_the_league
-        position = 3
-
-        required_missions = {
-            gothenburg.baltic_outposts
-        }
-
-        provinces_to_highlight = {
-            province_id = 25
-        }
-
-        trigger = {
-            25 = {
-                is_core = ROOT
-            }
-        }
-
-        effect = {
-            add_country_modifier = {
-                name = gothenburg.gutnish_trade
-                duration = -1
+            1744 = {
+                add_claim = ROOT
             }
         }
     }

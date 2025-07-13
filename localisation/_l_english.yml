@@ -72,11 +72,19 @@
  gothenburg.greenland_title: "Rediscover Greenland"
  gothenburg.greenland_desc: ""
 
+ gothenburg.protect_danzig_title: "Protect Danzig"
+ gothenburg.protect_danzig_desc: ""
+
  gothenburg.recover_novgorod_title: "Recover Novgorod"
  gothenburg.recover_novgorod_desc: ""
 
- gothenburg.protect_danzig_title: "Protect Danzig"
- gothenburg.protect_danzig_desc: ""
+ gothenburg.liberate_antwerp_title: "Liberate Antwerp"
+ gothenburg.liberate_antwerp_desc: ""
+
+ gothenburg.the_hre_title: "The Emperor's Grace"
+ gothenburg.the_hre_desc: ""
+
+
 
 
 # Events
@@ -89,7 +97,6 @@
  gothenburg.city_grows_title: "The city grows"
  gothenburg.city_grows_desc: "Our recent economic success and promises of freedom have attracted merchants and peasants alike."
  gothenburg.city_grows_accept: "Great news!"
-
 
  gothenburg.request_aland_event_title: "Gothenburg requests Åland"
  gothenburg.request_aland_event_desc: ""
@@ -111,12 +118,23 @@
  gothenburg.swedish_independence.support_sweden: "Support Sweden"
  gothenburg.swedish_independence.support_denmark: "Support Denmark"
 
+ gothenburg.fate_of_the_hansa_title: "The fate of the Hanseatic League"
+ gothenburg.fate_of_the_hansa_desc: ""
+ gothenburg.fate_of_the_hansa_take_control: "Take control over the Hansa"
+ gothenburg.fate_of_the_hansa_cooperate: "Cooperate with the Hansa"
+
+ gothenburg.got_and_hre_title: "Gothenburg and the Empire"
+ gothenburg.got_and_hre_desc: ""
+ gothenburg.got_and_hre_join: "Join"
+ gothenburg.got_and_hre_refuse: "Refuse"
+
 
 # Event Modifiers
  gothenburg.sprouting_city: "Sprouting City"
  gothenburg.city_planning: "City Planning"
  gothenburg.gutnish_trade: "Gutnish Trade"
  gothenburg.trade_network: "Trade Network"
+ gothenburg.hansa_cooperation: "Hansa Cooperation"
  #gothenburg.trade_city: "Trade City"
 
 
@@ -180,3 +198,10 @@
  gothenburg.invite_trade_city_desc: "Invite them to become one of our §YTrade Cities§!."
  gothenburg.invite_trade_city_tooltip: "Invite them to become one of our §YTrade Cities§!."
  gothenburg.invite_trade_city_alert_tooltip: "Invite them to become one of our §YTrade Cities§!."
+
+
+# AI acceptance modifiers
+ gothenburg.monthly_income: "Relative monthly income"
+ gothenburg.opinion: "Opinion"
+ gothenburg.border_distance: "Border distance"
+ gothenburg.navy_size: "Relaive navy size"
