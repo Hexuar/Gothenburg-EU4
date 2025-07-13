@@ -199,9 +199,15 @@
  gothenburg.invite_trade_city_tooltip: "Invite them to become one of our §YTrade Cities§!."
  gothenburg.invite_trade_city_alert_tooltip: "Invite them to become one of our §YTrade Cities§!."
 
+ gothenburg.integrate_trade_city: "Integrate Trade City"
+ gothenburg.integrate_trade_city_title: "Integrate Trade City"
+ gothenburg.integrate_trade_city_desc: ""
+ gothenburg.integrate_trade_city_tooltip: ""
+ gothenburg.integrate_trade_city_alert_tooltip: ""
+
 
 # AI acceptance modifiers
  gothenburg.monthly_income: "Relative monthly income"
  gothenburg.opinion: "Opinion"
  gothenburg.border_distance: "Border distance"
- gothenburg.navy_size: "Relaive navy size"
+ gothenburg.navy_size: "Relative navy size"

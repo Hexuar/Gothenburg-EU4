@@ -33,17 +33,12 @@ gothenburg.hansa.eastward_expansion = {
             43 = {
                 add_trade_node_income = 24
             }
-            every_province = {
-                if = {
-                    limit = {
-                        region = baltic_region
-                        has_port = yes
-                    }
-                    add_claim = ROOT
-                }
-            }
             33 = {
-                add_claim = ROOT
+                add_permanent_claim = ROOT
+            }
+            create_subject = {
+                subject_type = gothenburg.trade_city
+                subject = DNZ
             }
         }
     }
@@ -74,6 +69,15 @@ gothenburg.hansa.eastward_expansion = {
                     duration = 5475
                     power = 20
                     key = gothenburg.hansa_control
+                }
+            }
+            every_province = {
+                if = {
+                    limit = {
+                        region = baltic_region
+                        has_port = yes
+                    }
+                    add_claim = ROOT
                 }
             }
         }

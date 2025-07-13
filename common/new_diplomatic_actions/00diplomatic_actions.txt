@@ -3,12 +3,15 @@ gothenburg.invite_trade_city = {
 
     is_visible = {
         has_reform = gothenburg.scandinavian_trade_city
+        NOT = { FROM = { is_subject_of = ROOT } }
     }
 
     is_allowed = {
         FROM = {
             NOT = { num_of_owned_provinces_with = { value = 2 } }
             is_subject = no
+            government = republic
+            capital_scope = { has_port = yes }
         }
     }
 
@@ -116,4 +119,42 @@ gothenburg.invite_trade_city = {
 		}
 
     }
+}
+
+
+
+
+gothenburg.integrate_trade_city = {
+    category = influence
+
+    is_visible = {
+        FROM = {
+            is_subject_of_type_with_overlord = {
+                who = ROOT
+                type = gothenburg.trade_city
+            }
+        }
+    }
+
+    is_allowed = {
+        # ADD TIME DIFFERENCE
+
+        NOT = { liberty_desire = 50 }
+
+        reverse_has_opinion = {
+            who = FROM
+            value = 190
+        }
+    }
+
+    on_accept = {
+        create_subject = {
+            subject_type = gothenburg.integrated_trade_city
+            subject = FROM
+        }
+        FROM = {
+            change_country_color = { country = PREV }
+        }
+    }
+
 }

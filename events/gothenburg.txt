@@ -88,10 +88,10 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-	    months = 18
+	    months = 24
 
 		modifier = {
-		    factor = 0.33
+		    factor = 0.25
 			4942 = {
       		    NOT = { development = 20 }
             }
@@ -107,17 +107,28 @@ country_event = {
           		    NOT = { development = 20 }
                 }
 			}
+
 			4942 = {
     		    add_base_tax = 1
     			add_base_production = 1
     		}
+
+            add_owned_provinces_development_ducats = {
+                multiplier = 2
+				age_multiplier = 1
+			    trigger = { always = yes }
+			}
 		}
 
-		add_owned_provinces_development_ducats = {
-		    multiplier = 2
-			age_multiplier = 1
-			trigger = { always = yes }
+		else = {
+		    add_adm_power = 25
+		    add_owned_provinces_development_ducats = {
+                multiplier = 0.5
+				age_multiplier = 1
+			    trigger = { always = yes }
+			}
 		}
+
 	}
 }
 

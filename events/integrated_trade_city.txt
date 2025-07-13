@@ -6,7 +6,7 @@ country_event = {
 	desc = gothenburg.integrated_trade_city_event_desc
 	picture = TRADEGOODS_eventPicture
 
-	hidden = true
+	hidden = yes
 
 	trigger = {
 	    is_client_nation = yes

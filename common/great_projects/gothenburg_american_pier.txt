@@ -24,12 +24,12 @@ gothenburg.american_pier = {
 
     # Conditions to build the project
     build_trigger = {
-        
+
     }
 
     # What happens when the project is built
     on_built = {
-		
+
     }
 
     # What happens when the project is destroyed
@@ -63,22 +63,22 @@ gothenburg.american_pier = {
 		}
 
 		province_modifiers = {
-			
+
 		}
 
 		area_modifier = {
-			
+
 		}
 
 		country_modifiers = {
-			
+
 		}
 
 		on_upgraded = {
-			
+
 		}
 	}
-    
+
 	tier_1 = {
 		# Time it takes to upgrade the project
 		upgrade_time = {
@@ -92,7 +92,7 @@ gothenburg.american_pier = {
 
 		# What modifiers are given to the province the project is located in
 		province_modifiers = {
-			
+
 		}
 
 		# What modifiers are given to the area of the province the project is located in
@@ -107,15 +107,15 @@ gothenburg.american_pier = {
 
 		# What modifiers are given to the region of the province the project is located in
 		region_modifier = {
-			
+
 		}
 
 		# What happens when the upgrade is complete
 		on_upgraded = {
-			
+
 		}
 	}
-	
+
 	tier_2 = {
 		# Time it takes to upgrade the project
 		upgrade_time = {
@@ -129,7 +129,7 @@ gothenburg.american_pier = {
 
 		# What modifiers are given to the province the project is located in
 		province_modifiers = {
-			
+
 		}
 
 		# What modifiers are given to the area of the province the project is located in
@@ -145,12 +145,12 @@ gothenburg.american_pier = {
 
 		# What modifiers are given to the region of the province the project is located in
 		region_modifier = {
-			
+
 		}
 
 		# What happens when the upgrade is complete
 		on_upgraded = {
-			
+
 		}
 	}
 
@@ -167,12 +167,12 @@ gothenburg.american_pier = {
 
 		# What modifiers are given to the province the project is located in
 		province_modifiers = {
-			
+
 		}
 
 		# What modifiers are given to the area of the province the project is located in
 		area_modifier = {
-			
+
 		}
 
 		# What modifiers are given to the nation that owns the monument
@@ -186,19 +186,19 @@ gothenburg.american_pier = {
 
 		# What modifiers are given to the region of the province the project is located in
 		region_modifier = {
-			
+
 		}
 
 		# What happens when the upgrade is complete
 		on_upgraded = { #Not working right now
-			northeast_america_region = {
-				discover_country = GBG
-			}
-			northeast_america_region = {
-				random_area_province = {
-					create_colony = 200
-				}	
-			}
+			#northeast_america_region = {
+			#	discover_country = GBG
+			#}
+			#northeast_america_region = {
+			#	random_area_province = {
+			#		create_colony = 200
+			#	}
+			#}
 		}
 
 	}
