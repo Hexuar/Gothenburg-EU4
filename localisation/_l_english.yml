@@ -40,7 +40,7 @@
 # Missions
  gothenburg.founding_the_city_title: "Found the City"
  gothenburg.founding_the_city_desc: ""
- gothenburg.founding_the_city.enable_requesting: "\n§YEnables new decisions to purchase the islands of Bornholm, Åland and Ösel.§!"
+ gothenburg.founding_the_city.enable_requesting: "\n§YEnables decisions to purchase the islands of Bornholm, Åland and Ösel.§!"
 
  gothenburg.skillfull_diplomats_title: "Skillfull Diplomats"
  gothenburg.skillfull_diplomats_desc: ""
@@ -56,7 +56,7 @@
 
  gothenburg.the_hansa_title: "The Hanseatic League"
  gothenburg.the_hansa_desc: ""
- gothenburg.the_hansa_monthly_income_greater: "Has monthly income greater than §YLübeck§!."
+ gothenburg.the_hansa_monthly_income_greater: "Has monthly income greater than §Y[HSA.GetName]§!."
  gothenburg.the_hansa_enable_diplomatic_action: "Enables diplomatic action to invite nations to become your §YTrade Cities§!."
 
  gothenburg.the_fleet_title: "The Fleet"
@@ -127,6 +127,18 @@
  gothenburg.got_and_hre_desc: ""
  gothenburg.got_and_hre_join: "Join"
  gothenburg.got_and_hre_refuse: "Refuse"
+
+ gothenburg.republican_worries_title: "Republican Worries"
+ gothenburg.republican_worries_desc: "Due to our recent anti-republican policies, our fellow trade cities have been getting worried about the future of the republic."
+ gothenburg.republican_worries_button: "Don't panic!"
+
+ gothenburg.fall_of_the_republic_title: "The Fall of the Republic"
+ gothenburg.fall_of_the_republic_desc: "The republic has fallen. Today, [Root.Monarch.GetName] has declared the end of the republic and taken full control over [Root.GetName]. The other trade cities have long worried about this outcome, and only time will tell what their reaction will be."
+ gothenburg.fall_of_the_republic_button: "So this is how liberty dies..."
+
+ gothenburg.return_of_the_traders_title: "The Return of the Traders"
+ gothenburg.return_of_the_traders_desc: "Once again, the republic of [Root.GetName] stands proud."
+ gothenburg.return_of_the_traders_button: "Good riddance!"
 
 
 # Event Modifiers

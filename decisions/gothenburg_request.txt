@@ -4,6 +4,8 @@ country_decisions = {
     gothenburg.request_aland = {
         color = { 214  180  14 }
 
+        ai_importance = 400
+
         potential = {
             tag = GBG
             has_country_flag = gothenburg.gothenburg_founded
@@ -43,6 +45,8 @@ country_decisions = {
     gothenburg.request_bornholm = {
         color = { 214  180  14 }
 
+        ai_importance = 400
+
         potential = {
             tag = GBG
             has_country_flag = gothenburg.gothenburg_founded
@@ -81,6 +85,8 @@ country_decisions = {
     # Request Ösel
     gothenburg.request_osel = {
         color = { 214  180  14 }
+
+        ai_importance = 400
 
         potential = {
             tag = GBG

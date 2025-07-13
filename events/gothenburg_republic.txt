@@ -1,0 +1,117 @@
+namespace = gothenburg_republic
+
+country_event = {
+	id = gothenburg_republic.1
+	title = gothenburg.republican_worries_title
+	desc = gothenburg.republican_worries_desc
+	picture = DEBATE_REPUBLICAN_eventPicture
+
+	mean_time_to_happen = {
+	    months = 24
+	}
+
+	trigger = {
+	    tag = GBG
+		government = republic
+	    NOT = { republican_tradition = 66 }
+	}
+
+	option = {
+	    name = gothenburg.republican_worries_button
+
+		every_subject_country = {
+		    limit = {
+				OR = {
+				    is_subject_of_type = gothenburg.trade_city
+					is_subject_of_type = gothenburg.integrated_trade_city
+				}
+			}
+
+			if = {
+			    limit = {
+					ROOT = { republican_tradition = 31 }
+				}
+
+				add_liberty_desire = 5
+			}
+			else = {
+			    add_liberty_desire = 10
+			}
+
+		}
+	}
+}
+
+
+country_event = {
+	id = gothenburg_republic.2
+	title = gothenburg.fall_of_the_republic_title
+	desc = gothenburg.fall_of_the_republic_desc
+	picture = REFORM_eventPicture
+
+	mean_time_to_happen = {
+	    months = 0
+	}
+
+	trigger = {
+	    tag = GBG
+	    NOT = { government = republic }
+		NOT = { has_country_flag = gothenburg.has_seen_fall_of_the_republic_event }
+	}
+
+	immediate = {
+	    set_country_flag = gothenburg.has_seen_fall_of_the_republic_event
+	}
+
+	option = {
+	    name = gothenburg.fall_of_the_republic_button
+
+		every_subject_country = {
+		    limit = {
+				OR = {
+				    is_subject_of_type = gothenburg.trade_city
+					is_subject_of_type = gothenburg.integrated_trade_city
+				}
+			}
+
+			add_liberty_desire = 50
+		}
+	}
+}
+
+
+country_event = {
+	id = gothenburg_republic.3
+	title = gothenburg.return_of_the_traders_title
+	desc = gothenburg.return_of_the_traders_desc
+	picture = REFORM_eventPicture
+
+	mean_time_to_happen = {
+	    months = 0
+	}
+
+	trigger = {
+	    tag = GBG
+	    government = republic
+		has_country_flag = gothenburg.has_seen_fall_of_the_republic_event
+	}
+
+	immediate = {
+	    clr_country_flag = gothenburg.has_seen_fall_of_the_republic_event
+	}
+
+	option = {
+	    name = gothenburg.return_of_the_traders_button
+
+		every_subject_country = {
+		    limit = {
+				OR = {
+				    is_subject_of_type = gothenburg.trade_city
+					is_subject_of_type = gothenburg.integrated_trade_city
+				}
+			}
+
+			add_liberty_desire = -100
+		}
+	}
+}
