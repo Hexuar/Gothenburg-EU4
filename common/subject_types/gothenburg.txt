@@ -8,7 +8,7 @@ gothenburg.trade_city = {
 
     # Properties:
     can_fight_independence_war = yes
-    is_voluntary = no
+    is_voluntary = yes
     transfer_trade_power = yes
     can_have_subjects_of_other_types = yes
     can_be_annexed = no
@@ -49,7 +49,6 @@ gothenburg.free_trade_city = {
 
     # Properties:
     can_have_great_projects_moved_by_overlord = no
-    is_voluntary = yes
     transfer_trade_power = no
     can_use_claims = no
     share_rebel_popup = no

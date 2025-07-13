@@ -8,7 +8,12 @@ gothenburg.invite_trade_city = {
 
     is_allowed = {
         FROM = {
-            NOT = { num_of_owned_provinces_with = { value = 2 } }
+            custom_trigger_tooltip = {
+                tooltip = gothenburg.is_opm
+            }
+            hidden_trigger = {
+                NOT = { num_of_owned_provinces_with = { value = 2 } }
+            }
             is_subject = no
             government = republic
             capital_scope = { has_port = yes }
@@ -20,6 +25,9 @@ gothenburg.invite_trade_city = {
             create_subject = {
                 subject_type = gothenburg.trade_city
                 subject = FROM
+            }
+            FROM = {
+                add_government_reform = gothenburg.scandinavian_trade_city
             }
             add_prestige = 10
         }
@@ -139,7 +147,11 @@ gothenburg.integrate_trade_city = {
     is_allowed = {
         # ADD TIME DIFFERENCE
 
-        NOT = { liberty_desire = 50 }
+        republican_tradition = 90
+
+        FROM = {
+            NOT = { liberty_desire = 25 }
+        }
 
         reverse_has_opinion = {
             who = FROM
@@ -155,6 +167,33 @@ gothenburg.integrate_trade_city = {
         FROM = {
             change_country_color = { country = PREV }
         }
+        add_republican_tradition = -5
+    }
+}
+
+
+
+
+gothenburg.release_trade_city = {
+    category = influence
+
+    is_visible = {
+        FROM = {
+            is_subject_of = ROOT
+            OR = {
+                is_subject_of_type = gothenburg.trade_city
+                is_subject_of_type = gothenburg.integrated_trade_city
+            }
+        }
     }
 
+    is_allowed = {
+        is_at_war = no
+    }
+
+    on_accept = {
+        FROM = {
+            grant_independence = yes
+        }
+    }
 }

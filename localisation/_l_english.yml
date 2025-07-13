@@ -217,9 +217,16 @@
  gothenburg.integrate_trade_city_tooltip: ""
  gothenburg.integrate_trade_city_alert_tooltip: ""
 
+ gothenburg.release_trade_city: "Release Trade City"
+ gothenburg.release_trade_city_title: "Release Trade City"
+ gothenburg.release_trade_city_desc: ""
+ gothenburg.release_trade_city_tooltip: ""
+ gothenburg.release_trade_city_alert_tooltip: ""
+
 
 # AI acceptance modifiers
  gothenburg.monthly_income: "Relative monthly income"
  gothenburg.opinion: "Opinion"
  gothenburg.border_distance: "Border distance"
  gothenburg.navy_size: "Relative navy size"
+ gothenburg.is_opm: "Owns only one province."

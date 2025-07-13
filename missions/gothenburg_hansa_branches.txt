@@ -40,6 +40,10 @@ gothenburg.hansa.eastward_expansion = {
                 subject_type = gothenburg.trade_city
                 subject = DNZ
             }
+            DNZ = {
+                change_government = republic
+                add_government_reform = gothenburg.scandinavian_trade_city
+            }
         }
     }
 
