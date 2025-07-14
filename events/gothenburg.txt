@@ -198,40 +198,63 @@ country_event = {
 
 		add_treasury = -1000
 
-		create_subject = {
-            subject_type = gothenburg.trade_city
-            subject = HSA
-        }
-        HSA = {
-            change_government = republic
-            add_government_reform = gothenburg.scandinavian_trade_city
+		if = {
+		    limit = {
+				HSA = { exists = yes }
+			}
+			create_subject = {
+                subject_type = gothenburg.trade_city
+                subject = HSA
+            }
+		}
+
+		if = {
+		    limit = {
+				HAM = { exists = yes }
+			}
+            create_subject = {
+                subject_type = gothenburg.trade_city
+                subject = HAM
+            }
         }
 
-        create_subject = {
-            subject_type = gothenburg.trade_city
-            subject = HAM
-        }
-        HAM = {
-            change_government = republic
-            add_government_reform = gothenburg.scandinavian_trade_city
-        }
-
-        create_subject = {
-            subject_type = gothenburg.trade_city
-            subject = BRE
-        }
-        BRE = {
-            change_government = republic
-            add_government_reform = gothenburg.scandinavian_trade_city
+        if = {
+		    limit = {
+				BRE = { exists = yes }
+			}
+            create_subject = {
+                subject_type = gothenburg.trade_city
+                subject = BRE
+            }
         }
 
-        create_subject = {
-            subject_type = gothenburg.trade_city
-            subject = RIG
+        if = {
+		    limit = {
+				RIG = { exists = yes }
+			}
+            create_subject = {
+                subject_type = gothenburg.trade_city
+                subject = RIG
+            }
         }
-        RIG = {
-            change_government = republic
-            add_government_reform = gothenburg.scandinavian_trade_city
+
+        hidden_effect = {
+            HSA = {
+                change_government = republic
+                add_government_reform = gothenburg.scandinavian_trade_city
+            }
+            HAM = {
+                change_government = republic
+                add_government_reform = gothenburg.scandinavian_trade_city
+            }
+            BRE = {
+                change_government = republic
+                add_government_reform = gothenburg.scandinavian_trade_city
+            }
+            RIG = {
+                change_government = republic
+                add_government_reform = gothenburg.scandinavian_trade_city
+            }
         }
 	}
 

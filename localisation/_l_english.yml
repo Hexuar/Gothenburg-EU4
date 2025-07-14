@@ -53,6 +53,7 @@
 
  gothenburg.baltic_outposts_title: "Baltic Outposts"
  gothenburg.baltic_outposts_desc: ""
+ gothenburg.baltic_outposts_enable_gotland_trade_city: "Allows inviting §Y[GOT.GetName]§! to become our trade city despite other restrictions."
 
  gothenburg.the_hansa_title: "The Hanseatic League"
  gothenburg.the_hansa_desc: ""
@@ -114,7 +115,7 @@
  gothenburg.request_osel_event.reject: "Reject"
 
  gothenburg.swedish_independence_title: "Swedish Independence"
- gothenburg.swedish_independence_desc: "When we were all part of the Kalmar union, our political situation was much simpler. With the war of swedish independence however, things have changed. Now we must decide whether to grant our allegiance to Sweden or Denmark."
+ gothenburg.swedish_independence_desc: "When we were all part of the Kalmar union, our political situation was much simpler. With the advent of swedish independence however, things have changed. Now we must decide whether to grant our allegiance to Sweden or Denmark."
  gothenburg.swedish_independence.support_sweden: "Support Sweden"
  gothenburg.swedish_independence.support_denmark: "Support Denmark"
 

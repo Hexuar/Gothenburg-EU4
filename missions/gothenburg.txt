@@ -47,6 +47,8 @@ gothenburg.expansion = {
                 duration = -1
             }
             25 = { add_permanent_claim = ROOT }
+            custom_tooltip = gothenburg.baltic_outposts_enable_gotland_trade_city
+            set_country_flag = gothenburg.gotland_trade_city
         }
     }
 

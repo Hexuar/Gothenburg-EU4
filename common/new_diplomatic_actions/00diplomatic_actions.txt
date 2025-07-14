@@ -7,16 +7,26 @@ gothenburg.invite_trade_city = {
     }
 
     is_allowed = {
-        FROM = {
-            custom_trigger_tooltip = {
-                tooltip = gothenburg.is_opm
+        is_at_war = no
+        OR = {
+            FROM = {
+                custom_trigger_tooltip = {
+                    tooltip = gothenburg.is_opm
+                }
+                hidden_trigger = {
+                    NOT = { num_of_owned_provinces_with = { value = 2 } }
+                }
+                is_subject = no
+                government = republic
+                capital_scope = { has_port = yes }
             }
+
             hidden_trigger = {
-                NOT = { num_of_owned_provinces_with = { value = 2 } }
+                has_country_flag = gothenburg.gotland_trade_city
+                FROM = {
+                    tag = GOT
+                }
             }
-            is_subject = no
-            government = republic
-            capital_scope = { has_port = yes }
         }
     }
 
@@ -146,6 +156,8 @@ gothenburg.integrate_trade_city = {
 
     is_allowed = {
         # ADD TIME DIFFERENCE
+
+        is_at_war = no
 
         republican_tradition = 90
 
