@@ -1,0 +1,26 @@
+namespace = gothenburg_council
+
+country_event = {
+	id = gothenburg_council.1
+	title = gothenburg.gothenburg_council.1
+	desc = gothenburg.gothenburg_council.1
+	picture = CITY_VIEW_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+	    capital_scope = {
+            add_random_development = -1
+        }
+
+        FROM = {
+            capital_scope = {
+                add_random_development = 1
+            }
+        }
+	}
+
+	option = {
+	}
+}

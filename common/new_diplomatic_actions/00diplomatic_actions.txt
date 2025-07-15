@@ -107,7 +107,7 @@ gothenburg.invite_trade_city = {
 
 			divide_variable = {
 			    which = ai_value
-				value = -4
+				value = -2
 			}
 		}
 
@@ -135,7 +135,14 @@ gothenburg.invite_trade_city = {
 				value = 5
 			}
 		}
+    }
 
+    ai_will_do = {
+        NOT = {
+            any_subject_country = {
+                liberty_desire = 30
+            }
+        }
     }
 }
 
@@ -159,10 +166,11 @@ gothenburg.integrate_trade_city = {
 
         is_at_war = no
 
-        republican_tradition = 90
+        republican_tradition = 80
+        dip_power = 100
 
         FROM = {
-            NOT = { liberty_desire = 25 }
+            NOT = { liberty_desire = 50 }
         }
 
         reverse_has_opinion = {
@@ -176,10 +184,13 @@ gothenburg.integrate_trade_city = {
             subject_type = gothenburg.integrated_trade_city
             subject = FROM
         }
+
         FROM = {
             change_country_color = { country = PREV }
         }
+
         add_republican_tradition = -5
+        add_dip_power = -100
     }
 }
 
@@ -206,6 +217,13 @@ gothenburg.release_trade_city = {
     on_accept = {
         FROM = {
             grant_independence = yes
+            restore_country_color = yes
+        }
+    }
+
+    ai_will_do = {
+        FROM = {
+            liberty_desire = 50
         }
     }
 }

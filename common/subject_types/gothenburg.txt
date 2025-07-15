@@ -24,10 +24,16 @@ gothenburg.trade_city = {
     does_overlord_size_count_for_warscore_cost = no
     can_concentrate_development = no
 
-    liberty_desire_development_ratio = 0.25
+    max_government_rank = 1
+
+    liberty_desire_development_ratio = 1.0
 
     pays_overlord = 0.0
-    forcelimit_to_overlord = 0.1
+    forcelimit_to_overlord = 0.0
+    naval_forcelimit_to_overlord = 0.5
+    manpower_to_overlord = 0.01
+    sailors_to_overlord = 0.01
+    military_focus = 0.2
 
     relative_power_class = 2
     should_quit_wars_on_activation = yes

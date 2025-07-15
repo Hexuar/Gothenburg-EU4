@@ -58,7 +58,7 @@
  gothenburg.the_hansa_title: "The Hanseatic League"
  gothenburg.the_hansa_desc: ""
  gothenburg.the_hansa_monthly_income_greater: "Has monthly income greater than §Y[HSA.GetName]§!."
- gothenburg.the_hansa_enable_diplomatic_action: "Enables diplomatic action to invite nations to become your §YTrade Cities§!."
+ gothenburg.the_hansa_enable_council: "Establishes the §Y[Root.GetAdjective] Council§!. Granting additional decisions to manage the growing republic."
 
  gothenburg.the_fleet_title: "The Fleet"
  gothenburg.the_fleet_desc: ""
@@ -149,6 +149,8 @@
  gothenburg.trade_network: "Trade Network"
  gothenburg.hansa_cooperation: "Hansa Cooperation"
  #gothenburg.trade_city: "Trade City"
+ gothenburg.draft_law: "Draft Law"
+ gothenburg.draft_sailors_law: "Draft Sailors Law"
 
 
 # Opinion Modifiers
@@ -170,6 +172,24 @@
 
  gothenburg.request_osel_title: "¤ Request Ösel"
  gothenburg.request_osel_desc: ""
+
+ gothenburg.draft_law_title: "£no£ Pass Council Law: Draft"
+ gothenburg.draft_law_desc: ""
+ gothenburg.revoke_draft_law_title: "£yes£ Revoke Council Law: Draft"
+ gothenburg.revoke_draft_law_desc: ""
+
+ gothenburg.draft_sailors_law_title: "£no£ Pass Council Law: Draft Sailors"
+ gothenburg.draft_sailors_law_desc: ""
+ gothenburg.revoke_draft_sailors_law_title: "£yes£ Revoke Council Law: Draft Sailors"
+ gothenburg.revoke_draft_sailors_law_desc: ""
+
+ gothenburg.consolidate_development_action_title: "£adm£ Council Action: Consolidate Development"
+ gothenburg.consolidate_development_action_desc: ""
+ gothenburg.consolidate_development_action_tooltip: "Will transfer one random development from each of our Trade Cities' capitals to [Root.Capital.GetName]."
+
+ gothenburg.collect_additional_tax_action_title: "£adm£ Council Action: Collect Additional Tax"
+ gothenburg.collect_additional_tax_action_desc: ""
+ gothenburg.collect_additional_tax_action_tooltip: "Will collect §G50¤§! from every Trade Citiy."
 
 
 # Subject Types

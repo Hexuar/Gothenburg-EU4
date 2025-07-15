@@ -230,6 +230,16 @@ gothenburg.main = {
                 id = gothenburg.4
             }
 
+            if = {
+                limit = {
+                    has_reform = gothenburg.scandinavian_trade_city
+                }
+
+                custom_tooltip = gothenburg.the_hansa_enable_council
+                set_country_flag = gothenburg.enabled_council
+            }
+
+
             43 = {
                 add_permanent_claim = ROOT
             }

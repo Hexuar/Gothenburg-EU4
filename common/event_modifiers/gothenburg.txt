@@ -30,5 +30,4 @@ gothenburg.hansa_cooperation = {
 
 gothenburg.trade_city_overlord = {
     trade_efficiency = 0.01
-    naval_forcelimit = 1
 }

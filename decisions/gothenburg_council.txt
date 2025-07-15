@@ -1,0 +1,285 @@
+country_decisions = {
+
+    gothenburg.draft_law = {
+        color = { 100  170  200 }
+
+        potential = {
+            has_reform = gothenburg.scandinavian_trade_city
+            has_country_flag = gothenburg.enabled_council
+
+            NOT = { has_country_flag = gothenburg.draft_law }
+        }
+
+        allow = {
+            republican_tradition = 90
+            adm_power = 100
+        }
+
+        effect = {
+            set_country_flag = gothenburg.draft_law
+
+            add_country_modifier = {
+                name = gothenburg.draft_law
+                duration = -1
+            }
+
+            add_republican_tradition = -20
+            add_adm_power = -100
+
+            every_subject_country = {
+                limit = {
+                    OR = {
+                        is_subject_of_type = gothenburg.trade_city
+                        is_subject_of_type = gothenburg.integrated_trade_city
+                    }
+                }
+
+                add_liberty_desire = 20
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+
+            modifier = {
+                factor = 0
+                any_subject_country = {
+                    liberty_desire = 20
+                }
+            }
+        }
+    }
+
+    gothenburg.revoke_draft_law = {
+        color = { 100  170  200 }
+
+        potential = {
+            has_reform = gothenburg.scandinavian_trade_city
+            has_country_flag = gothenburg.enabled_council
+
+            has_country_flag = gothenburg.draft_law
+        }
+
+        allow = {
+        }
+
+        effect = {
+            clr_country_flag = gothenburg.draft_law
+
+            remove_country_modifier = gothenburg.draft_law
+        }
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+
+    gothenburg.draft_sailors_law = {
+        color = { 100  170  200 }
+
+        potential = {
+            has_reform = gothenburg.scandinavian_trade_city
+            has_country_flag = gothenburg.enabled_council
+
+            NOT = { has_country_flag = gothenburg.draft_sailors_law }
+        }
+
+        allow = {
+            republican_tradition = 90
+            adm_power = 100
+        }
+
+        effect = {
+            set_country_flag = gothenburg.draft_sailors_law
+
+            add_country_modifier = {
+                name = gothenburg.draft_sailors_law
+                duration = -1
+            }
+
+            add_republican_tradition = -20
+            add_adm_power = -100
+
+            every_subject_country = {
+                limit = {
+                    OR = {
+                        is_subject_of_type = gothenburg.trade_city
+                        is_subject_of_type = gothenburg.integrated_trade_city
+                    }
+                }
+
+                add_liberty_desire = 20
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+
+            modifier = {
+                factor = 0
+                any_subject_country = {
+                    liberty_desire = 20
+                }
+            }
+        }
+    }
+
+    gothenburg.revoke_draft_sailors_law = {
+        color = { 100  170  200 }
+
+        potential = {
+            has_reform = gothenburg.scandinavian_trade_city
+            has_country_flag = gothenburg.enabled_council
+
+            has_country_flag = gothenburg.draft_sailors_law
+        }
+
+        allow = {
+        }
+
+        effect = {
+            clr_country_flag = gothenburg.draft_sailors_law
+
+            remove_country_modifier = gothenburg.draft_sailors_law
+        }
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+
+
+
+    gothenburg.consolidate_development_action = {
+        color = { 100  170  200 }
+
+        potential = {
+            has_reform = gothenburg.scandinavian_trade_city
+            has_country_flag = gothenburg.enabled_council
+        }
+
+        allow = {
+            republican_tradition = 90
+            adm_power = 100
+        }
+
+        effect = {
+            add_republican_tradition = -20
+            add_adm_power = -100
+
+            custom_tooltip = gothenburg.consolidate_development_action_tooltip
+
+            every_subject_country = {
+                limit = {
+                    OR = {
+                        is_subject_of_type = gothenburg.trade_city
+                        is_subject_of_type = gothenburg.integrated_trade_city
+                    }
+
+                    capital_scope = {
+                        development = 4
+                    }
+                }
+
+                add_liberty_desire = 20
+            }
+
+            hidden_effect = {
+                every_subject_country = {
+                    limit = {
+                        OR = {
+                            is_subject_of_type = gothenburg.trade_city
+                            is_subject_of_type = gothenburg.integrated_trade_city
+                        }
+
+                        capital_scope = {
+                            development = 4
+                        }
+                    }
+
+                    hidden_effect = {
+                        country_event = {
+                            id = gothenburg_council.1
+                        }
+                    }
+                }
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+
+            modifier = {
+                factor = 0
+                any_subject_country = {
+                    liberty_desire = 30
+                }
+            }
+        }
+    }
+
+
+    gothenburg.collect_additional_tax_action = {
+        color = { 100  170  200 }
+
+        potential = {
+            has_reform = gothenburg.scandinavian_trade_city
+            has_country_flag = gothenburg.enabled_council
+        }
+
+        allow = {
+            republican_tradition = 90
+            adm_power = 100
+        }
+
+        effect = {
+            add_republican_tradition = -20
+            add_adm_power = -100
+
+            custom_tooltip = gothenburg.collect_additional_tax_action_tooltip
+
+            every_subject_country = {
+                limit = {
+                    OR = {
+                        is_subject_of_type = gothenburg.trade_city
+                        is_subject_of_type = gothenburg.integrated_trade_city
+                    }
+                }
+
+                add_liberty_desire = 20
+            }
+
+            hidden_effect = {
+                every_subject_country = {
+                    limit = {
+                        OR = {
+                            is_subject_of_type = gothenburg.trade_city
+                            is_subject_of_type = gothenburg.integrated_trade_city
+                        }
+                    }
+
+                    hidden_effect = {
+                        add_treasury = -50
+                        ROOT = {
+                            add_treasury = 50
+                        }
+                    }
+                }
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+
+            modifier = {
+                factor = 0
+                any_subject_country = {
+                    liberty_desire = 30
+                }
+            }
+        }
+    }
+
+}

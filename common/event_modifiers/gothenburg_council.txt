@@ -1,0 +1,11 @@
+gothenburg.draft_law = {
+    vassal_manpower_bonus = 5.0
+    republican_tradition = -0.2
+    reduced_liberty_desire = -10
+}
+
+gothenburg.draft_sailors_law = {
+    vassal_sailors_bonus = 5.0
+    republican_tradition = -0.2
+    reduced_liberty_desire = -10
+}
