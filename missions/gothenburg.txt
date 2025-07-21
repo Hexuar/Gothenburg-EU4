@@ -413,7 +413,11 @@ gothenburg.colonialism = {
 
     gothenburg.explorers = {
         icon = mission_longships
-        position = 1
+        position = 2
+
+        required_missions = {
+            gothenburg.founding_the_city
+        }
 
         trigger = {
             NOR = {
@@ -438,7 +442,7 @@ gothenburg.colonialism = {
 
     gothenburg.greenland = {
         icon = mission_sailor_boat
-        position = 2
+        position = 3
 
         required_missions = {
             gothenburg.explorers
@@ -458,7 +462,7 @@ gothenburg.colonialism = {
 
     gothenburg.greenland_colony = {
         icon = mission_colonial
-        position = 3
+        position = 4
 
         required_missions = {
             gothenburg.greenland
@@ -479,7 +483,7 @@ gothenburg.colonialism = {
 
     gothenburg.vinland = {
         icon = mission_rb_colonise_canada
-        position = 4
+        position = 5
 
         required_missions = {
             gothenburg.greenland_colony
