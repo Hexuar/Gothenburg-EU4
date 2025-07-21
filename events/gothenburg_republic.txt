@@ -14,6 +14,12 @@ country_event = {
 	    tag = GBG
 		government = republic
 	    NOT = { republican_tradition = 66 }
+		any_subject_country = {
+		    OR = {
+			    is_subject_of_type = gothenburg.trade_city
+				is_subject_of_type = gothenburg.integrated_trade_city
+			}
+		}
 	}
 
 	option = {
@@ -111,7 +117,7 @@ country_event = {
 				}
 			}
 
-			add_liberty_desire = -100
+			add_liberty_desire = -75
 		}
 	}
 }

@@ -380,7 +380,7 @@ gothenburg.colonialism = {
 
     gothenburg.explorers = {
         icon = mission_longships
-        position = 5
+        position = 1
 
         trigger = {
             NOR = {
@@ -405,7 +405,7 @@ gothenburg.colonialism = {
 
     gothenburg.greenland = {
         icon = mission_sailor_boat
-        position = 6
+        position = 2
 
         required_missions = {
             gothenburg.explorers
@@ -418,6 +418,57 @@ gothenburg.colonialism = {
         effect = {
             1104 = {
                 create_colony = 100
+            }
+        }
+    }
+
+
+    gothenburg.greenland_colony = {
+        icon = mission_colonial
+        position = 3
+
+        required_missions = {
+            gothenburg.greenland
+        }
+
+        trigger = {
+            is_core = 1104
+        }
+
+        effect = {
+            add_country_modifier = {
+                name = gothenburg.colonised_greenland
+                duration = -1
+            }
+        }
+    }
+
+
+    gothenburg.vinland = {
+        icon = mission_rb_colonise_canada
+        position = 4
+
+        required_missions = {
+            gothenburg.greenland_colony
+        }
+
+        provinces_to_highlight = {
+            area = newfoundland_area
+        }
+
+        trigger = {
+            newfoundland_area = {
+                is_core = ROOT
+            }
+        }
+
+        effect = {
+            newfoundland_area = {
+                create_colony = 200
+                add_province_modifier = {
+                    name = gothenburg.vinland_colonisation
+                    duration = 9125
+                }
             }
         }
     }

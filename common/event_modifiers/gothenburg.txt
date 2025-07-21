@@ -31,3 +31,13 @@ gothenburg.hansa_cooperation = {
 gothenburg.trade_city_overlord = {
     trade_efficiency = 0.01
 }
+
+gothenburg.colonised_greenland = {
+    colonists = 1
+    global_colonial_growth = 5
+}
+
+gothenburg.vinland_colonisation = {
+    local_colonial_growth = 10
+    local_colony_cost_modifier = -0.25
+}

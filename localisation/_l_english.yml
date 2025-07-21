@@ -73,6 +73,12 @@
  gothenburg.greenland_title: "Rediscover Greenland"
  gothenburg.greenland_desc: ""
 
+ gothenburg.greenland_colony_title: "Colonial Greenland"
+ gothenburg.greenland_colony_desc: ""
+
+ gothenburg.vinland_title: "Colonize Vinland"
+ gothenburg.vinland_desc: ""
+
  gothenburg.protect_danzig_title: "Protect Danzig"
  gothenburg.protect_danzig_desc: ""
 
@@ -148,6 +154,8 @@
  gothenburg.gutnish_trade: "Gutnish Trade"
  gothenburg.trade_network: "Trade Network"
  gothenburg.hansa_cooperation: "Hansa Cooperation"
+ gothenburg.colonised_greenland: "Colonized Greenland"
+ gothenburg.vinland_colonisation: "Vinland Colonization"
  #gothenburg.trade_city: "Trade City"
  gothenburg.draft_law: "Draft Law"
  gothenburg.draft_sailors_law: "Draft Sailors Law"
