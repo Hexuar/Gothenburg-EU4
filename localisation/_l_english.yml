@@ -195,13 +195,13 @@
 
 # Decisions
  gothenburg.request_aland_title: "¤ Request Åland"
- gothenburg.request_aland_desc: "Ask to buy Åland from [1930.Owner]"
+ gothenburg.request_aland_desc: "Ask to buy Åland from [1930.Owner.GetName]"
 
  gothenburg.request_bornholm_title: "¤ Request Bornholm"
- gothenburg.request_bornholm_desc: "Ask to buy Bornholm from [1981.Owner]"
+ gothenburg.request_bornholm_desc: "Ask to buy Bornholm from [1981.Owner.GetName]"
 
  gothenburg.request_osel_title: "¤ Request Ösel"
- gothenburg.request_osel_desc: "Ask to buy Ösel from [35.Owner]"
+ gothenburg.request_osel_desc: "Ask to buy Ösel from [35.Owner.GetName]"
 
  gothenburg.draft_law_title: "£no£ Pass Council Law: Draft"
  gothenburg.draft_law_desc: "Increase military recruitment from our trade cities."
