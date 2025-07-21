@@ -1,0 +1,385 @@
+gothenburg.project_focus_military = {
+	slot = 4 
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		tag = GBG
+	}
+
+	gothenburg.project_start = {
+		icon = mission_war_chest
+		position = 10
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4942
+			}		
+		}
+
+		trigger = {
+			ROOT = {
+				crown_land_share = 35
+				treasury = 1000
+			}
+			4942 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				development = 25
+			}
+		}
+
+		effect = {
+			add_treasury = -1000
+			4942 = {
+				add_random_development = 3
+			}
+			add_province_modifier = {
+				name = gothenburg.project_construction
+				duration = -1
+			}
+		}
+	}
+
+	gothenburg.project_continues = {
+		icon = mission_early_game_buildings
+		position = 11
+
+		required_missions = {
+            gothenburg.project_start
+        }
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4942
+			}	
+		}
+
+		trigger = {
+			ROOT = {
+				crown_land_share = 50
+				treasury = 2000
+			}
+			4942 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				development = 40
+			}
+		}
+
+		effect = {
+			add_treasury = -2000
+			4942 = {
+				add_random_development = 5
+			}
+			remove_province_modifier = gothenburg.project_construction
+			add_province_modifier = {
+				name = gothenburg.project_construction2
+				duration = -1
+			}
+		}
+	}
+
+	gothenburg.project_unlock_military = {
+		icon = mission_assemble_an_army
+		position = 12
+
+		required_missions = {
+            gothenburg.project_continues
+			NOT = {
+				AND = {
+					gothenburg.project_unlock_economy
+					gothenburg.project_unlock_technology
+				}
+			}
+        }
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4942
+			}		
+		}
+
+		trigger = {
+			ROOT = {
+				treasury = 2000
+				mil_tech = 10
+			}
+			4942 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				base_manpower = 15
+			}
+		}
+
+		effect = {
+			add_treasury = -2000
+			remove_province_modifier = gothenburg.project_construction2
+			add_great_project = {
+				type = gothenburg.defence
+				instant = yes
+			}
+			add_great_project = {
+				type = gothenburg.shipbuilding
+				instant = yes
+			}
+		}
+	}
+
+	gothenburg.project_unlock_colonial = {
+		icon = mission_assemble_an_army
+		position = 13
+
+		required_missions = {
+            OR = {
+				gothenburg.project_unlock_economy
+				gothenburg.project_unlock_military
+				gothenburg.project_unlock_technology
+			}
+        }
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4942
+			}		
+		}
+
+		trigger = {
+			ROOT = {
+				treasury = 4000
+				colony = 1
+			}
+			4942 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				development = 60
+			}
+		}
+
+		effect = {
+			add_treasury = -4000
+			add_great_project = {
+				type = gothenburg.american_pier
+				instant = yes
+			}
+		}
+	}
+
+	gothenburg.project_panacea = {
+		icon = mission_empire
+		position = 14
+
+		required_missions = {
+            gothenburg.project_unlock_colonial
+        }
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4942
+			}		
+		}
+
+		trigger = {
+			ROOT = {
+				treasury = 20000
+				mil_tech = 20
+				adm_tech = 20
+				dip_tech = 20
+			}
+			4942 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				development = 100
+			}
+		}
+
+		effect = {
+			add_treasury = -20000
+			4942 = {
+				add_random_development = 10
+				add_province_modifier = {
+					name = gothenburg.project_done
+					duration = -1
+				}
+			}
+			if = {
+				limit = {
+					has_mission = gothenburg.project_focus_economy
+				}
+
+				add_great_project = {
+					type = gothenburg.defence
+					instant = yes
+				}
+				add_great_project = {
+					type = gothenburg.shipbuilding
+					instant = yes
+				}
+				add_great_project = {
+					type = gothenburg.chalmers
+					instant = yes
+				}
+				add_great_project = {
+					type = gothenburg.kronhuset
+					instant = yes
+				}
+			}
+			else_if = {
+				limit = {
+					has_mission = gothenburg.project_focus_military
+				}
+
+				add_great_project = {
+					type = gothenburg.fishmarket
+					instant = yes
+				}
+				add_great_project = {
+					type = gothenburg.port
+					instant = yes
+				}
+				add_great_project = {
+					type = gothenburg.chalmers
+					instant = yes
+				}
+				add_great_project = {
+					type = gothenburg.kronhuset
+					instant = yes
+				}
+			}
+			else_if = {
+				limit = {
+					has_mission = gothenburg.project_focus_technology
+				}
+
+				add_great_project = {
+					type = gothenburg.defence
+					instant = yes
+				}
+				add_great_project = {
+					type = gothenburg.shipbuilding
+					instant = yes
+				}
+				add_great_project = {
+					type = gothenburg.fishmarket
+					instant = yes
+				}
+				add_great_project = {
+					type = gothenburg.port
+					instant = yes
+				}
+			}
+		}
+	}
+}
+
+gothenburg.project_focus_economy = {
+	slot = 3 
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		tag = GBG
+	}
+
+	gothenburg.project_unlock_economy = {
+		icon = mission_hanseatic_city
+		position = 12
+
+		required_missions = {
+            gothenburg.project_continues
+			NOT = {
+				AND = {
+					gothenburg.project_unlock_technology
+					gothenburg.project_unlock_military
+				}
+			}
+        }
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4942
+			}		
+		}
+
+		trigger = {
+			ROOT = {
+				treasury = 2000
+				adm_tech = 10
+				dip_tech = 10
+			}
+			4942 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				base_tax = 15
+				base_trade = 15
+			}
+		}
+
+		effect = {
+			add_treasury = -2000
+			remove_province_modifier = gothenburg.project_construction2
+			add_great_project = {
+				type = gothenburg.fishmarket
+				instant = yes
+			}
+			add_great_project = {
+				type = gothenburg.port
+				instant = yes
+			}
+		}
+	}
+}
+
+gothenburg.project_focus_technology = {
+	slot = 5 
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		tag = GBG
+	}
+
+	gothenburg.project_unlock_technology = {
+		icon = mission_alliances
+		position = 12
+
+		required_missions = {
+            gothenburg.project_continues
+			NOT = {
+				AND = {
+					gothenburg.project_unlock_economy
+					gothenburg.project_unlock_military
+				}
+			}
+        }
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4942
+			}		
+		}
+
+		trigger = {
+			ROOT = {
+				treasury = 2000
+				mil_tech = 10
+				adm_tech = 10
+				dip_tech = 10
+			}
+			4942 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				development = 50
+			}
+		}
+
+		effect = {
+			add_treasury = -2000
+			remove_province_modifier = gothenburg.project_construction2
+			add_great_project = {
+				type = gothenburg.chalmers
+				instant = yes
+			}
+			add_great_project = {
+				type = gothenburg.kronhuset
+				instant = yes
+			}
+		}
+	}
+}

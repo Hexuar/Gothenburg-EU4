@@ -1,0 +1,22 @@
+gothenburg.project_construction = {
+	local_build_cost = 0.25
+	local_build_time = 0.25
+}
+
+gotheburg.project_construction2 = {
+	local_build_cost = 1
+	local_build_time = 1
+	local_tax_modifier = -0.9
+	local_manpower_modifier = -0.9
+	local_sailors_modifier = -0.9
+	local_production_efficiency = -0.9
+	province_trade_power_modifier = -0.9
+}
+
+gothenburg.project_done = {
+	local_tax_modifier = 1
+	local_manpower_modifier = 1
+	local_sailors_modifier = 1
+	local_production_efficiency = 1
+	province_trade_power_modifier = 1
+}

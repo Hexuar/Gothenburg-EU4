@@ -44,7 +44,10 @@ gothenburg.american_pier = {
 
     # Conditions to upgrade project
     can_upgrade_trigger = {
-
+		OR = {
+			has_mission = gothenburg.project_unlock_colonial
+			has_mission = gothenburg.project_panacea
+		}
     }
 
     # Conditions for if the project will be destroyed when conquered
@@ -190,15 +193,8 @@ gothenburg.american_pier = {
 		}
 
 		# What happens when the upgrade is complete
-		on_upgraded = { #Not working right now
-			#northeast_america_region = {
-			#	discover_country = GBG
-			#}
-			#northeast_america_region = {
-			#	random_area_province = {
-			#		create_colony = 200
-			#	}
-			#}
+		on_upgraded = { 
+
 		}
 
 	}

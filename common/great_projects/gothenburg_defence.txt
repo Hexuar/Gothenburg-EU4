@@ -44,7 +44,10 @@ gothenburg.defence = {
 
     # Conditions to upgrade project
     can_upgrade_trigger = {
-
+		OR = {
+			has_mission = gothenburg.project_unlock_military
+			has_mission = gothenburg.project_panacea
+		}
     }
 
     # Conditions for if the project will be destroyed when conquered
