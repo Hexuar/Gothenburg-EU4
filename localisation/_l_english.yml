@@ -107,25 +107,25 @@
 
 #Project missions
  gothenburg.project_start_title: "The Great monuments of Gothenburg"
- gothenburg.project_start_desc: "The people are crying for more monuments so let them have monuments - Marie Antoinette"
+ gothenburg.project_start_desc: "The people are crying for more monuments so let them have monuments - Marie Antoinette."
 
  gothenburg.project_continues_title: "No going back now"
- gothenburg.project_continues_desc: "We have come this far, we must continue - Sun Tzu"
+ gothenburg.project_continues_desc: "We have come this far, we must continue - Sun Tzu."
 
  gothenburg.project_unlock_economy_title: "The economy will live long and prosper"
- gothenburg.project_unlock_economy_desc: "Our economy is in shambles after our §Y[ROOT.Monarch.GetTitle]§ decided to send money to a Nigerian prince and lost all our coffers. We must rebuild again stronger than ever"
+ gothenburg.project_unlock_economy_desc: "Our economy is in shambles after our §Y[ROOT.Monarch.GetTitle]§ decided to send money to a Nigerian prince and lost all our coffers. We must rebuild again stronger than ever."
 
  gothenburg.project_unlock_military_title: "Call for reinforcements"
  gothenburg.project_unlock_military_desc: "We must light the beacons and call for aid."
 
  gothenburg.project_unlock_technology_title: "Ape together strong"
- gothenburg.project_unlock_technology_desc: "Our enemies are more advanced than us so we must catch up quick or we will be exterminated - Abraham Lincoln"
+ gothenburg.project_unlock_technology_desc: "Our enemies are more advanced than us so we must catch up quick or we will be exterminated - Abraham Lincoln."
  
  gothenburg.project_unlock_colonial_title: "New women for our brave and glorious country"
  gothenburg.project_unlock_colonial_desc: "We must venture to this New World and take whatever we can, women, spices, gold and whatever is not bolted down. Then we will transport it back to Gothenburg. In return we will give the survivors some blankets so they can survive, they just got to hope the blankets does not have smallpox on them."
 
  gothenburg.project_panacea_title: "One city to rule them all"
- gothenburg.project_panacea_desc: "In order to ensure the security and continuing stability, the Republic will be reorganized into the first Galactic Empire! For a safe and secure society! - Emperor Palpatine I of Gothenburg"
+ gothenburg.project_panacea_desc: "In order to ensure the security and continuing stability, the Republic will be reorganized into the first Galactic Empire! For a safe and secure society! - Emperor Palpatine I of Gothenburg."
 
 
 
