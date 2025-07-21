@@ -1,6 +1,6 @@
 #Add_great_project no work, mission börjar inte synas korrekt
 gothenburg.project_focus_military = {
-	slot = 4 
+	slot = 4
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -16,7 +16,7 @@ gothenburg.project_focus_military = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 4942
-			}		
+			}
 		}
 
 		trigger = {
@@ -53,7 +53,7 @@ gothenburg.project_focus_military = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 4942
-			}	
+			}
 		}
 
 		trigger = {
@@ -91,7 +91,7 @@ gothenburg.project_focus_military = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 4942
-			}		
+			}
 		}
 
 		trigger = {
@@ -139,7 +139,7 @@ gothenburg.project_focus_military = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 4942
-			}		
+			}
 		}
 
 		trigger = {
@@ -166,7 +166,7 @@ gothenburg.project_focus_military = {
 			}
 			if = {
 				limit = {
-					mission_completed = gothenburg.project_focus_economy
+					mission_completed = gothenburg.project_unlock_economy
 				}
 
 				4942 = {
@@ -190,7 +190,7 @@ gothenburg.project_focus_military = {
 			}
 			else_if = {
 				limit = {
-					mission_completed = gothenburg.project_focus_military
+					mission_completed = gothenburg.project_unlock_military
 				}
 
 				4942 = {
@@ -214,9 +214,9 @@ gothenburg.project_focus_military = {
 			}
 			else_if = {
 				limit = {
-					mission_completed = gothenburg.project_focus_technology
+					mission_completed = gothenburg.project_unlock_technology
 				}
-				
+
 				4942 = {
 					add_great_project = {
 						type = gothenburg.defence
@@ -241,7 +241,7 @@ gothenburg.project_focus_military = {
 }
 
 gothenburg.project_focus_economy = {
-	slot = 3 
+	slot = 3
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -261,7 +261,7 @@ gothenburg.project_focus_economy = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 4942
-			}		
+			}
 		}
 
 		trigger = {
@@ -302,7 +302,7 @@ gothenburg.project_focus_economy = {
 }
 
 gothenburg.project_focus_technology = {
-	slot = 5 
+	slot = 5
 	generic = no
 	ai = yes
 	has_country_shield = yes
@@ -322,7 +322,7 @@ gothenburg.project_focus_technology = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 4942
-			}		
+			}
 		}
 
 		trigger = {
@@ -389,7 +389,7 @@ gothenburg.project_focus_colonial = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 4942
-			}		
+			}
 		}
 
 		trigger = {
