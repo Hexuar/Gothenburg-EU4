@@ -1,6 +1,8 @@
 ﻿l_english:
 
 
+
+
 # Countries
  GBG: "Gothenburg"
  GBG_ADJ: "Gothenburgian"
@@ -8,9 +10,13 @@
  gothenburg: "Gothenburg"
 
 
+
+
 # Provinces
  PROV4942: "Göteborg"
  PROV_ADJ4942: "Göteborger"
+
+
 
 
 # Ideas
@@ -35,6 +41,8 @@
 
  gbg_goteborgs_hamn: "Göteborgs Hamn"
  gbg_goteborgs_hamn_desc: ""
+
+
 
 
 # Missions
@@ -154,6 +162,8 @@
  gothenburg.return_of_the_traders_button: "Good riddance!"
 
 
+
+
 # Event Modifiers
  gothenburg.sprouting_city: "Sprouting City"
  gothenburg.city_planning: "City Planning"
@@ -167,14 +177,20 @@
  gothenburg.draft_sailors_law: "Draft Sailors Law"
 
 
+
+
 # Opinion Modifiers
  gothenburg.opinion_skillfull_diplomats: "Skillfull Diplomats"
  gothenburg.opinion_remained_faithful: "Remained Faithful"
  gothenburg.opinion_refused_allegiance: "Refused Allegiance"
 
 
+
+
 # Trade Modifiers
  gothenburg.hansa_control: "Hansa Controlled"
+
+
 
 
 # Decisions
@@ -206,6 +222,8 @@
  gothenburg.collect_additional_tax_action_tooltip: "Will collect §G50¤§! from every Trade Citiy."
 
 
+
+
 # Subject Types
  gothenburg.trade_city: "Trade City"
  gothenburg.trade_city_long_desc: "A Trade City is a semi-independent nation that supports its overlord financially"
@@ -229,14 +247,32 @@
  is_gothenburg.integrated_trade_city: "Is Integrated Trade City"
 
 
+
+
 #Great Projects
+ gothenburg.american_pier: "Amerikapiren"
+
+ gothenburg.chalmers: "Chalmers"
+
+ gothenburg.defence: "Försvarsverket"
+
  gothenburg.fishmarket: "Feskekôrka"
  gothenburg.fishmarket_price: "Strong fish industry"
+
+ gothenburg.kronhuset: "Kronhuset"
+
+ gothenburg.port: "Göta Kanal"
+
+ gothenburg.shipbuilding: "Varvet"
+
+
 
 
 # Government Reforms
  gothenburg.scandinavian_trade_city: "Scandinavian Trade City"
  gothenburg.scandinavian_trade_city_desc: "A Scandinavian Trade City represents a city state which expands its power through indirect control over other trade cities."
+
+
 
 
 # Diplomatic Actions
@@ -257,6 +293,8 @@
  gothenburg.release_trade_city_desc: "Grant independence to this Trade City"
  gothenburg.release_trade_city_tooltip: "Grant independence to this Trade City"
  gothenburg.release_trade_city_alert_tooltip: "Grant independence to this Trade City"
+
+
 
 
 # AI acceptance modifiers
