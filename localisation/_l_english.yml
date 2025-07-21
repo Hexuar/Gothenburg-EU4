@@ -105,6 +105,27 @@
  gothenburg.the_hre_title: "The Emperor's Grace"
  gothenburg.the_hre_desc: "With our success in northen Germany, it might be advantageous to reach out to the emperor about our situation in the empire."
 
+#Project missions
+ gothenburg.project_start_title: "The Great monuments of Gothenburg"
+ gothenburg.project_start_desc: "The people are crying for more monuments so let them have monuments - Marie Antoinette"
+
+ gothenburg.project_continues_title: "No going back now"
+ gothenburg.project_continues_desc: "We have come this far, we must continue - Sun Tzu"
+
+ gothenburg.project_unlock_economy_title: "The economy will live long and prosper"
+ gothenburg.project_unlock_economy_desc: "Our economy is in shambles after our §Y[ROOT.Monarch.GetTitle]§ decided to send money to a Nigerian prince and lost all our coffers. We must rebuild again stronger than ever"
+
+ gothenburg.project_unlock_military_title: "Call for reinforcements"
+ gothenburg.project_unlock_military_desc: "We must light the beacons and call for aid."
+
+ gothenburg.project_unlock_technology_title: "Ape together strong"
+ gothenburg.project_unlock_technology_desc: "Our enemies are more advanced than us so we must catch up quick or we will be exterminated"
+ 
+ gothenburg.project_unlock_colonial_title: "New women for our brave and glorious country"
+ gothenburg.project_unlock_colonial_desc: "We must venture to this New World and take whatever we can, women, spices, gold and whatever is not bolted down. Then we will transport it back to Gothenburg. In return we will give the survivors some blankets so they can survive, they just got to hope the blankets does not have smallpox on them."
+
+ gothenburg.project_panacea_title: "One city to rule them all"
+ gothenburg.project_panacea_desc: "In order to ensure the security and continuing stability, the Republic will be reorganized into the first Galactic Empire! For a safe and secure society! - Emperor Palpatine I of Gothenburg"
 
 
 
@@ -175,6 +196,9 @@
  #gothenburg.trade_city: "Trade City"
  gothenburg.draft_law: "Draft Law"
  gothenburg.draft_sailors_law: "Draft Sailors Law"
+ gothenburg.project_construction: "Great Project Construction"
+ gothenburg.project_construction2: "Great Project Construction Intensified"
+ gothenburg.project_done: "The City of Splendor"
 
 
 
@@ -251,19 +275,27 @@
 
 #Great Projects
  gothenburg.american_pier: "Amerikapiren"
+ gothenburg.american_pier_desc: "Amerikapiren användes av alla båtar som skulle till Amerika med personer som ville emigrera dit."
 
  gothenburg.chalmers: "Chalmers"
+ gothenburg.chalmers_desc: "Chalmers Tekniska Högskola började som en slöjdskola men blev senare ett av Sveriges mest framstående högre läroverk."
 
  gothenburg.defence: "Försvarsverket"
+ gothenburg.defence_desc: "Göteborgs försvarsverk var stort då de onda Danskarna och de lite mindre onda Norskarna var precis intill staden på varsin sida. Göteborg var från början ett stort sjärnfort med bommar i kanalerna och flera portar såsom Kungsporten. Därtill fanns skansar som skulle användas till försvaret av staden, dessa var skansen Kronan och skansen Lejonet."
 
  gothenburg.fishmarket: "Feskekôrka"
+ gothenburg.fishmarket_desc: "Feskekôrka är stans fiskhandel där man kan köpa dagsfärsk fisk och annat från havet."
  gothenburg.fishmarket_price: "Strong fish industry"
 
  gothenburg.kronhuset: "Kronhuset"
+ gothenburg.kronhuset_desc: "Kronhuset har använts för flera syften, först användes det för att lagra tygmateriel åt garnisonen i Göteborg. Den har även fungerat som rikssal under en riksdag."
 
  gothenburg.port: "Göta Kanal"
+ gothenburg.port_desc: "Göta Kanal går mellan Vänern och Göteborgs hamn, detta gör att den kan användas för att transportera virke från skogsindustrin i Värmland till Göteborgs hamn för att där skeppas ut till världen."
 
  gothenburg.shipbuilding: "Varvet"
+ gothenburg.shipbuilding_desc: "Göteborgs varvsindustri är världsberömd för sina skepp. Skeppen som konstrueras här är oslagbara."
+ gothenburg.shipbuilding_price: "Strong shipbuilding industry"
 
 
 

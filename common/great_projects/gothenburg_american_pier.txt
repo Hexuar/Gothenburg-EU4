@@ -1,5 +1,3 @@
-#Make this for colonialism
-
 gothenburg.american_pier = {
     # Province the project starts in
     start = 4942

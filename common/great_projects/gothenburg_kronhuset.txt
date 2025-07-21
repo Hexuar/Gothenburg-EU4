@@ -1,5 +1,3 @@
-#Make this for admin
-
 gothenburg.kronhuset = {
     # Province the project starts in
     start = 4942

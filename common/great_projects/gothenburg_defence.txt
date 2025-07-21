@@ -1,5 +1,3 @@
-#Make this for army and defence
-
 gothenburg.defence = {
     # Province the project starts in
     start = 4942

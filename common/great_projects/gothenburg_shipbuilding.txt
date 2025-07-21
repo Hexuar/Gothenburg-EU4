@@ -1,5 +1,3 @@
-#Make this naval focused, can change price of naval supplies
-
 gothenburg.shipbuilding = {
     # Province the project starts in
     start = 4942
@@ -159,7 +157,7 @@ gothenburg.shipbuilding = {
 			add_or_upgrade_shipyard_building = yes
 			change_price = {
 				trade_goods = naval_supplies
-				key = gothenburg.fishmarket_price
+				key = gothenburg.shipbuilding_price
 				value = 0.1
 				duration = 365
 			}

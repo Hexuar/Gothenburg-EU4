@@ -1,5 +1,3 @@
-#Make this for tech
-
 gothenburg.chalmers = {
     # Province the project starts in
     start = 4942
@@ -24,12 +22,12 @@ gothenburg.chalmers = {
 
     # Conditions to build the project
     build_trigger = {
-        
+		always = no
     }
 
     # What happens when the project is built
     on_built = {
-		always = no
+	
     }
 
     # What happens when the project is destroyed

@@ -1,4 +1,3 @@
-#Make this for trade, maybe rebrand to Göta Kanal
 gothenburg.port = {
     # Province the project starts in
     start = 4942
