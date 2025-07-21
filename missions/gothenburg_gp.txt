@@ -1,3 +1,4 @@
+#Add_great_project no work, mission börjar inte synas igen korrekt, mission med unlock olika branches omöjliga då has_mission tydligen är om den är available
 gothenburg.project_focus_military = {
 	slot = 4 
 	generic = no
@@ -85,12 +86,6 @@ gothenburg.project_focus_military = {
 
 		required_missions = {
             gothenburg.project_continues
-			NOT = {
-				AND = {
-					gothenburg.project_unlock_economy
-					gothenburg.project_unlock_technology
-				}
-			}
         }
 
 		provinces_to_highlight = {
@@ -103,6 +98,12 @@ gothenburg.project_focus_military = {
 			ROOT = {
 				treasury = 2000
 				mil_tech = 10
+				NOT = {
+					AND = {
+						has_mission = gothenburg.project_unlock_economy
+						has_mission = gothenburg.project_unlock_technology
+					}
+				}
 			}
 			4942 = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -123,46 +124,7 @@ gothenburg.project_focus_military = {
 					instant = yes
 				}
 			}
-		}
-	}
-
-	gothenburg.project_unlock_colonial = {
-		icon = mission_assemble_an_army
-		position = 13
-
-		required_missions = {
-            OR = {
-				gothenburg.project_unlock_economy
-				gothenburg.project_unlock_military
-				gothenburg.project_unlock_technology
-			}
-        }
-
-		provinces_to_highlight = {
-			OR = {
-				province_id = 4942
-			}		
-		}
-
-		trigger = {
-			ROOT = {
-				treasury = 4000
-				colony = 1
-			}
-			4942 = {
-				country_or_non_sovereign_subject_holds = ROOT
-				development = 60
-			}
-		}
-
-		effect = {
-			add_treasury = -4000
-			4942 = {
-				add_great_project = {
-					type = gothenburg.american_pier
-					instant = yes
-				}
-			}
+			swap_non_generic_missions = yes
 		}
 	}
 
@@ -294,12 +256,6 @@ gothenburg.project_focus_economy = {
 
 		required_missions = {
             gothenburg.project_continues
-			NOT = {
-				AND = {
-					gothenburg.project_unlock_technology
-					gothenburg.project_unlock_military
-				}
-			}
         }
 
 		provinces_to_highlight = {
@@ -313,6 +269,12 @@ gothenburg.project_focus_economy = {
 				treasury = 2000
 				adm_tech = 10
 				dip_tech = 10
+				NOT = {
+					AND = {
+						has_mission = gothenburg.project_unlock_military
+						has_mission = gothenburg.project_unlock_technology
+					}
+				}
 			}
 			4942 = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -334,6 +296,7 @@ gothenburg.project_focus_economy = {
 					instant = yes
 				}
 			}
+			swap_non_generic_missions = yes
 		}
 	}
 }
@@ -354,12 +317,6 @@ gothenburg.project_focus_technology = {
 
 		required_missions = {
             gothenburg.project_continues
-			NOT = {
-				AND = {
-					gothenburg.project_unlock_economy
-					gothenburg.project_unlock_military
-				}
-			}
         }
 
 		provinces_to_highlight = {
@@ -374,6 +331,12 @@ gothenburg.project_focus_technology = {
 				mil_tech = 10
 				adm_tech = 10
 				dip_tech = 10
+				NOT = {
+					AND = {
+						has_mission = gothenburg.project_unlock_economy
+						has_mission = gothenburg.project_unlock_military
+					}
+				}
 			}
 			4942 = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -395,6 +358,60 @@ gothenburg.project_focus_technology = {
 					instant = yes
 				}
 			}
+			swap_non_generic_missions = yes
 		}
 	}
 }
+
+gothenburg.project_focus_colonial = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		tag = GBG
+		OR = {
+			has_mission = gothenburg.project_unlock_economy
+			has_mission = gothenburg.project_unlock_military
+			has_mission = gothenburg.project_unlock_technology
+		}
+	}
+
+	gothenburg.project_unlock_colonial = {
+		icon = mission_assemble_an_army
+		position = 13
+
+		required_missions = {
+            gothenburg.project_continues
+        }
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4942
+			}		
+		}
+
+		trigger = {
+			ROOT = {
+				treasury = 4000
+				colony = 1
+			}
+			4942 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				development = 60
+			}
+		}
+
+		effect = {
+			add_treasury = -4000
+			4942 = {
+				add_great_project = {
+					type = gothenburg.american_pier
+					instant = yes
+				}
+			}
+		}
+	}
+}
+
