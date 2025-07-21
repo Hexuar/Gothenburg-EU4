@@ -35,7 +35,15 @@ country_event = {
             add_government_reform = gothenburg.scandinavian_trade_city
             change_estate_land_share = {
                 estate = estate_burghers
-                share = 20
+                share = 40
+            }
+            change_estate_land_share = {
+                estate = estate_church
+                share = 10
+            }
+            change_estate_land_share = {
+                estate = estate_nobles
+                share = 10
             }
         }
         4942 = {
@@ -62,7 +70,15 @@ country_event = {
             add_government_reform = gothenburg.scandinavian_trade_city
             change_estate_land_share = {
                 estate = estate_burghers
-                share = 20
+                share = 40
+            }
+            change_estate_land_share = {
+                estate = estate_church
+                share = 10
+            }
+            change_estate_land_share = {
+                estate = estate_nobles
+                share = 10
             }
         }
         4942 = {
