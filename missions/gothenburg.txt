@@ -362,6 +362,39 @@ gothenburg.trade = {
             }
         }
     }
+
+    gothenburg.baltic_trade = {
+        icon = invest_in_the_rich_trades
+        position = 3
+
+        required_missions = {
+            gothenburg.trade_city
+        }
+
+        trigger = {
+            1926 = {
+                is_strongest_trade_power = ROOT
+            }
+        }
+
+        effect = {
+            1926 = {
+                add_trade_node_income = 60
+            }
+
+            if = {
+                limit = {
+                    25 = {
+                        country_or_non_sovereign_subject_holds = ROOT
+                    }
+                }
+
+                25 = {
+                    add_center_of_trade_level = 1
+                }
+            }
+        }
+    }
 }
 
 
