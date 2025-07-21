@@ -23,7 +23,7 @@ gothenburg.port = {
 
     # Conditions to build the project
     build_trigger = {
-        
+        always = no
     }
 
     # What happens when the project is built
@@ -38,14 +38,18 @@ gothenburg.port = {
 
     # Conditions to use project
     can_use_modifiers_trigger = {
-
+		owner = {
+			tag = GBG
+		}
     }
 
     # Conditions to upgrade project
     can_upgrade_trigger = {
-		OR = {
-			mission_completed = gothenburg.project_unlock_economy
-			mission_completed = gothenburg.project_panacea
+		owner = {
+			OR = {
+				mission_completed = gothenburg.project_unlock_economy
+				mission_completed = gothenburg.project_panacea
+			}	
 		}
     }
 

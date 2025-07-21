@@ -279,7 +279,7 @@ gothenburg.project_focus_economy = {
 			4942 = {
 				country_or_non_sovereign_subject_holds = ROOT
 				base_tax = 15
-				base_trade = 15
+				base_production = 15
 			}
 		}
 
