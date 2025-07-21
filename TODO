@@ -19,3 +19,8 @@ Bugs
 + Make sure danzig mission is always completeable
 + Make sure hre event works if the hre has been disbanded
 + City grows to frequent in late game
++ Great project building not working as intended, may be because alwasys = no (so they never get built even by mission), they actually do not exist anymore
++ Last two missions in great project mission tree not showing up
++ Province modifiers from great project tree not showing up in province
+
+#Jag gissar att plus betyder viktigt, sedan ser jag en liten typo från dig i en av todo

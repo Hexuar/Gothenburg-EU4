@@ -22,7 +22,10 @@ gothenburg.defence = {
 
     # Conditions to build the project
     build_trigger = {
-        always = no
+        owner = {
+			tag = GBG
+			mission_completed = gothenburg.project_panacea
+		}
     }
 
     # What happens when the project is built

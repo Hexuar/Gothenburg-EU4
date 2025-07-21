@@ -1,4 +1,3 @@
-#Add_great_project no work, mission börjar inte synas korrekt
 gothenburg.project_focus_military = {
 	slot = 4
 	generic = no
