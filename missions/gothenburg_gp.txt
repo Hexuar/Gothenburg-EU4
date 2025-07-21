@@ -113,13 +113,15 @@ gothenburg.project_focus_military = {
 		effect = {
 			add_treasury = -2000
 			remove_province_modifier = gothenburg.project_construction2
-			add_great_project = {
-				type = gothenburg.defence
-				instant = yes
-			}
-			add_great_project = {
-				type = gothenburg.shipbuilding
-				instant = yes
+			4942 = {
+				add_great_project = {
+					type = gothenburg.defence
+					instant = yes
+				}
+				add_great_project = {
+					type = gothenburg.shipbuilding
+					instant = yes
+				}
 			}
 		}
 	}
@@ -155,9 +157,11 @@ gothenburg.project_focus_military = {
 
 		effect = {
 			add_treasury = -4000
-			add_great_project = {
-				type = gothenburg.american_pier
-				instant = yes
+			4942 = {
+				add_great_project = {
+					type = gothenburg.american_pier
+					instant = yes
+				}
 			}
 		}
 	}
@@ -203,21 +207,23 @@ gothenburg.project_focus_military = {
 					has_mission = gothenburg.project_focus_economy
 				}
 
-				add_great_project = {
-					type = gothenburg.defence
-					instant = yes
-				}
-				add_great_project = {
-					type = gothenburg.shipbuilding
-					instant = yes
-				}
-				add_great_project = {
-					type = gothenburg.chalmers
-					instant = yes
-				}
-				add_great_project = {
-					type = gothenburg.kronhuset
-					instant = yes
+				4942 = {
+					add_great_project = {
+						type = gothenburg.defence
+						instant = yes
+					}
+					add_great_project = {
+						type = gothenburg.shipbuilding
+						instant = yes
+					}
+					add_great_project = {
+						type = gothenburg.chalmers
+						instant = yes
+					}
+					add_great_project = {
+						type = gothenburg.kronhuset
+						instant = yes
+					}
 				}
 			}
 			else_if = {
@@ -225,43 +231,47 @@ gothenburg.project_focus_military = {
 					has_mission = gothenburg.project_focus_military
 				}
 
-				add_great_project = {
-					type = gothenburg.fishmarket
-					instant = yes
-				}
-				add_great_project = {
-					type = gothenburg.port
-					instant = yes
-				}
-				add_great_project = {
-					type = gothenburg.chalmers
-					instant = yes
-				}
-				add_great_project = {
-					type = gothenburg.kronhuset
-					instant = yes
+				4942 = {
+					add_great_project = {
+						type = gothenburg.fishmarket
+						instant = yes
+					}
+					add_great_project = {
+						type = gothenburg.port
+						instant = yes
+					}
+					add_great_project = {
+						type = gothenburg.chalmers
+						instant = yes
+					}
+					add_great_project = {
+						type = gothenburg.kronhuset
+						instant = yes
+					}
 				}
 			}
 			else_if = {
 				limit = {
 					has_mission = gothenburg.project_focus_technology
 				}
-
-				add_great_project = {
-					type = gothenburg.defence
-					instant = yes
-				}
-				add_great_project = {
-					type = gothenburg.shipbuilding
-					instant = yes
-				}
-				add_great_project = {
-					type = gothenburg.fishmarket
-					instant = yes
-				}
-				add_great_project = {
-					type = gothenburg.port
-					instant = yes
+				
+				4942 = {
+					add_great_project = {
+						type = gothenburg.defence
+						instant = yes
+					}
+					add_great_project = {
+						type = gothenburg.shipbuilding
+						instant = yes
+					}
+					add_great_project = {
+						type = gothenburg.fishmarket
+						instant = yes
+					}
+					add_great_project = {
+						type = gothenburg.port
+						instant = yes
+					}
 				}
 			}
 		}
@@ -314,13 +324,15 @@ gothenburg.project_focus_economy = {
 		effect = {
 			add_treasury = -2000
 			remove_province_modifier = gothenburg.project_construction2
-			add_great_project = {
-				type = gothenburg.fishmarket
-				instant = yes
-			}
-			add_great_project = {
-				type = gothenburg.port
-				instant = yes
+			4942 = {
+				add_great_project = {
+					type = gothenburg.fishmarket
+					instant = yes
+				}
+				add_great_project = {
+					type = gothenburg.port
+					instant = yes
+				}
 			}
 		}
 	}
@@ -372,13 +384,16 @@ gothenburg.project_focus_technology = {
 		effect = {
 			add_treasury = -2000
 			remove_province_modifier = gothenburg.project_construction2
-			add_great_project = {
-				type = gothenburg.chalmers
-				instant = yes
-			}
-			add_great_project = {
-				type = gothenburg.kronhuset
-				instant = yes
+
+			4942 = {
+				add_great_project = {
+					type = gothenburg.chalmers
+					instant = yes
+				}
+				add_great_project = {
+					type = gothenburg.kronhuset
+					instant = yes
+				}
 			}
 		}
 	}

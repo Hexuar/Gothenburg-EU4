@@ -3,7 +3,7 @@ gothenburg.project_construction = {
 	local_build_time = 0.25
 }
 
-gotheburg.project_construction2 = {
+gothenburg.project_construction2 = {
 	local_build_cost = 1
 	local_build_time = 1
 	local_tax_modifier = -0.9
