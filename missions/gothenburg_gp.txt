@@ -127,117 +127,6 @@ gothenburg.project_focus_military = {
 			swap_non_generic_missions = yes
 		}
 	}
-
-	gothenburg.project_panacea = {
-		icon = mission_empire
-		position = 14
-
-		required_missions = {
-            gothenburg.project_unlock_colonial
-        }
-
-		provinces_to_highlight = {
-			OR = {
-				province_id = 4942
-			}
-		}
-
-		trigger = {
-			ROOT = {
-				treasury = 20000
-				mil_tech = 20
-				adm_tech = 20
-				dip_tech = 20
-			}
-			4942 = {
-				country_or_non_sovereign_subject_holds = ROOT
-				development = 100
-			}
-		}
-
-		effect = {
-			add_treasury = -20000
-			4942 = {
-				add_random_development = 10
-				add_province_modifier = {
-					name = gothenburg.project_done
-					duration = -1
-				}
-			}
-			if = {
-				limit = {
-					mission_completed = gothenburg.project_unlock_economy
-				}
-
-				4942 = {
-					add_great_project = {
-						type = gothenburg.defence
-						instant = yes
-					}
-					add_great_project = {
-						type = gothenburg.shipbuilding
-						instant = yes
-					}
-					add_great_project = {
-						type = gothenburg.chalmers
-						instant = yes
-					}
-					add_great_project = {
-						type = gothenburg.kronhuset
-						instant = yes
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					mission_completed = gothenburg.project_unlock_military
-				}
-
-				4942 = {
-					add_great_project = {
-						type = gothenburg.fishmarket
-						instant = yes
-					}
-					add_great_project = {
-						type = gothenburg.port
-						instant = yes
-					}
-					add_great_project = {
-						type = gothenburg.chalmers
-						instant = yes
-					}
-					add_great_project = {
-						type = gothenburg.kronhuset
-						instant = yes
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					mission_completed = gothenburg.project_unlock_technology
-				}
-
-				4942 = {
-					add_great_project = {
-						type = gothenburg.defence
-						instant = yes
-					}
-					add_great_project = {
-						type = gothenburg.shipbuilding
-						instant = yes
-					}
-					add_great_project = {
-						type = gothenburg.fishmarket
-						instant = yes
-					}
-					add_great_project = {
-						type = gothenburg.port
-						instant = yes
-					}
-				}
-			}
-		}
-	}
 }
 
 gothenburg.project_focus_economy = {
@@ -409,6 +298,118 @@ gothenburg.project_focus_colonial = {
 				add_great_project = {
 					type = gothenburg.american_pier
 					instant = yes
+				}
+			}
+		}
+	}
+
+
+	gothenburg.project_panacea = {
+		icon = mission_empire
+		position = 14
+
+		required_missions = {
+            gothenburg.project_unlock_colonial
+        }
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4942
+			}
+		}
+
+		trigger = {
+			ROOT = {
+				treasury = 20000
+				mil_tech = 20
+				adm_tech = 20
+				dip_tech = 20
+			}
+			4942 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				development = 100
+			}
+		}
+
+		effect = {
+			add_treasury = -20000
+			4942 = {
+				add_random_development = 10
+				add_province_modifier = {
+					name = gothenburg.project_done
+					duration = -1
+				}
+			}
+			if = {
+				limit = {
+					mission_completed = gothenburg.project_unlock_economy
+				}
+
+				4942 = {
+					add_great_project = {
+						type = gothenburg.defence
+						instant = yes
+					}
+					add_great_project = {
+						type = gothenburg.shipbuilding
+						instant = yes
+					}
+					add_great_project = {
+						type = gothenburg.chalmers
+						instant = yes
+					}
+					add_great_project = {
+						type = gothenburg.kronhuset
+						instant = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					mission_completed = gothenburg.project_unlock_military
+				}
+
+				4942 = {
+					add_great_project = {
+						type = gothenburg.fishmarket
+						instant = yes
+					}
+					add_great_project = {
+						type = gothenburg.port
+						instant = yes
+					}
+					add_great_project = {
+						type = gothenburg.chalmers
+						instant = yes
+					}
+					add_great_project = {
+						type = gothenburg.kronhuset
+						instant = yes
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					mission_completed = gothenburg.project_unlock_technology
+				}
+
+				4942 = {
+					add_great_project = {
+						type = gothenburg.defence
+						instant = yes
+					}
+					add_great_project = {
+						type = gothenburg.shipbuilding
+						instant = yes
+					}
+					add_great_project = {
+						type = gothenburg.fishmarket
+						instant = yes
+					}
+					add_great_project = {
+						type = gothenburg.port
+						instant = yes
+					}
 				}
 			}
 		}
