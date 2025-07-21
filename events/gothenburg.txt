@@ -33,6 +33,10 @@ country_event = {
             change_government = republic
             set_government_rank = 1
             add_government_reform = gothenburg.scandinavian_trade_city
+            change_estate_land_share = {
+                estate = estate_burghers
+                share = 20
+            }
         }
         4942 = {
             add_province_modifier = {
@@ -46,13 +50,20 @@ country_event = {
 	option = {
 	    name = gothenburg.city_of_gothenburg.release
 		create_vassal = GBG
-	    create_subject = {
-            subject_type = gothenburg.free_trade_city
-            subject = GBG
-        }
+		DAN = {
+		    create_subject = {
+                subject_type = gothenburg.free_trade_city
+                subject = GBG
+            }
+		}
         GBG = {
             change_government = republic
             set_government_rank = 1
+            add_government_reform = gothenburg.scandinavian_trade_city
+            change_estate_land_share = {
+                estate = estate_burghers
+                share = 20
+            }
         }
         4942 = {
             add_province_modifier = {
@@ -84,50 +95,28 @@ country_event = {
 
 	trigger = {
 	    tag = GBG
+		4942 = {
+  		    NOT = { development = 25 }
+        }
 	}
 
 	mean_time_to_happen = {
-	    months = 24
-
-		modifier = {
-		    factor = 0.25
-			4942 = {
-      		    NOT = { development = 20 }
-            }
-		}
+	    months = 6
 	}
 
 	option = {
 	    name = gothenburg.city_grows_accept
 
-		if = {
-		    limit = {
-    			4942 = {
-          		    NOT = { development = 20 }
-                }
-			}
+		4942 = {
+  		    add_base_tax = 1
+ 			add_base_production = 1
+  		}
 
-			4942 = {
-    		    add_base_tax = 1
-    			add_base_production = 1
-    		}
-
-            add_owned_provinces_development_ducats = {
-                multiplier = 2
-				age_multiplier = 1
-			    trigger = { always = yes }
-			}
+        add_owned_provinces_development_ducats = {
+            multiplier = 2
+			age_multiplier = 1
+		    trigger = { always = yes }
 		}
-
-		else = {
-		    add_adm_power = 25
-		    add_owned_provinces_development_ducats = {
-                multiplier = 0.5
-				age_multiplier = 1
-			    trigger = { always = yes }
-			}
-		}
-
 	}
 }
 
@@ -282,7 +271,18 @@ country_event = {
 	option = {
 	    name = gothenburg.got_and_hre_join
 
-		set_in_empire = yes
+		if = {
+		    limit = {
+				hre_size = 1
+			}
+			set_in_empire = yes
+		}
+		else = {
+		    emperor = {
+				create_alliance = ROOT
+			}
+		}
+
 	}
 
 	option = {

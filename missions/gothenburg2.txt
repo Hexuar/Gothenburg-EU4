@@ -22,11 +22,21 @@ gothenburg.hansa.eastward_expansion = {
         }
 
         trigger = {
-            exists = DNZ
-            DNZ = {
-                owns = 43
-                is_subject_of = ROOT
+            OR = {
+                AND = {
+                    DNZ = {
+                        owns = 43
+                        is_subject_of = ROOT
+                    }
+                }
+                AND = {
+                    43 = {
+                        NOT = { is_core = DNZ }
+                        country_or_non_sovereign_subject_holds = ROOT
+                    }
+                }
             }
+
         }
 
         effect = {

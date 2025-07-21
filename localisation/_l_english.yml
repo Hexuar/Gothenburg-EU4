@@ -39,57 +39,60 @@
 
 # Missions
  gothenburg.founding_the_city_title: "Found the City"
- gothenburg.founding_the_city_desc: ""
+ gothenburg.founding_the_city_desc: "With so many new residents arriving, proper infrastructure is needed to accomodate them."
  gothenburg.founding_the_city.enable_requesting: "\n§YEnables decisions to purchase the islands of Bornholm, Åland and Ösel.§!"
 
+ #gothenburg.trade_city_title: "Trade City"
+ gothenburg.trade_city_desc: "Our city has growm strong, to accomodate all the traders, we will need to expand our markets."
+
  gothenburg.skillfull_diplomats_title: "Skillfull Diplomats"
- gothenburg.skillfull_diplomats_desc: ""
+ gothenburg.skillfull_diplomats_desc: "To become a relevant local power, we must be able to improve relations with our neighbours."
 
  gothenburg.trade_empire_title: "Trade Empire"
- gothenburg.trade_empire_desc: ""
+ gothenburg.trade_empire_desc: "In order to grow our influence, we must get more cities under our control."
 
  gothenburg.gutnish_trade_title: "Gutnish Trade"
- gothenburg.gutnish_trade_desc: ""
+ gothenburg.gutnish_trade_desc: "The traders of Gotland have long held great power over the baltic trade. They are the primary obstacle for our estwards expansion."
 
  gothenburg.baltic_outposts_title: "Baltic Outposts"
- gothenburg.baltic_outposts_desc: ""
+ gothenburg.baltic_outposts_desc: "By obtaining land around the baltic, we can establish new trade cities to serve our interests."
  gothenburg.baltic_outposts_enable_gotland_trade_city: "Allows inviting §Y[GOT.GetName]§! to become our trade city despite other restrictions."
 
  gothenburg.the_hansa_title: "The Hanseatic League"
- gothenburg.the_hansa_desc: ""
+ gothenburg.the_hansa_desc: "The hanseatic league has a strong grip over all trade in the baltic and north sea. We must demonstrate our dominance over them if we wish to win more trade cities over."
  gothenburg.the_hansa_monthly_income_greater: "Has monthly income greater than §Y[HSA.GetName]§!."
  gothenburg.the_hansa_enable_council: "Establishes the §Y[Root.GetAdjective] Council§!. Granting additional decisions to manage the growing republic."
 
  gothenburg.the_fleet_title: "The Fleet"
- gothenburg.the_fleet_desc: ""
+ gothenburg.the_fleet_desc: "In order to establish dominance, we will need a large fleet to protect our interests in the area."
 
  gothenburg.varvet_title: "Varvet"
- gothenburg.varvet_desc: ""
+ gothenburg.varvet_desc: "The great wharf of Gothenburg will be of great importance to grow our fleet further."
  gothenburg.varvet_spawn_ships: "§Y[Root.GetName]§!: Get five §YLight Ships§! in §Y[Root.Capital.GetName]§!."
 
  gothenburg.explorers_title: "Ancestral Explorers"
- gothenburg.explorers_desc: ""
+ gothenburg.explorers_desc: "Long ago, our ancestors explored lands to the far west. Let us venture there once more."
 
  gothenburg.greenland_title: "Rediscover Greenland"
- gothenburg.greenland_desc: ""
+ gothenburg.greenland_desc: "Despite what the sagas might say, this land is not, in fact, green. It won't stop us from expanding our great nation however."
 
  gothenburg.greenland_colony_title: "Colonial Greenland"
- gothenburg.greenland_colony_desc: ""
+ gothenburg.greenland_colony_desc: "Having established a thriving colony on greenland, it's now time to venture even further west, into the lands of Vinland."
 
  gothenburg.vinland_title: "Colonize Vinland"
- gothenburg.vinland_desc: ""
+ gothenburg.vinland_desc: "We have finally reached Vinland. This new land, filled with opportunity will attract many settlers."
 
  gothenburg.protect_danzig_title: "Protect Danzig"
- gothenburg.protect_danzig_desc: ""
+ gothenburg.protect_danzig_desc: "The city of Danzig, has been under the control of foreign powers for too long. It's time to bring them into our sphere of influence."
 
  gothenburg.recover_novgorod_title: "Recover Novgorod"
- gothenburg.recover_novgorod_desc: ""
+ gothenburg.recover_novgorod_desc: "In order to further our grip over the baltic, we need to expand further east, into the lands of the novgorodians."
 
  gothenburg.liberate_antwerp_title: "Liberate Antwerp"
- gothenburg.liberate_antwerp_desc: ""
+ gothenburg.liberate_antwerp_desc: "The great city of antwerp was an important city for the hansa. We must free them from foreign occupation."
 
  gothenburg.the_hre_title: "The Emperor's Grace"
- gothenburg.the_hre_desc: ""
+ gothenburg.the_hre_desc: "With our success in northen Germany, it might be advantageous to reach out to the emperor about our situation in the empire."
 
 
 
@@ -106,17 +109,17 @@
  gothenburg.city_grows_accept: "Great news!"
 
  gothenburg.request_aland_event_title: "Gothenburg requests Åland"
- gothenburg.request_aland_event_desc: ""
+ gothenburg.request_aland_event_desc: "The city of Gothenburg argues that they could do more with Åland, and therefore wish to purchase it from us."
  gothenburg.request_aland_event.accept: "Accept"
  gothenburg.request_aland_event.reject: "Reject"
 
  gothenburg.request_bornholm_event_title: "Gothenburg requests Bornholm"
- gothenburg.request_bornholm_event_desc: ""
+ gothenburg.request_bornholm_event_desc: "The city of Gothenburg argues that they could do more with Bornhom, and therefore wish to purchase it from us."
  gothenburg.request_bornholm_event.accept: "Accept"
  gothenburg.request_bornholm_event.reject: "Reject"
 
  gothenburg.request_osel_event_title: "Gothenburg requests Ösel"
- gothenburg.request_osel_event_desc: ""
+ gothenburg.request_osel_event_desc: "The city of Gothenburg argues that they could do more with Ösel, and therefore wish to purchase it from us."
  gothenburg.request_osel_event.accept: "Accept"
  gothenburg.request_osel_event.reject: "Reject"
 
@@ -126,12 +129,12 @@
  gothenburg.swedish_independence.support_denmark: "Support Denmark"
 
  gothenburg.fate_of_the_hansa_title: "The fate of the Hanseatic League"
- gothenburg.fate_of_the_hansa_desc: ""
+ gothenburg.fate_of_the_hansa_desc: "The hanseatic league has weakened greatly in the past years. If we wish to, we could persuade them to join us."
  gothenburg.fate_of_the_hansa_take_control: "Take control over the Hansa"
  gothenburg.fate_of_the_hansa_cooperate: "Cooperate with the Hansa"
 
  gothenburg.got_and_hre_title: "Gothenburg and the Empire"
- gothenburg.got_and_hre_desc: ""
+ gothenburg.got_and_hre_desc: "The emperor has offered us an official place under the dominion of the Holy Roman Empire."
  gothenburg.got_and_hre_join: "Join"
  gothenburg.got_and_hre_refuse: "Refuse"
 
@@ -173,30 +176,30 @@
 
 # Decisions
  gothenburg.request_aland_title: "¤ Request Åland"
- gothenburg.request_aland_desc: ""
+ gothenburg.request_aland_desc: "Ask to buy Åland from [1930.Owner]"
 
  gothenburg.request_bornholm_title: "¤ Request Bornholm"
- gothenburg.request_bornholm_desc: ""
+ gothenburg.request_bornholm_desc: "Ask to buy Bornholm from [1981.Owner]"
 
  gothenburg.request_osel_title: "¤ Request Ösel"
- gothenburg.request_osel_desc: ""
+ gothenburg.request_osel_desc: "Ask to buy Ösel from [35.Owner]"
 
  gothenburg.draft_law_title: "£no£ Pass Council Law: Draft"
- gothenburg.draft_law_desc: ""
+ gothenburg.draft_law_desc: "Increase military recruitment from our trade cities."
  gothenburg.revoke_draft_law_title: "£yes£ Revoke Council Law: Draft"
  gothenburg.revoke_draft_law_desc: ""
 
  gothenburg.draft_sailors_law_title: "£no£ Pass Council Law: Draft Sailors"
- gothenburg.draft_sailors_law_desc: ""
+ gothenburg.draft_sailors_law_desc: "Increase recruitment of sailors from our trade cities."
  gothenburg.revoke_draft_sailors_law_title: "£yes£ Revoke Council Law: Draft Sailors"
  gothenburg.revoke_draft_sailors_law_desc: ""
 
  gothenburg.consolidate_development_action_title: "£adm£ Council Action: Consolidate Development"
- gothenburg.consolidate_development_action_desc: ""
+ gothenburg.consolidate_development_action_desc: "Bring wealth from the trade cities to Gothenburg"
  gothenburg.consolidate_development_action_tooltip: "Will transfer one random development from each of our Trade Cities' capitals to [Root.Capital.GetName]."
 
  gothenburg.collect_additional_tax_action_title: "£adm£ Council Action: Collect Additional Tax"
- gothenburg.collect_additional_tax_action_desc: ""
+ gothenburg.collect_additional_tax_action_desc: "Collect an additional one-time fee from our trade cities."
  gothenburg.collect_additional_tax_action_tooltip: "Will collect §G50¤§! from every Trade Citiy."
 
 
@@ -230,7 +233,7 @@
 
 # Government Reforms
  gothenburg.scandinavian_trade_city: "Scandinavian Trade City"
- gothenburg.scandinavian_trade_city_desc: ""
+ gothenburg.scandinavian_trade_city_desc: "A Scandinavian Trade City represents a city state which expands its power through indirect control over other trade cities."
 
 
 # Diplomatic Actions
@@ -242,15 +245,15 @@
 
  gothenburg.integrate_trade_city: "Integrate Trade City"
  gothenburg.integrate_trade_city_title: "Integrate Trade City"
- gothenburg.integrate_trade_city_desc: ""
- gothenburg.integrate_trade_city_tooltip: ""
- gothenburg.integrate_trade_city_alert_tooltip: ""
+ gothenburg.integrate_trade_city_desc: "Turn this Trade City into an §YIntegrated Trade City§!"
+ gothenburg.integrate_trade_city_tooltip: "Turn this Trade City into an §YIntegrated Trade City§!"
+ gothenburg.integrate_trade_city_alert_tooltip: "Turn this Trade City into an §YIntegrated Trade City§!"
 
  gothenburg.release_trade_city: "Release Trade City"
  gothenburg.release_trade_city_title: "Release Trade City"
- gothenburg.release_trade_city_desc: ""
- gothenburg.release_trade_city_tooltip: ""
- gothenburg.release_trade_city_alert_tooltip: ""
+ gothenburg.release_trade_city_desc: "Grant independence to this Trade City"
+ gothenburg.release_trade_city_tooltip: "Grant independence to this Trade City"
+ gothenburg.release_trade_city_alert_tooltip: "Grant independence to this Trade City"
 
 
 # AI acceptance modifiers
