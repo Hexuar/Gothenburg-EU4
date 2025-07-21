@@ -45,8 +45,8 @@ gothenburg.kronhuset = {
     # Conditions to upgrade project
     can_upgrade_trigger = {
 		OR = {
-			has_mission = gothenburg.project_unlock_technology
-			has_mission = gothenburg.project_panacea
+			mission_completed = gothenburg.project_unlock_technology
+			mission_completed = gothenburg.project_panacea
 		}
     }
 

@@ -1,4 +1,4 @@
-#Add_great_project no work, mission börjar inte synas igen korrekt, mission med unlock olika branches omöjliga då has_mission tydligen är om den är available
+#Add_great_project no work, mission börjar inte synas korrekt
 gothenburg.project_focus_military = {
 	slot = 4 
 	generic = no
@@ -100,8 +100,8 @@ gothenburg.project_focus_military = {
 				mil_tech = 10
 				NOT = {
 					AND = {
-						has_mission = gothenburg.project_unlock_economy
-						has_mission = gothenburg.project_unlock_technology
+						mission_completed = gothenburg.project_unlock_economy
+						mission_completed = gothenburg.project_unlock_technology
 					}
 				}
 			}
@@ -166,7 +166,7 @@ gothenburg.project_focus_military = {
 			}
 			if = {
 				limit = {
-					has_mission = gothenburg.project_focus_economy
+					mission_completed = gothenburg.project_focus_economy
 				}
 
 				4942 = {
@@ -190,7 +190,7 @@ gothenburg.project_focus_military = {
 			}
 			else_if = {
 				limit = {
-					has_mission = gothenburg.project_focus_military
+					mission_completed = gothenburg.project_focus_military
 				}
 
 				4942 = {
@@ -214,7 +214,7 @@ gothenburg.project_focus_military = {
 			}
 			else_if = {
 				limit = {
-					has_mission = gothenburg.project_focus_technology
+					mission_completed = gothenburg.project_focus_technology
 				}
 				
 				4942 = {
@@ -271,8 +271,8 @@ gothenburg.project_focus_economy = {
 				dip_tech = 10
 				NOT = {
 					AND = {
-						has_mission = gothenburg.project_unlock_military
-						has_mission = gothenburg.project_unlock_technology
+						mission_completed = gothenburg.project_unlock_military
+						mission_completed = gothenburg.project_unlock_technology
 					}
 				}
 			}
@@ -333,8 +333,8 @@ gothenburg.project_focus_technology = {
 				dip_tech = 10
 				NOT = {
 					AND = {
-						has_mission = gothenburg.project_unlock_economy
-						has_mission = gothenburg.project_unlock_military
+						mission_completed = gothenburg.project_unlock_economy
+						mission_completed = gothenburg.project_unlock_military
 					}
 				}
 			}
@@ -372,9 +372,9 @@ gothenburg.project_focus_colonial = {
 	potential = {
 		tag = GBG
 		OR = {
-			has_mission = gothenburg.project_unlock_economy
-			has_mission = gothenburg.project_unlock_military
-			has_mission = gothenburg.project_unlock_technology
+			mission_completed = gothenburg.project_unlock_economy
+			mission_completed = gothenburg.project_unlock_military
+			mission_completed = gothenburg.project_unlock_technology
 		}
 	}
 
