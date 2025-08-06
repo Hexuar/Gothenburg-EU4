@@ -127,6 +127,12 @@
  gothenburg.project_panacea_title: "One city to rule them all"
  gothenburg.project_panacea_desc: "In order to ensure the security and continuing stability, the Republic will be reorganized into the first Galactic Empire! For a safe and secure society! - Emperor Palpatine I of Gothenburg."
 
+#Special helpers
+ gothenburg.secret_helpers: "Helping our breathren"
+ gotehnburg.secret_helpers_desc: "For too long our walloon breathren have been persecutred by the evil flemish and dutch. We must help the walloon end this suffering"
+ gothenburg.walloon_iron: "The Walloon iron is highly sought after"
+ gothenburg.solution_to_the_walloonian_problem: "We shall finally solve the problem"
+
 
 
 # Events
@@ -182,6 +188,12 @@
  gothenburg.return_of_the_traders_desc: "Once again, the republic of [Root.GetName] stands proud."
  gothenburg.return_of_the_traders_button: "Good riddance!"
 
+ gothenburg.help_our_breathren_title: "What is the solution to the walloonian question?"
+ gothenburg.help_our_breathren_desc: "The walloonians, dutch and flemish have for far too long shown that they can not coexist and now it is our job to solve their problem"
+ gothenburg.help_our_breathren_option_1: "Remove the flemish and dutch from the Low Countries"
+ gothenburg.help_our_breathren_option_2: "Invite them to us"
+ gothenburg.help_our_breathren_option_3: "Move them to our Venetian rivals"
+
 
 
 
@@ -199,6 +211,7 @@
  gothenburg.project_construction: "Great Project Construction"
  gothenburg.project_construction2: "Great Project Construction Intensified"
  gothenburg.project_done: "The City of Splendor"
+ gothenburg.walloon_inefficiency: "The Walloons brought their inefficiency"
 
 
 
@@ -299,7 +312,6 @@
 
 
 
-
 # Government Reforms
  gothenburg.scandinavian_trade_city: "Scandinavian Trade City"
  gothenburg.scandinavian_trade_city_desc: "A Scandinavian Trade City represents a city state which expands its power through indirect control over other trade cities."
@@ -335,3 +347,8 @@
  gothenburg.border_distance: "Border distance"
  gothenburg.navy_size: "Relative navy size"
  gothenburg.is_opm: "Owns only one province."
+
+# Special names
+ new_dutch_name: La grande Wallonie
+ new_gothenburg_name: La petite Wallonie
+ new_gothenburg_province_name: Le petit Charleroi

@@ -20,3 +20,7 @@ gothenburg.project_done = {
 	local_production_efficiency = 1
 	province_trade_power_modifier = 1
 }
+
+gothenburg.walloon_inefficiency = {
+	administrative_efficiency = -0.1
+}

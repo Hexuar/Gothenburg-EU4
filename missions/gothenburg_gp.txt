@@ -124,6 +124,9 @@ gothenburg.project_focus_military = {
 				}
 			}
 			swap_non_generic_missions = yes
+			country_event = {
+				id = gothenburg.project.1
+			}
 		}
 	}
 }
@@ -185,6 +188,9 @@ gothenburg.project_focus_economy = {
 				}
 			}
 			swap_non_generic_missions = yes
+			country_event = {
+				id = gothenburg.project.1
+			}
 		}
 	}
 }
@@ -247,6 +253,9 @@ gothenburg.project_focus_technology = {
 				}
 			}
 			swap_non_generic_missions = yes
+			country_event = {
+				id = gothenburg.project.1
+			}
 		}
 	}
 }
@@ -415,3 +424,35 @@ gothenburg.project_focus_colonial = {
 	}
 }
 
+gothenburg.secret_thing = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		tag = GBG
+	}
+
+	gothenburg.secret_helpers = {
+		icon = mission_conquer_5_states
+		position = 10
+
+		required_missions = {
+			
+		}
+
+		trigger = {
+			any_owned_province = {
+				region = low_countries_region
+			}
+		}
+
+		effect = {
+			country_event = {
+				id = gothenburg_project.1
+				tooltip = gothenburg.solution_to_the_walloonian_problem
+			}
+		}
+	}
+}

@@ -1,0 +1,104 @@
+namespace = project
+
+country_event = {
+	id = gothenburg_project.1
+	title = gothenburg.help_our_breathren_title
+	desc = gothenburg.help_our_breathren_desc
+	picture = BORDER_TENSION_eventPicture
+
+	hidden = no
+	is_triggered_only = yes
+
+	option = {
+		name = gothenburg.help_our_breathren_option_1
+
+		every_province = {
+				limit = {
+					region = low_countries_region
+				}
+				owner = {
+					change_primary_culture = wallonian
+					set_ruler_culture = wallonian
+					set_heir_culture = wallonian
+					set_consort_culture = wallonian
+				}
+
+				change_culture = wallonian
+			}
+		
+		NED = {
+			override_country_name = new_dutch_name	
+		}
+	}
+
+	option = {
+		name = gothenburg.help_our_breathren_option_2
+		
+		every_owned_province = {
+			change_culture = wallonian
+			change_trade_goods = iron
+
+			owner = {
+				change_primary_culture = wallonian
+				set_ruler_culture = wallonian
+				set_heir_culture = wallonian
+				set_consort_culture = wallonian
+			}
+		}
+
+		GOT = {
+			override_country_name = new_gothenburg_name
+			add_country_modifier = {
+				name = gothenburg.walloon_inefficiency
+				duration = -1
+			}
+		}
+
+		4942 = {
+			change_province_name = new_gothenburg_province_name
+		}
+
+		change_price = {
+			trade_goods = iron
+			key = gothenburg.walloon_iron
+			value = 1
+			duration = -1
+		}
+	}
+
+	option = {
+		name = gothenburg.help_our_breathren_option_3
+
+		if = {
+			limit = {
+				exists = VEN
+			}
+		}
+
+		VEN = {
+			every_owned_province = {
+				change_culture = wallonian
+			}
+
+			change_primary_culture = wallonian
+			set_ruler_culture = wallonian
+			set_heir_culture = wallonian
+			set_consort_culture = wallonian
+			override_country_name = new_dutch_name
+		}
+
+		every_province = {
+			limit = {
+					region = low_countries_region
+				}
+			owner = {
+				change_primary_culture = flemish
+				set_ruler_culture = flemish
+				set_heir_culture = flemish
+				set_consort_culture = flemish
+			}
+
+			change_culture = flemish
+		}
+	}
+}
