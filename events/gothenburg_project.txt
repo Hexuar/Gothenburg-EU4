@@ -15,6 +15,9 @@ country_event = {
 		every_province = {
 				limit = {
 					region = low_countries_region
+					NOT = {
+						owned_by = GBG
+					}
 				}
 				owner = {
 					change_primary_culture = wallonian
@@ -27,7 +30,7 @@ country_event = {
 			}
 		
 		NED = {
-			override_country_name = new_dutch_name	
+			override_country_name = gothenburg.new_dutch_name	
 		}
 	}
 
@@ -37,25 +40,22 @@ country_event = {
 		every_owned_province = {
 			change_culture = wallonian
 			change_trade_goods = iron
-
-			owner = {
-				change_primary_culture = wallonian
-				set_ruler_culture = wallonian
-				set_heir_culture = wallonian
-				set_consort_culture = wallonian
-			}
 		}
 
-		GOT = {
-			override_country_name = new_gothenburg_name
+		GBG = {
+			override_country_name = gothenburg.new_gothenburg_name
 			add_country_modifier = {
 				name = gothenburg.walloon_inefficiency
 				duration = -1
 			}
+			change_primary_culture = wallonian
+			set_ruler_culture = wallonian
+			set_heir_culture = wallonian
+			set_consort_culture = wallonian
 		}
 
 		4942 = {
-			change_province_name = new_gothenburg_province_name
+			change_province_name = gothenburg.new_gothenburg_province_name
 		}
 
 		change_price = {
@@ -84,12 +84,15 @@ country_event = {
 			set_ruler_culture = wallonian
 			set_heir_culture = wallonian
 			set_consort_culture = wallonian
-			override_country_name = new_dutch_name
+			override_country_name = gothenburg.new_dutch_name 
 		}
 
 		every_province = {
 			limit = {
 					region = low_countries_region
+					NOT = {
+						owned_by = GBG
+					}
 				}
 			owner = {
 				change_primary_culture = flemish
