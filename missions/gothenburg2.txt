@@ -138,9 +138,10 @@ gothenburg.hansa.westward_expansion = {
                 add_claim = ROOT
                 spawn_rebels = {
     				type = nationalist_rebels
-    				size = 5
+    				size = 3
     				win = yes
     				separatists_target = GBG
+                    friend = GBG
     			}
             }
         }
