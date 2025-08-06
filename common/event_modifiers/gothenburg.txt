@@ -41,3 +41,9 @@ gothenburg.vinland_colonisation = {
     local_colonial_growth = 10
     local_colony_cost_modifier = -0.25
 }
+
+gothenburg.london_secured = {
+    placed_merchant_power_modifier = 0.25
+    global_own_trade_power = 0.1
+    global_ship_trade_power = 0.2
+}

@@ -134,9 +134,49 @@ gothenburg.hansa.westward_expansion = {
             1744 = {
                 add_trade_node_income = 24
             }
+            236 = {
+                add_claim = ROOT
+                spawn_rebels = {
+    				type = nationalist_rebels
+    				size = 5
+    				win = yes
+    				separatists_target = GBG
+    			}
+            }
         }
     }
 
+
+    gothenburg.secure_london = {
+        icon = mission_rb_scottish_conquer_london
+        position = 6
+
+        required_missions = {
+            gothenburg.liberate_antwerp
+        }
+
+        provinces_to_highlight = {
+            province_id = 236
+        }
+
+        trigger = {
+            236 = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+
+        effect = {
+            236 = {
+                add_base_tax = 1
+                add_base_production = 1
+            }
+
+            add_country_modifier = {
+                name = gothenburg.london_secured
+                duration = -1
+            }
+        }
+    }
 }
 
 

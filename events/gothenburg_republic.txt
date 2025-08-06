@@ -67,6 +67,12 @@ country_event = {
 
 	immediate = {
 	    set_country_flag = gothenburg.has_seen_fall_of_the_republic_event
+
+		clr_country_flag = gothenburg.draft_law
+		remove_country_modifier = gothenburg.draft_law
+
+		clr_country_flag = gothenburg.draft_sailors_law
+		remove_country_modifier = gothenburg.draft_sailors_law
 	}
 
 	option = {
