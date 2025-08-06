@@ -347,8 +347,3 @@
  gothenburg.border_distance: "Border distance"
  gothenburg.navy_size: "Relative navy size"
  gothenburg.is_opm: "Owns only one province."
-
-# Special names
- gothenburg.new_dutch_name: La grande Wallonie
- gothenburg.new_gothenburg_name: La petite Wallonie
- gothenburg.new_gothenburg_province_name: Le petit Charleroi

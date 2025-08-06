@@ -30,7 +30,7 @@ country_event = {
 			}
 		
 		NED = {
-			override_country_name = gothenburg.new_dutch_name	
+			override_country_name = "La grande Wallonie"
 		}
 	}
 
@@ -43,7 +43,7 @@ country_event = {
 		}
 
 		GBG = {
-			override_country_name = gothenburg.new_gothenburg_name
+			override_country_name = "La petite Wallonie"
 			add_country_modifier = {
 				name = gothenburg.walloon_inefficiency
 				duration = -1
@@ -55,7 +55,7 @@ country_event = {
 		}
 
 		4942 = {
-			change_province_name = gothenburg.new_gothenburg_province_name
+			change_province_name = "Le petit Charleroi"
 		}
 
 		change_price = {
@@ -84,7 +84,7 @@ country_event = {
 			set_ruler_culture = wallonian
 			set_heir_culture = wallonian
 			set_consort_culture = wallonian
-			override_country_name = gothenburg.new_dutch_name 
+			override_country_name = "La grande Wallonie"
 		}
 
 		every_province = {
