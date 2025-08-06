@@ -56,6 +56,9 @@
  gothenburg.baltic_trade_title: "Baltic Trade"
  gothenburg.baltic_trade_desc: "If we wish to become relevant in scandinavia, we must first conquer the north sea."
 
+ gothenburg.dominate_home_trade_title: "Dominate Home Trade"
+ gothenburg.dominate_home_trade_desc: "Our economic power has grown massively over the years, it is time we cement our control over our own home region."
+
  gothenburg.skillfull_diplomats_title: "Skillfull Diplomats"
  gothenburg.skillfull_diplomats_desc: "To become a relevant local power, we must be able to improve relations with our neighbours."
 
@@ -102,6 +105,9 @@
  gothenburg.liberate_antwerp_title: "Liberate Antwerp"
  gothenburg.liberate_antwerp_desc: "The great city of antwerp was an important city for the hansa. We must free them from foreign occupation."
 
+ gothenburg.liberate_secure_london_title: "Secure London"
+ gothenburg.liberate_secure_london_desc: "The hanseatic league once held great influence over the city of London. Let us restore it."
+
  gothenburg.the_hre_title: "The Emperor's Grace"
  gothenburg.the_hre_desc: "With our success in northen Germany, it might be advantageous to reach out to the emperor about our situation in the empire."
 
@@ -120,7 +126,7 @@
 
  gothenburg.project_unlock_technology_title: "Ape together strong"
  gothenburg.project_unlock_technology_desc: "Our enemies are more advanced than us so we must catch up quick or we will be exterminated - Abraham Lincoln."
- 
+
  gothenburg.project_unlock_colonial_title: "New women for our brave and glorious country"
  gothenburg.project_unlock_colonial_desc: "We must venture to this New World and take whatever we can, women, spices, gold and whatever is not bolted down. Then we will transport it back to Gothenburg. In return we will give the survivors some blankets so they can survive, they just got to hope the blankets does not have smallpox on them."
 
@@ -212,6 +218,7 @@
  gothenburg.project_construction2: "Great Project Construction Intensified"
  gothenburg.project_done: "The City of Splendor"
  gothenburg.walloon_inefficiency: "The Walloons brought their inefficiency"
+ gothenburg.london_secured: "London Secured"
 
 
 
