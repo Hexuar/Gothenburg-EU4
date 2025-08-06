@@ -33,10 +33,10 @@ gothenburg.project_focus_military = {
 			add_treasury = -1000
 			4942 = {
 				add_random_development = 3
-			}
-			add_province_modifier = {
-				name = gothenburg.project_construction
-				duration = -1
+				add_province_modifier = {
+					name = gothenburg.project_construction
+					duration = -1
+				}
 			}
 		}
 	}
@@ -70,11 +70,11 @@ gothenburg.project_focus_military = {
 			add_treasury = -2000
 			4942 = {
 				add_random_development = 5
-			}
-			remove_province_modifier = gothenburg.project_construction
-			add_province_modifier = {
-				name = gothenburg.project_construction2
-				duration = -1
+				remove_province_modifier = gothenburg.project_construction
+				add_province_modifier = {
+					name = gothenburg.project_construction2
+					duration = -1
+				}
 			}
 		}
 	}
@@ -112,8 +112,8 @@ gothenburg.project_focus_military = {
 
 		effect = {
 			add_treasury = -2000
-			remove_province_modifier = gothenburg.project_construction2
 			4942 = {
+				remove_province_modifier = gothenburg.project_construction2
 				add_great_project = {
 					type = gothenburg.defence
 					instant = yes
@@ -124,9 +124,6 @@ gothenburg.project_focus_military = {
 				}
 			}
 			swap_non_generic_missions = yes
-			country_event = {
-				id = gothenburg.project.1
-			}
 		}
 	}
 }
@@ -176,8 +173,8 @@ gothenburg.project_focus_economy = {
 
 		effect = {
 			add_treasury = -2000
-			remove_province_modifier = gothenburg.project_construction2
 			4942 = {
+				remove_province_modifier = gothenburg.project_construction2
 				add_great_project = {
 					type = gothenburg.fishmarket
 					instant = yes
@@ -188,9 +185,6 @@ gothenburg.project_focus_economy = {
 				}
 			}
 			swap_non_generic_missions = yes
-			country_event = {
-				id = gothenburg.project.1
-			}
 		}
 	}
 }
@@ -240,9 +234,8 @@ gothenburg.project_focus_technology = {
 
 		effect = {
 			add_treasury = -2000
-			remove_province_modifier = gothenburg.project_construction2
-
 			4942 = {
+				remove_province_modifier = gothenburg.project_construction2
 				add_great_project = {
 					type = gothenburg.chalmers
 					instant = yes
@@ -253,9 +246,6 @@ gothenburg.project_focus_technology = {
 				}
 			}
 			swap_non_generic_missions = yes
-			country_event = {
-				id = gothenburg.project.1
-			}
 		}
 	}
 }
