@@ -24,7 +24,10 @@ gothenburg.shipbuilding = {
     build_trigger = {
         owner = {
 			tag = GBG
-			mission_completed = gothenburg.project_panacea
+			OR = {
+				mission_completed = gothenburg.project_unlock_military
+				mission_completed = gothenburg.project_panacea
+			}
 		}
     }
 
