@@ -102,3 +102,31 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = gothenburg_project.2
+
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		4942 = {
+			add_great_project = {
+				type = gothenburg.defence
+				instant = yes
+			}
+			add_great_project = {
+				type = gothenburg.shipbuilding
+				instant = yes
+			}
+		}
+		swap_non_generic_missions = yes
+	}
+
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+	}
+} #Kanske ej behövs
