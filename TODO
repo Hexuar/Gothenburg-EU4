@@ -22,4 +22,3 @@ Bugs
 - Great project building not working as intended, may be because alwasys = no (so they never get built even by mission), they actually do not exist anymore
 - Last two missions in great project mission tree not showing up even with event firing
 - Province modifiers from great project tree not showing up in province not development either
-

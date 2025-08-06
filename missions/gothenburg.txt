@@ -395,6 +395,28 @@ gothenburg.trade = {
             }
         }
     }
+
+    gothenburg.dominate_home_trade = {
+        icon = mission_dominate_home_trade_node
+        position = 4
+
+        required_missions = {
+            gothenburg.baltic_trade
+            gothenburg.varvet
+        }
+
+        trigger = {
+            45 = {
+                is_strongest_trade_power = ROOT
+            }
+        }
+
+        effect = {
+            capital_scope = {
+                add_center_of_trade_level = 1
+            }
+        }
+    }
 }
 
 
