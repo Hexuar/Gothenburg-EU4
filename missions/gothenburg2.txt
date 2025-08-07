@@ -217,4 +217,70 @@ gothenburg.hansa.hre = {
             }
         }
     }
+
+
+    gothenburg.control_hre_trade = {
+        icon = the_imperial_border
+        position = 6
+
+        required_missions = {
+            gothenburg.the_hre
+        }
+
+        trigger = {
+            45 = {
+                is_strongest_trade_power = ROOT
+            }
+            61 = {
+                is_strongest_trade_power = ROOT
+            }
+            134 = {
+                is_strongest_trade_power = ROOT
+            }
+            1876 = {
+                is_strongest_trade_power = ROOT
+            }
+        }
+
+        effect = {
+            add_treasury = 1000
+
+            add_country_modifier = {
+                name = gothenburg.controls_hre_trade
+                duration = -1
+            }
+
+            custom_tooltip = gothenburg.control_hre_trade_immigration
+            tooltip = {
+                add_base_tax = 1
+                add_base_production = 1
+                add_base_manpower = 1
+
+                add_province_modifier = {
+                    name = gothenburg.increased_immigration
+                    duration = 9125
+                }
+            }
+
+            hidden_effect = {
+                every_subject_country = {
+                    every_owned_province = {
+                        limit = {
+                            is_part_of_hre = yes
+                        }
+
+                        add_base_tax = 1
+                        add_base_production = 1
+                        add_base_manpower = 1
+
+                        add_province_modifier = {
+                            name = gothenburg.increased_immigration
+                            duration = 9125
+                        }
+                    }
+                }
+            }
+
+        }
+    }
 }

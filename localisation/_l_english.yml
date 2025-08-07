@@ -111,6 +111,10 @@
  gothenburg.the_hre_title: "The Emperor's Grace"
  gothenburg.the_hre_desc: "With our success in northen Germany, it might be advantageous to reach out to the emperor about our situation in the empire."
 
+ gothenburg.control_hre_trade_title: "Control Imperial Trade"
+ gothenburg.control_hre_trade_desc: "The Holy Roman Empire has become much too dependent on our trade network, it is time we exploit this."
+ gothenburg.control_hre_trade_immigration: "Every subject nation's provinces in the HRE will gain the following:"
+
 #Project missions
  gothenburg.project_start_title: "The Great monuments of Gothenburg"
  gothenburg.project_start_desc: "The people are crying for more monuments so let them have monuments - Marie Antoinette."
@@ -219,6 +223,8 @@
  gothenburg.project_done: "The City of Splendor"
  gothenburg.walloon_inefficiency: "The Walloons brought their inefficiency"
  gothenburg.london_secured: "London Secured"
+ gothenburg.controls_hre_trade: "Controls HRE Trade"
+ gothenburg.increased_immigration: "Increased Immigration"
 
 
 

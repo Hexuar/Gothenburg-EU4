@@ -47,3 +47,14 @@ gothenburg.london_secured = {
     global_own_trade_power = 0.1
     global_ship_trade_power = 0.2
 }
+
+gothenburg.controls_hre_trade = {
+    caravan_power = 0.2
+}
+
+gothenburg.increased_immigration = {
+    local_institution_spread = 0.1
+    local_prosperity_growth = 0.1
+    local_build_cost = -0.1
+    local_culture_conversion_cost = 0.05
+}
