@@ -282,4 +282,58 @@ country_decisions = {
         }
     }
 
+
+    gothenburg.unite_republic_action = {
+        major = yes
+
+        potential = {
+            has_reform = gothenburg.scandinavian_trade_city
+            has_country_flag = gothenburg.enabled_council
+        }
+
+        allow = {
+            republican_tradition = 90
+            adm_power = 100
+
+            has_country_flag = gothenburg.draft_law
+            has_country_flag = gothenburg.draft_sailors_law
+
+            all_subject_country = {
+                NOT = { liberty_desire = 50 }
+            }
+        }
+
+        effect = {
+            override_country_name = gothenburg.republiken
+
+            custom_tooltip = gothenburg.unite_republic_action_inherit
+            hidden_effect = {
+                every_subject_country = {
+                    limit = {
+                        OR = {
+                            is_subject_of_type = gothenburg.trade_city
+                            is_subject_of_type = gothenburg.integrated_trade_city
+                        }
+                    }
+
+                    ROOT = {
+                        inherit = PREV
+                    }
+                }
+            }
+
+            remove_government_reform = gothenburg.scandinavian_trade_city
+
+            add_country_modifier = {
+                name = gothenburg.the_great_republic
+                duration = -1
+            }
+
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+
 }

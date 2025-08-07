@@ -24,3 +24,8 @@ gothenburg.project_done = {
 gothenburg.walloon_inefficiency = {
 	administrative_efficiency = -0.1
 }
+
+gothenburg.the_great_republic = {
+    land_forcelimit_modifier = 1.0
+    naval_forcelimit_modifier = 1.0
+}

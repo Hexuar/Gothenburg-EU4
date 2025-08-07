@@ -9,6 +9,10 @@
  GBG_ADJ2: "Gothenburgian"
  gothenburg: "Gothenburg"
 
+ gothenburg.republiken: "Förenta Republiken"
+ gothenburg.republiken_ADJ: "Förenta Republiken"
+ gothenburg.republiken_ADJ2: "Förenta Republiken"
+
 
 
 
@@ -225,6 +229,7 @@
  gothenburg.london_secured: "London Secured"
  gothenburg.controls_hre_trade: "Controls HRE Trade"
  gothenburg.increased_immigration: "Increased Immigration"
+ gothenburg.the_great_republic: "The Great Republic"
 
 
 
@@ -270,6 +275,11 @@
  gothenburg.collect_additional_tax_action_title: "£adm£ Council Action: Collect Additional Tax"
  gothenburg.collect_additional_tax_action_desc: "Collect an additional one-time fee from our trade cities."
  gothenburg.collect_additional_tax_action_tooltip: "Will collect §G50¤§! from every Trade Citiy."
+
+ gothenburg.unite_republic_action_title: "Unite The Republic"
+ gothenburg.unite_republic_action_desc: "Integrate all our Trade Cities into our empire."
+ gothenburg.unite_republic_action_tooltip: ""
+ gothenburg.unite_republic_action_inherit: "Inherit every Trade City and Integrated Trade City."
 
 
 
