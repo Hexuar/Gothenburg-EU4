@@ -143,7 +143,7 @@
 
 #Special helpers
  gothenburg.secret_helpers_title: "Helping our breathren"
- gothenburg.secret_helpers_desc: "For too long our walloon breathren have been persecutred by the evil flemish and dutch. We must help the walloon end this suffering"
+ gothenburg.secret_helpers_desc: "For too long our walloon breathren have been persecutred by the evil flemish and dutch. We must help the walloon end this suffering one way or another because this is our duty as protectors of the walloonian culture."
  gothenburg.walloon_iron: "The Walloon iron is highly sought after"
  gothenburg.solution_to_the_walloonian_problem: "We shall finally solve the problem"
 
@@ -203,10 +203,10 @@
  gothenburg.return_of_the_traders_button: "Good riddance!"
 
  gothenburg.help_our_breathren_title: "What is the solution to the walloonian question?"
- gothenburg.help_our_breathren_desc: "The walloonians, dutch and flemish have for far too long shown that they can not coexist and now it is our job to solve their problem"
- gothenburg.help_our_breathren_option_1: "Remove the flemish and dutch from the Low Countries"
- gothenburg.help_our_breathren_option_2: "Invite them to us"
- gothenburg.help_our_breathren_option_3: "Move them to our Venetian rivals"
+ gothenburg.help_our_breathren_desc: "The walloonians, dutch and flemish have for far too long shown that they can not coexist and now it is our job to solve their problem."
+ gothenburg.help_our_breathren_option_1: "Remove the flemish and dutch from the Low Countries."
+ gothenburg.help_our_breathren_option_2: "Invite them to us."
+ gothenburg.help_our_breathren_option_3: "Move them to our Venetian rivals."
 
  gothenburg.trade_cities_request_aid_title: "Trade Cities Request Aid"
  gothenburg.trade_cities_request_aid_desc: "Some of our Trade Cities have been struggling with recent local events and turn to us to support them, as our arrangement demands."

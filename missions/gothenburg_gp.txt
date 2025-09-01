@@ -254,7 +254,9 @@ gothenburg.project_focus_colonial = {
 		}
 
 		trigger = {
-			has_country_flag = gothenburg.project_first_unlocks
+			hidden_trigger = {
+				has_country_flag = gothenburg.project_first_unlocks	
+			}
 			ROOT = {
 				treasury = 4000
 				colony = 1
