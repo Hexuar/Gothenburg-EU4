@@ -127,7 +127,7 @@
  gothenburg.project_continues_desc: "We have come this far, we must continue - Sun Tzu."
 
  gothenburg.project_unlock_economy_title: "The economy will live long and prosper"
- gothenburg.project_unlock_economy_desc: "Our economy is in shambles after our §Y[ROOT.Monarch.GetTitle]§ decided to send money to a Nigerian prince and lost all our coffers. We must rebuild again stronger than ever."
+ gothenburg.project_unlock_economy_desc: "Our economy is in shambles after our [Root.Monarch.GetTitle] decided to send money to a Nigerian prince and lost all our coffers. We must rebuild again stronger than ever."
 
  gothenburg.project_unlock_military_title: "Call for reinforcements"
  gothenburg.project_unlock_military_desc: "We must light the beacons and call for aid."
