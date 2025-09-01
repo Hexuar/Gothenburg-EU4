@@ -1,0 +1,30 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_great_project_gothenburg.american_pier"	
+        texturefile = "gfx//interface//great_projects//great_project_gothenburg_american_pier.dds"
+    }
+    spriteType = {
+        name = "GFX_great_project_gothenburg.chalmers"	
+        texturefile = "gfx//interface//great_projects//great_project_gothenburg_chalmers.dds"
+    }
+    spriteType = {
+        name = "GFX_great_project_gothenburg.defence"	
+        texturefile = "gfx//interface//great_projects//great_project_gothenburg_defence.dds"
+    }
+	spriteType = {
+        name = "GFX_great_project_gothenburg.fishmarket"	
+        texturefile = "gfx//interface//great_projects//great_project_gothenburg_fishmarket.dds"
+    }
+	spriteType = {
+        name = "GFX_great_project_gothenburg.kronhuset"	
+        texturefile = "gfx//interface//great_projects//great_project_gothenburg_kronhuset.dds"
+    }
+    spriteType = {
+        name = "GFX_great_project_gothenburg.port"	
+        texturefile = "gfx//interface//great_projects//great_project_gothenburg_port.dds"
+    }
+    spriteType = {
+        name = "GFX_great_project_gothenburg.shipbuilding"	
+        texturefile = "gfx//interface//great_projects//great_project_gothenburg_shipbuilding.dds"
+    }
+}

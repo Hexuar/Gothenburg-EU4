@@ -1,4 +1,4 @@
-namespace = project
+namespace = gothenburg_project
 
 country_event = {
 	id = gothenburg_project.1
