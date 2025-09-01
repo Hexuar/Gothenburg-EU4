@@ -1,0 +1,17 @@
+estate_burghers_enforced_law = {
+    icon = privilege_aged_paper
+
+    max_absolutism = -5
+    loyalty = 0.05
+    influence = 0.10
+
+    is_valid = {
+        tag = GBG
+    }
+
+    benefits = {
+        republican_tradition = 0.5
+        yearly_corruption = -0.01
+        prestige_decay = 0.01
+    }
+}

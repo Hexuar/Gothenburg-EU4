@@ -374,3 +374,10 @@
  gothenburg.border_distance: "Border distance"
  gothenburg.navy_size: "Relative navy size"
  gothenburg.is_opm: "Owns only one province."
+
+
+
+
+# Privileges
+ estate_burghers_enforced_law: "Burgher Enforced Law"
+ estate_burghers_enforced_law_desc: ""
