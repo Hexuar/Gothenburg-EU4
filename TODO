@@ -1,12 +1,12 @@
 Balance:
-~ Balance Trade Cities
-~ Add more ai_acceptance modifiers to diplomatic actions
++ Balance Trade Cities
++ Add more ai_acceptance modifiers to diplomatic actions
 + Add release trade city diplomatic action
 
 Missions:
-- Add dominate home trade node mission
-- Add protestantism mission
-~ Expand colonialism mission branch
++ Add dominate home trade node mission
+X Add protestantism mission
++ Expand colonialism mission branch
 
 Republican tradition:
 + The fall of the republic
