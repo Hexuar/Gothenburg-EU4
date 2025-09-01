@@ -127,3 +127,39 @@ country_event = {
 		}
 	}
 }
+
+
+country_event = {
+	id = gothenburg_republic.4
+	title = gothenburg.trade_cities_request_aid_title
+	desc = gothenburg.trade_cities_request_aid_desc
+	picture = DEBATE_REPUBLICAN_eventPicture
+
+	mean_time_to_happen = {
+	    months = 50
+	}
+
+	trigger = {
+	    tag = GBG
+		government = republic
+		any_subject_country = {
+		    OR = {
+			    is_subject_of_type = gothenburg.trade_city
+				is_subject_of_type = gothenburg.integrated_trade_city
+			}
+		}
+	}
+
+	option = {
+	    name = gothenburg.trade_cities_request_aid_grant
+
+		add_treasury = -100
+		add_republican_tradition = 5
+	}
+
+	option = {
+	    name = gothenburg.trade_cities_request_aid_deny
+
+		add_republican_tradition = -5
+	}
+}

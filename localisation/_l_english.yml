@@ -208,6 +208,10 @@
  gothenburg.help_our_breathren_option_2: "Invite them to us"
  gothenburg.help_our_breathren_option_3: "Move them to our Venetian rivals"
 
+ gothenburg.trade_cities_request_aid_title: "Trade Cities Request Aid"
+ gothenburg.trade_cities_request_aid_desc: "Some of our Trade Cities have been struggling with recent local events and turn to us to support them, as our arrangement demands."
+ gothenburg.trade_cities_request_aid_grant: "Very well."
+ gothenburg.trade_cities_request_aid_deny: "They should solve this themselves."
 
 
 
