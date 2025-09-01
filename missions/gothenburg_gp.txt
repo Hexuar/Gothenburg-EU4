@@ -115,14 +115,6 @@ gothenburg.project_focus_military = {
 			add_treasury = -2000
 			4942 = {
 				remove_province_modifier = gothenburg.project_construction2
-				add_great_project = {
-					type = gothenburg.defence
-					instant = yes
-				}
-				add_great_project = {
-					type = gothenburg.shipbuilding
-					instant = yes
-				}
 			}
 			swap_non_generic_missions = yes
 		}
@@ -177,14 +169,6 @@ gothenburg.project_focus_economy = {
 			add_treasury = -2000
 			4942 = {
 				remove_province_modifier = gothenburg.project_construction2
-				add_great_project = {
-					type = gothenburg.fishmarket
-					instant = yes
-				}
-				add_great_project = {
-					type = gothenburg.port
-					instant = yes
-				}
 			}
 			swap_non_generic_missions = yes
 		}
@@ -239,14 +223,6 @@ gothenburg.project_focus_technology = {
 			add_treasury = -2000
 			4942 = {
 				remove_province_modifier = gothenburg.project_construction2
-				add_great_project = {
-					type = gothenburg.chalmers
-					instant = yes
-				}
-				add_great_project = {
-					type = gothenburg.kronhuset
-					instant = yes
-				}
 			}
 			swap_non_generic_missions = yes
 		}
@@ -291,12 +267,6 @@ gothenburg.project_focus_colonial = {
 
 		effect = {
 			add_treasury = -4000
-			4942 = {
-				add_great_project = {
-					type = gothenburg.american_pier
-					instant = yes
-				}
-			}
 		}
 	}
 
@@ -335,78 +305,6 @@ gothenburg.project_focus_colonial = {
 				add_province_modifier = {
 					name = gothenburg.project_done
 					duration = -1
-				}
-			}
-			if = {
-				limit = {
-					mission_completed = gothenburg.project_unlock_economy
-				}
-
-				4942 = {
-					add_great_project = {
-						type = gothenburg.defence
-						instant = yes
-					}
-					add_great_project = {
-						type = gothenburg.shipbuilding
-						instant = yes
-					}
-					add_great_project = {
-						type = gothenburg.chalmers
-						instant = yes
-					}
-					add_great_project = {
-						type = gothenburg.kronhuset
-						instant = yes
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					mission_completed = gothenburg.project_unlock_military
-				}
-
-				4942 = {
-					add_great_project = {
-						type = gothenburg.fishmarket
-						instant = yes
-					}
-					add_great_project = {
-						type = gothenburg.port
-						instant = yes
-					}
-					add_great_project = {
-						type = gothenburg.chalmers
-						instant = yes
-					}
-					add_great_project = {
-						type = gothenburg.kronhuset
-						instant = yes
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					mission_completed = gothenburg.project_unlock_technology
-				}
-
-				4942 = {
-					add_great_project = {
-						type = gothenburg.defence
-						instant = yes
-					}
-					add_great_project = {
-						type = gothenburg.shipbuilding
-						instant = yes
-					}
-					add_great_project = {
-						type = gothenburg.fishmarket
-						instant = yes
-					}
-					add_great_project = {
-						type = gothenburg.port
-						instant = yes
-					}
 				}
 			}
 		}

@@ -3,7 +3,7 @@ gothenburg.shipbuilding = {
     start = 4942
 
     # Date built in real life (If you start the game at a date later than this, then the project will show up)
-    date = 30000.01.01
+    date = 0.01.01
 
     # How much it costs to build
     build_cost = 1000
