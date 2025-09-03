@@ -2,6 +2,8 @@ Balance:
 + Balance Trade Cities
 + Add more ai_acceptance modifiers to diplomatic actions
 + Add release trade city diplomatic action
+- Naval supplies price increase
+- Allow re-request of province
 
 Missions:
 + Add dominate home trade node mission
