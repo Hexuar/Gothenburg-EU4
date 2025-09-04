@@ -131,7 +131,6 @@ country_event = {
         add_owned_provinces_development_ducats = {
             multiplier = 2
 			age_multiplier = 1
-		    trigger = { always = yes }
 		}
 	}
 }

@@ -36,6 +36,10 @@ country_event = {
 
 		add_prestige = 10
 
+		FROM = {
+		    clr_country_flag = gothenburg.requested_bornholm
+		}
+
 		ai_chance = { factor = 10 }
 	}
 }
@@ -77,6 +81,10 @@ country_event = {
 
 		add_prestige = 10
 
+		FROM = {
+		    clr_country_flag = gothenburg.requested_bornholm
+		}
+
 		ai_chance = { factor = 10 }
 	}
 }
@@ -117,6 +125,10 @@ country_event = {
 	    name = gothenburg.request_osel_event.reject
 
 		add_prestige = 10
+
+		FROM = {
+		    clr_country_flag = gothenburg.requested_bornholm
+		}
 
 		ai_chance = { factor = 10 }
 	}
