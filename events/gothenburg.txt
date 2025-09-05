@@ -204,7 +204,10 @@ country_event = {
 
 		if = {
 		    limit = {
-				HSA = { exists = yes }
+				HSA = {
+				    exists = yes
+					NOT = { is_subject_of = ROOT }
+				}
 			}
 			create_subject = {
                 subject_type = gothenburg.trade_city
@@ -214,7 +217,10 @@ country_event = {
 
 		if = {
 		    limit = {
-				HAM = { exists = yes }
+				HAM = {
+				    exists = yes
+					NOT = { is_subject_of = ROOT }
+				}
 			}
             create_subject = {
                 subject_type = gothenburg.trade_city
@@ -224,7 +230,10 @@ country_event = {
 
         if = {
 		    limit = {
-				BRE = { exists = yes }
+				BRE = {
+				    exists = yes
+					NOT = { is_subject_of = ROOT }
+				}
 			}
             create_subject = {
                 subject_type = gothenburg.trade_city
@@ -234,7 +243,10 @@ country_event = {
 
         if = {
 		    limit = {
-				RIG = { exists = yes }
+				RIG = {
+				    exists = yes
+					NOT = { is_subject_of = ROOT }
+				}
 			}
             create_subject = {
                 subject_type = gothenburg.trade_city
