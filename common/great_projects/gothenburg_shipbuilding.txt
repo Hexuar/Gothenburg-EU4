@@ -164,7 +164,7 @@ gothenburg.shipbuilding = {
 			change_price = {
 				trade_goods = naval_supplies
 				key = gothenburg.shipbuilding_price
-				value = 0.1
+				value = 1
 				duration = 365
 			}
 		}
@@ -209,7 +209,7 @@ gothenburg.shipbuilding = {
 			change_price = {
 				trade_goods = naval_supplies
 				key = gothenburg.shipbuilding_price
-				value = 0.1
+				value = 1
 				duration = -1
 			}
 		}
