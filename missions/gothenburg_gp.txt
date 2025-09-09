@@ -116,7 +116,6 @@ gothenburg.project_focus_military = {
 			4942 = {
 				remove_province_modifier = gothenburg.project_construction2
 			}
-			swap_non_generic_missions = yes
 		}
 	}
 }
@@ -170,7 +169,6 @@ gothenburg.project_focus_economy = {
 			4942 = {
 				remove_province_modifier = gothenburg.project_construction2
 			}
-			swap_non_generic_missions = yes
 		}
 	}
 }
@@ -224,7 +222,6 @@ gothenburg.project_focus_technology = {
 			4942 = {
 				remove_province_modifier = gothenburg.project_construction2
 			}
-			swap_non_generic_missions = yes
 		}
 	}
 }
