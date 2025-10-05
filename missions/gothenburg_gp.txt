@@ -150,7 +150,7 @@ gothenburg.project_focus_economy = {
 				adm_tech = 10
 				dip_tech = 10
 				NOT = {
-					AND = {
+					OR = {
 						mission_completed = gothenburg.project_unlock_military
 						mission_completed = gothenburg.project_unlock_technology
 					}
@@ -204,7 +204,7 @@ gothenburg.project_focus_technology = {
 				adm_tech = 10
 				dip_tech = 10
 				NOT = {
-					AND = {
+					OR = {
 						mission_completed = gothenburg.project_unlock_economy
 						mission_completed = gothenburg.project_unlock_military
 					}
