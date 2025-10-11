@@ -181,7 +181,7 @@ gothenburg.defence = {
 			fort_level = 1
 			supply_limit_modifier = 0.2
 			local_has_carolean = yes
-			local_amount_of_carolean = 0.1
+			local_amount_of_carolean = 1
 		}
 
 		# What modifiers are given to the area of the province the project is located in
